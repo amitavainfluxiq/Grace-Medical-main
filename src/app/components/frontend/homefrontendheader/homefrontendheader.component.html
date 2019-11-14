@@ -1,0 +1,79 @@
+<mat-card class="ami_top1">
+    <mat-card-content class="ami_top1_wrapper">
+        <span class="ami_top_logo" routerLink="/home"><img src="/assets/images/logo.png" alt="#"></span>
+
+        <span class="ami_top_menu">
+
+                   <span class="ami_top_search">
+
+           <!-- <form >-->
+            <input matInput placeholder="Search"  >
+          <button mat-button><i class="material-icons">search</i></button>
+                       <!-- </form>-->
+<span class="clear"></span>
+        </span>
+            <button mat-button  class="amitoplogin" routerLink="/sacheduleappointment"  routerLinkActive="activeamitoplogin">Schedule Appointment</button>
+<button mat-button [matMenuTriggerFor]="menu" class="amitoplogin">Login</button>
+
+<mat-menu #menu="matMenu" >
+  <button mat-menu-item class="amitoploginmenu" routerLink="/login">Admin Login</button>
+  <button mat-menu-item class="amitoploginmenu">Doctor Login</button>
+<button mat-menu-item class="amitoploginmenu">Patient Login</button>
+
+</mat-menu>
+
+
+         </span>
+
+
+
+
+
+        <span class="clear"></span>
+    </mat-card-content>
+
+</mat-card>
+
+
+
+<mat-card class="ami_top2">
+
+
+    <span class="toglenav_class" (click)="clickEvent()"     [ngClass]="status ? 'menushow' : 'menuhide'">
+
+       <label><!--For modern browsers-->
+
+<i class="material-icons">
+menu
+</i> </label>
+
+<span class="menulist">
+
+    <button mat-button routerLink="/home"   routerLinkActive="active" >Home</button>
+    <button mat-button routerLink="/ourphysicians" routerLinkActive="active">Our Physicians</button>
+    <button mat-button routerLink="/appointment" routerLinkActive="active">Appointments</button>
+    <button mat-button routerLink="/services" routerLinkActive="active">Services</button>
+    <button mat-button routerLink="/journals" routerLinkActive="active">Journals</button>
+    <button mat-button routerLink="/imagegallery" routerLinkActive="active">Image Gallery</button>
+    <button mat-button routerLink="/videogallery" routerLinkActive="active">Video Gallery</button>
+    <button mat-button routerLink="/testimonial" routerLinkActive="active">Testimonial</button>
+    <button mat-button routerLink="/contactus" routerLinkActive="active">Contact Us</button>
+</span>
+</span>
+
+</mat-card>
+
+
+
+<span class="share_this_all">
+
+    <img src="/assets/images/share_this_1.png" alt="#" >
+    <img src="/assets/images/share_this_2.png" alt="#" >
+    <img src="/assets/images/share_this_3.png" alt="#" >
+    <img src="/assets/images/share_this_4.png" alt="#" >
+    <img src="/assets/images/share_this_5.png" alt="#" >
+    <img src="/assets/images/share_this_6.png" alt="#" >
+
+</span>
+
+

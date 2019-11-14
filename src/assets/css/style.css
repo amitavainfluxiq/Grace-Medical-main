@@ -1,0 +1,206 @@
+
+@font-face{font-family:"Helvetica-Regular";
+
+    src:url(../fonts/Helvetica-Normal.eot);src:url(../fonts/Helvetica-Normal.eot?#iefix) format("embedded-opentype"),url(../fonts/Helvetica-Normal.woff2) format("woff2"),url(../fonts/Helvetica-Normal.woff) format("woff"),url(../fonts/Helvetica-Normal.ttf) format("truetype"),url(../fonts/Helvetica-Normal.svg#Helvetica-Normal) format("svg");font-weight:400;font-style:normal}
+
+@font-face{font-family:"HelveticaBold";
+
+    src:url(../fonts/Helvetica-Bold.eot);src:url(../fonts/Helvetica-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/Helvetica-Bold.woff2) format("woff2"),url(../fonts/Helvetica-Bold.woff) format("woff"),url(../fonts/Helvetica-Bold.ttf) format("truetype"),url(../fonts/Helvetica-Bold.svg#Helvetica-Bold) format("svg");font-weight:700;font-style:normal}
+
+
+
+@font-face {font-family: 'HelveticaBold';
+    src: url('../fonts/Helvetica-Bold.eot'); src: url('../fonts/Helvetica-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Helvetica-Bold.woff2') format('woff2'), url('../fonts/Helvetica-Bold.woff') format('woff'), url('../fonts/Helvetica-Bold.ttf') format('truetype'), url('../fonts/Helvetica-Bold.svg#Helvetica-Bold') format('svg'); font-weight: bold; font-style: normal;}
+
+@font-face {font-family: 'Helvetica-Normal';
+
+    src: url('../fonts/Helvetica-Normal.eot');src: url('../fonts/Helvetica-Normal.eot?#iefix') format('embedded-opentype'), url('../fonts/Helvetica-Normal.woff2') format('woff2'), url('../fonts/Helvetica-Normal.woff') format('woff'), url('../fonts/Helvetica-Normal.ttf') format('truetype'), url('../fonts/Helvetica-Normal.svg#Helvetica-Normal') format('svg'); font-weight: normal; font-style: normal;}
+
+
+
+.images{ display: block; position: relative; }
+ .images img{ max-width: 100%; }
+
+ .tab_pannel{ width: 165px;  
+    position: fixed;
+    right: 0;
+    top: 20%;
+    display: block;
+    background: #1bdcff;
+    box-shadow: -1px 1px 7px 2px #4a3131;}
+
+    .tab_pannel .mat-list-base{padding: 0;}
+    .tab_pannel .mat-list-base .mat-list-item,
+    .tab_pannel .mat-list-base .mat-list-option {
+        display: block;
+        height: 48px;
+        -webkit-tap-highlight-color: transparent;
+        width: 100%;
+        padding: 0;
+        background: #01b2d3;
+        margin: 5px 0;
+        color: #fff;
+    }
+
+    .images .tapi{ background: red;}
+
+
+.loderbody{width:100vw; height:100vh; display:table-cell; vertical-align:middle; text-align:center; background: #1c73ca;}
+
+.loderpagelogo{margin:0 auto; margin-bottom:30px; width: auto; max-width: 90%;}
+
+.loader{border:16px solid #064785;border-top:16px solid #fff;border-radius:50%;width:120px;height:120px;animation:spin 2s linear infinite;margin:0 auto;}
+@keyframes spin{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+
+
+
+
+.homeblock6 .mat-icon-button{ color: #333!important;}
+
+
+.homeblock6 .mat-icon-button:nth-of-type(1) {
+    background: url("../images/home_tes_block_slide_left.png") no-repeat left top!important;
+}
+
+.homeblock6 .mat-icon-button:nth-of-type(2) {
+    background: url("../images/home_tes_block_slide_right.png") no-repeat left top!important;
+}
+.homeblock6 .mat-icon{ display: none;}
+
+@media(max-width:1199px) {
+
+    .homeblock6 .mat-icon-button{ display: none!important;}
+}
+
+     /*----------------------------------------------------------------------------------*/
+
+
+.carousel-slide {
+    height: 100% !important;
+    position: initial !important;
+}
+
+.carousel-slide-content {
+    position: inherit !important;
+}
+
+.carousel-list{
+    align-items: center;
+    flex-basis: content;
+}
+
+.carousel-slide-overlay {
+    position: inherit!important;
+}
+
+
+/*----------------------------------------------------------------------------------*/
+
+.mat-form-field-flex {
+    background: #fff; padding: 0 16px;
+    padding-top: 0px; border: solid 1px #818282;
+}
+
+.mat-form-field-label {
+    padding: 1px 0px!important;
+}
+
+
+
+.mat-form-field-appearance-legacy .mat-form-field-label, .mat-form-field-appearance-legacy .mat-hint {
+    color: #000!important;
+}
+
+
+input.mat-input-element{        padding: 0px 0px!important;   height: 100%!important;   color: #000!important; }
+
+.mat-form-field-appearance-legacy .mat-form-field-infix {
+    padding: 0!important;
+}
+.mat-form-field-type-mat-native-select .mat-input-element {
+    padding-right: 15px;
+   /* height: 46px!important;*/
+}
+
+.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+    display: none !important;
+}
+
+.mat-form-field-infix{border-top: 0px!important;}
+
+.mat-form-field-appearance-legacy .mat-form-field-infix {
+    padding: 0px 0px!important;
+    background: #fff;
+
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 0px!important;
+}
+
+
+.mat-form-field-type-mat-native-select .mat-input-element {
+    height: 64px!important; padding-right: 30px!important;
+}
+
+.mat-form-field-label-wrapper {
+    top: -62px!important;
+
+    display: block!important;
+}
+
+textarea.mat-input-element {
+    resize: none!important;
+    color: #000!important;
+    padding: 4px 0px!important;
+    margin: 0px 0!important; height: 45px!important;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-subscript-wrapper {
+    margin-top: 8px!important;
+}
+
+.mat-form-field-type-mat-native-select .mat-input-element {  color: #000!important;  padding-left:16px!important;}
+
+.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label, .mat-form-field-empty.mat-form-field-label {
+    display: block;
+    padding: 8px 0!important;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    display: none!important;
+}
+
+input.mat-input-element {
+    margin-top: 0!important;
+}
+
+.mat-form-field-type-mat-native-select .mat-form-field-infix::after{ right: 5px!important;}
+
+.mat-form-field-label-wrapper {
+    position: inherit!important;
+    left: 0!important;
+
+    width: 100%!important;
+    height: 100%!important;
+    overflow: inherit!important;
+
+    background: none!important;
+}
+
+.mat-form-field-infix {
+    height: 100%!important;
+}
+/*----------------------------------------------------------------------------------*/
+
+
+.homeblock4_wrapper .doc_searcform .mat-form-field-flex{ border:solid 1px #edeeee!important; background: #fff!important; height: 50px;}
+
+.mat-form-field-type-mat-native-select .mat-form-field-infix::after{ content: ''!important; background: url("../images/selectbg.jpg") no-repeat right center!important;     top: 0!important;
+    font-size: 0px!important;
+    border: none!important;
+    width: 26px!important;
+    height: 100%!important; margin: 0px!important; right: 0px!important; cursor: pointer!important;}
+
+
+.selectfild .mat-form-field-flex{ padding: 0px!important;}
