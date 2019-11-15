@@ -41,7 +41,7 @@
 
 .contact_info_block_text hr{ height: 2px; background: #58a3ca; border: none; margin: 0 15px;}
 
-.contact_text2{background: none!important; width: 1600px;  margin: 0px auto!important;  padding: 0px!important; border-radius: 0px!important; box-shadow: none!important; border: none!important; margin-bottom: 40px!important;}
+.contact_text2{background: none!important; width: 1620px;  margin: 0px auto!important;  padding: 0px!important; border-radius: 0px!important; box-shadow: none!important; border: none!important; margin-bottom: 40px!important;}
 
 
 .contact_text2 h2{ text-align: center; margin: 0; padding: 0 0 30px 0; font-size: 24px; color: #213f68; text-transform: uppercase;}
@@ -57,7 +57,7 @@
 
 @media(max-width:1600px) {
 .contact_text1 { width: 1360px;}
-.contact_text2 { width: 1360px;}
+.contact_text2 { width: 1380px;}
 
 
     .contact_info_block_map{ width: 680px;  }
@@ -65,7 +65,7 @@
 
 
 @media(max-width:1400px) {
-    .contact_text1 { width: 1190px;}
+    .contact_text1 { width: 1170px;}
     .contact_text2 { width: 1190px;}
 
 

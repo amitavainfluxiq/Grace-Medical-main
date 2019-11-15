@@ -1,0 +1,132 @@
+.appointment_banner{display: block; width: 100%; padding: 0; clear: both; overflow: hidden; outline: none!important; border: none!important; margin: 0!important; border-radius: 0px!important; box-shadow: none!important; background: url("../../../../assets/images/appointment_banner.jpg") no-repeat right top!important; background-size: 1920px!important; height: 376px!important;}
+
+.appointment_banner_wrapper{ width: 100vw; height: 376px; display: table-cell; text-align: center; vertical-align: middle;  }
+
+.appointment_banner_wrapper_text{ width: 770px; margin: 0 0 0 24%; display: block;}
+
+.appointment_banner_wrapper_text h2{ margin: 0; padding: 0; font-size: 60px; color: #13b9af; font-family:"HelveticaBold";}
+
+.appointment_banner_wrapper_text h3{ display: block; width: 525px; margin: 0 auto; margin-top: 20px; background: url("../../../../assets/images/contact_banner_textimg.png") no-repeat center bottom; padding-bottom: 40px; font-size: 24px; color: #3d3d3d; font-family: 'Helvetica-Normal'; font-weight: normal; line-height: 28px; }
+
+
+.appointment_block1{display: block; width: 1600px; padding: 0; clear: both; overflow: hidden; outline: none!important; border: none!important; margin:40px auto!important; border-radius: 0px!important; box-shadow: none!important; background:none!important;  }
+
+.appointment_block1 h2{ margin: 0; padding: 0 0 35px 0; font-size: 30px; color: #3d3d3d; font-family: 'Helvetica-Normal'; text-transform: uppercase; text-align: center;}
+
+.appointment_block1_sub{display: block; width: 100%; padding: 0; clear: both; overflow: hidden; outline: none!important; border: none!important; margin:0px auto!important; border-radius: 0px!important; box-shadow: none!important; background:#1c73ca!important; display: flex; flex-direction: row; margin-top: -4px!important;  flex-wrap: wrap;}
+
+.appointment_block1_sub:nth-child(odd){flex-direction: row-reverse;}
+
+.appointment_block1_sub_text{ position: relative; display: block;  width: 47%; padding-right: 3%; }
+
+.appointment_block1_sub_text .appointment_block1_sub_text_wrapper{  width: 110%; margin-left: -9.8%; display: block;   }
+
+.appointment_block1_sub_text_span{ display: table-cell; vertical-align: middle;   width: 100vw; height:554px;  }
+
+.appointment_block1_sub_text_span_wrapper{ display: table-cell; background: #fff; padding: 30px; height: 400px; vertical-align: middle; }
+
+.appointment_block1_sub_text_span_wrapper h3{ margin: 0; padding: 0 0 20px 0;  font-family: 'Helvetica-Normal'; font-size: 24px; color: #58a3ca;}
+
+.appointment_block1_sub_text_span_wrapper p{ margin: 0; padding: 0px;  font-size: 18px; color: #3d3d3d;  font-family: 'Helvetica-Normal'; line-height: 24px;}
+
+.appointment_block1_sub_text_span_wrapper a{ text-decoration: none; color: #e65b3a; display: inline-block;}
+
+.appointment_block1_sub:nth-child(odd) .appointment_block1_sub_text .appointment_block1_sub_text_wrapper {margin-left: 0px !important; margin-right: -10%;}
+
+.appointment_block1_sub:nth-child(odd) .appointment_block1_sub_text{ padding-left: 3%; padding-right: 0px!important;}
+
+.appointment_block1_sub_img{ display: block; width: 50%; overflow: hidden;}
+
+.appointment_block1_sub_img img{ height: 100%;}
+
+/*=========================================================================================================================================*/
+/*============================================================MEDIA CSS====================================================================*/
+/*========================================================================================================================================*/
+
+
+@media(max-width:1740px) {
+    .appointment_banner_wrapper_text{ width: 770px; margin: 0 0 0 20%; }
+
+}
+
+@media(max-width:1700px) {
+    .appointment_banner_wrapper_text{ width: 770px; margin: 0 0 0 15%; }
+
+}
+
+@media(max-width:1620px) {
+    .appointment_block1{ width: 1400px;}
+
+}
+
+@media(max-width:1560px) {
+    .appointment_banner_wrapper_text{ width: 770px; margin: 0 0 0 10%; }
+
+}
+
+
+@media(max-width:1460px) {
+    .appointment_banner_wrapper_text{ width: 770px; margin: 0 0 0 8%; }
+
+}
+@media(max-width:1440px) {
+    .appointment_banner_wrapper_text{ width: 770px; margin: 0 0 0 5%; }
+    .appointment_block1{ width: 1190px;}
+}
+
+@media(max-width:1360px) {
+    .appointment_banner_wrapper_text{ width: 770px; margin: 0 0 0 3%; }
+
+}
+
+
+@media(max-width:1280px) {
+    .appointment_banner_wrapper_text{ width: 560px; margin: 0 0 0 5%; }
+
+}
+
+@media(max-width:1199px) {
+
+    .appointment_banner{ background-position: top right!important; height: auto!important; background-size: 280%!important; padding-top: 57%; background-color: #edf1f2!important; padding-bottom: 25px;}
+
+    .appointment_banner_wrapper{ width: 100%; height: auto; display: block;    }
+
+    .appointment_banner_wrapper_text{ width: auto; margin: 0;  padding: 0 15px; }
+
+    .appointment_block1{ width: 90%;}
+
+
+
+
+
+    .appointment_block1_sub{display: block; flex-direction: inherit;  padding: 15px;  width: auto;    margin-top: 0px!important;}
+
+    .appointment_block1_sub:nth-child(odd){flex-direction: inherit;}
+
+    .appointment_block1_sub_text{ position: relative; display: block;  width: 100%; padding-right: 0; }
+
+    .appointment_block1_sub_text .appointment_block1_sub_text_wrapper{  width: auto; margin-left: 0%; display: block;   }
+
+    .appointment_block1_sub_text_span{ display: block;     width: auto; height:auto;  text-align: center;  }
+
+
+
+    .appointment_block1_sub_text_span_wrapper{ display:block;   padding: 20px; height: auto;  }
+
+
+
+    .appointment_block1_sub:nth-child(odd) .appointment_block1_sub_text .appointment_block1_sub_text_wrapper {margin-left: 0px !important; margin-right: 0%;}
+
+    .appointment_block1_sub:nth-child(odd) .appointment_block1_sub_text{ padding-left: 0%; padding-right: 0px!important;}
+
+    .appointment_block1_sub_img{ display: block; width: 100%; }
+
+    .appointment_block1_sub_img img{ width: 100%;}
+
+
+}
+
+@media(max-width:767px) {
+    .appointment_banner{  background-size: 390%!important; padding-top: 82%; }
+
+}

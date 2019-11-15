@@ -67,6 +67,11 @@ import { HometestimonialComponent } from './components/frontend/hometestimonial/
 import { HomegalleryComponent } from './components/frontend/homegallery/homegallery.component';
 
 
+import { MetaModule } from '@ngx-meta/core';
+
+import { ApiService } from './api.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -127,9 +132,10 @@ import { HomegalleryComponent } from './components/frontend/homegallery/homegall
     MatCarouselModule.forRoot(),
     ContactusModule,
     ListingModule,
-    NgxUploaderModule
+    NgxUploaderModule,
+    AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule,
   ],
-  providers: [CookieService],
+  providers: [CookieService, ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
