@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ApiService } from 'src/app/api.service';
 import { MetaService } from '@ngx-meta/core';
 
 @Component({
@@ -19,7 +19,7 @@ export class ContactusComponent implements OnInit {
   };
   public getDataUrl: any = 'datalist';
   public routeingUrl: any = 'dashboard';
-  constructor(private readonly meta: MetaService) {
+  constructor(private readonly meta: MetaService, public ApiService: ApiService) {
     window.scrollTo(500, 0);
     this.meta.setTitle('Contact Us dynamic');
     this.meta.setTag('og:description', 'This is dynamic decription ');

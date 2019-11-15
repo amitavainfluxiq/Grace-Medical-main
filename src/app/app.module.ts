@@ -64,6 +64,10 @@ import { NgxUploaderModule } from 'ngx-uploader';
 
 
 import { MetaModule } from '@ngx-meta/core';
+
+import { ApiService } from './api.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -122,7 +126,7 @@ import { MetaModule } from '@ngx-meta/core';
     NgxUploaderModule,
     AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule,
   ],
-  providers: [CookieService],
+  providers: [CookieService, ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,7 +1,10 @@
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './components/frontend/login/login.component';
-
+/*
+import { AuthGuard } from './auth.guard';
+import { ResolveService } from './resolve.service';
+*/
 
 // Grace Medical routing amitava
 
