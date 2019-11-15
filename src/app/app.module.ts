@@ -52,6 +52,16 @@ import { AdminNewsSettingsComponent } from './components/backend/admin-dashboard
 
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 
+import { ContactusModule } from 'contactus';
+
+import { CookieService } from 'ngx-cookie-service';
+
+import {ListingModule} from "listing-angular7";
+
+
+
+import { NgxUploaderModule } from 'ngx-uploader';
+
 
 @NgModule({
   declarations: [
@@ -106,8 +116,11 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     BrowserAnimationsModule,
     DemoMaterialModule,
     MatCarouselModule.forRoot(),
+    ContactusModule,
+    ListingModule,
+    NgxUploaderModule
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

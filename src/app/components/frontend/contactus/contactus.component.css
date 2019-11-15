@@ -1,0 +1,122 @@
+.contact_banner{display: block; width: 100%; padding: 0; clear: both; overflow: hidden; outline: none!important; border: none!important; margin: 0!important; border-radius: 0px!important; box-shadow: none!important; background: url("../../../../assets/images/contact_banner_img.jpg") no-repeat right top!important; background-size: 1920px!important; height: 376px!important;}
+
+.contact_banner_wrapper{ width: 100vw; height: 376px; display: table-cell; text-align: center; vertical-align: middle;  }
+
+.contact_banner_wrapper_text{ width: 770px; margin: 0 0 0 24%; display: block;}
+
+.contact_banner_wrapper_text h2{ margin: 0; padding: 0; font-size: 60px; color: #13b9af; font-family:"HelveticaBold";}
+
+.contact_banner_wrapper_text h3{ display: block; width: 525px; margin: 0 auto; margin-top: 20px; background: url("../../../../assets/images/contact_banner_textimg.png") no-repeat center bottom; padding-bottom: 40px; font-size: 24px; color: #3d3d3d; font-family: 'Helvetica-Normal'; font-weight: normal; line-height: 28px; }
+
+
+.contact_text1{ background: none!important; width: 1600px;  margin: 40px auto!important;  border-radius: 0px!important; box-shadow: none!important; border: none!important;}
+.contact_text1 h2{ text-align: center; margin: 0; padding: 0 0 30px 0; font-size: 24px; color: #213f68; text-transform: uppercase;}
+
+.contact_info_block{ width: auto; background: #f6f6f7; display: block; padding: 18px; box-shadow: 0 0 8px #d0d0d1; border: solid 1px #ddddde;}
+
+.contact_info_block_wrapper{ background: #fff; border: solid 1px #ddddde; background: #fff; display: flex; flex-wrap: wrap; clear: both; overflow: hidden; }
+
+.contact_info_block_text{ display: block; width: 639px; float: left; border-right: solid 1px #ddddde; }
+.contact_info_block_map{ display: block; width: 920px; float: right; clear: both; overflow: hidden; }
+
+.contact_info_block_map iframe{ width: 100%; height: 100%;}
+
+.contact_info_block_text1{ width: 354px; float: left;}
+.contact_info_block_text2{ width: 285px; float: right;}
+
+.contact_info_block_text h3{ background: #1c73ca; border: solid 1px #0057ae; padding: 15px 15px 9px 15px; text-align: center; font-size: 22px; text-transform: uppercase; font-family:"HelveticaBold"; margin: 0px ;color: #fff;}
+
+.contact_info_block_text h4{ margin: 0px; padding: 15px; font-size: 20px; line-height: 22px; color: #064785; text-transform: uppercase; font-family:"HelveticaBold";}
+.contact_info_block_text h5{ margin: 0px 15px; padding: 0px 0 0 30px; font-size: 24px; color: #243348; text-transform: uppercase; font-family:"HelveticaBold"; background: url("../../../../assets/images/contact_icon1.png") no-repeat left 1px; }
+.contact_info_block_text h5 a{color: #243348; text-decoration: none; cursor: pointer;}
+
+.contact_info_block_text h6{ margin: 15px; padding: 0px 0 0 30px; font-size: 18px; color: #243348; font-family: 'Helvetica-Normal'; background: url("../../../../assets/images/contact_icon2.png") no-repeat left 4px; font-weight: normal; }
+.contact_info_block_text h6 a{color: #243348; text-decoration: underline; cursor: pointer;}
+
+.contact_info_block_text label{ margin: 0; padding: 10px 15px 10px 40px; font-size: 18px;  color: #243348;  font-family:"HelveticaBold"; display: block; line-height: 24px;}
+
+.contact_info_block_text label strong{ font-weight: normal; font-family: 'Helvetica-Normal'; display: block;}
+
+.contact_info_block_text label p{ color: #d76f70; display: block; margin: 0; padding: 0;}
+
+.contact_info_block_text hr{ height: 2px; background: #58a3ca; border: none; margin: 0 15px;}
+
+.contact_text2{background: none!important; width: 1600px;  margin: 0px auto!important;  padding: 0px!important; border-radius: 0px!important; box-shadow: none!important; border: none!important; margin-bottom: 40px!important;}
+
+
+.contact_text2 h2{ text-align: center; margin: 0; padding: 0 0 30px 0; font-size: 24px; color: #213f68; text-transform: uppercase;}
+/*=========================================================================================================================================*/
+/*============================================================MEDIA CSS====================================================================*/
+/*========================================================================================================================================*/
+
+
+@media(max-width:1700px) {
+    .contact_banner_wrapper_text{ width: 770px; margin: 0 0 0 15%; }
+
+}
+
+@media(max-width:1600px) {
+.contact_text1 { width: 1360px;}
+.contact_text2 { width: 1360px;}
+
+
+    .contact_info_block_map{ width: 680px;  }
+}
+
+
+@media(max-width:1400px) {
+    .contact_text1 { width: 1190px;}
+    .contact_text2 { width: 1190px;}
+
+
+    .contact_info_block_map{ width: 510px;  }
+}
+
+
+@media(max-width:1460px) {
+    .contact_banner_wrapper_text{ width: 770px; margin: 0 0 0 10%; }
+
+}
+
+
+@media(max-width:1360px) {
+    .contact_banner_wrapper_text{ width: 770px; margin: 0 0 0 5%; }
+
+}
+
+
+@media(max-width:1280px) {
+    .contact_banner_wrapper_text{ width: 560px; margin: 0 0 0 5%; }
+
+}
+
+@media(max-width:1199px) {
+
+    .contact_banner{ background-position: top right!important; height: auto!important; background-size: 280%!important; padding-top: 57%; background-color: #edf1f2!important; padding-bottom: 25px;}
+
+    .contact_banner_wrapper{ width: 100%; height: auto; display: block;    }
+
+    .contact_banner_wrapper_text{ width: auto; margin: 0;  padding: 0 15px; }
+
+
+    .contact_text1 { width: 90%; display: block;}
+    .contact_text2 { width: 90%; display: block;}
+
+
+    .contact_info_block_map{ width: 100%; height: 300px;  }
+    .contact_info_block_text{ width: 100%; height: auto;  }
+    .contact_info_block_text1{ width: 100%;  float: none; text-align: center;  }
+    .contact_info_block_text2{ width: 100%;  float: none;  text-align: center;}
+
+    .contact_info_block_text  label {
+        margin: 0;
+        padding: 10px 15px;}
+
+    .contact_info_block_text h5{ background-position: center top; padding-left: 0px; padding-top: 30px;}
+    .contact_info_block_text h6{ background-position: center top; padding-left: 0px; padding-top: 24px;  word-wrap: break-word;}
+}
+
+@media(max-width:767px) {
+    .contact_banner{  background-size: 390%!important; padding-top: 82%; }
+
+}
