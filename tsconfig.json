@@ -17,7 +17,16 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "contactus": [
+        "dist/contactus"
+      ],
+      "contactus/*": [
+        "dist/contactus/*"
+      ]
+
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

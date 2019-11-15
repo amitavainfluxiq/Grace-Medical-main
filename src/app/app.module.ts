@@ -52,8 +52,6 @@ import { AdminNewsSettingsComponent } from './components/backend/admin-dashboard
 
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 
-import { ContactusModule } from 'contactus';
-
 import { CookieService } from 'ngx-cookie-service';
 
 import {ListingModule} from "listing-angular7";
@@ -61,6 +59,12 @@ import {ListingModule} from "listing-angular7";
 
 
 import { NgxUploaderModule } from 'ngx-uploader';
+import { ContactusModule } from 'contactus';
+import { HomeblogComponent } from './components/frontend/homeblog/homeblog.component';
+import { HomeservicesComponent } from './components/frontend/homeservices/homeservices.component';
+import { HomedoctorsComponent } from './components/frontend/homedoctors/homedoctors.component';
+import { HometestimonialComponent } from './components/frontend/hometestimonial/hometestimonial.component';
+import { HomegalleryComponent } from './components/frontend/homegallery/homegallery.component';
 
 
 @NgModule({
@@ -106,6 +110,11 @@ import { NgxUploaderModule } from 'ngx-uploader';
     AddMediaComponent,
     AdminSubscribersComponent,
     AdminNewsSettingsComponent,
+    HomeblogComponent,
+    HomeservicesComponent,
+    HomedoctorsComponent,
+    HometestimonialComponent,
+    HomegalleryComponent,
 
 
 

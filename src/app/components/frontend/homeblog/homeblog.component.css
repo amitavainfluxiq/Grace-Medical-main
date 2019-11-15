@@ -1,0 +1,257 @@
+.homeblock2{ display: block; width: 100%; padding: 30px 0 0 0; clear: both; overflow: hidden; outline: none!important; border: none!important; margin: 0!important; border-radius: 0px!important; box-shadow: none!important;}
+
+.homeblock2 h1{ margin: 0px; padding: 0 0 30px 0; text-align: center; font-size: 30px; color: #363636;  font-family: 'Helvetica-Normal'; text-transform: uppercase;}
+
+.homeblock2 .mat-card-content{ width: 1600px; display: block; margin: 0 auto;}
+
+.homeblock2 .mat-card-content mat-card-subtitle{ display: block; float: left; width: 30.3%; padding: 1%; margin: 0 0.5%; background: #f1f1f1; border-top: solid 9px #e0dfdd;}
+
+.homeblock2 .mat-card-content mat-card-subtitle h2{ margin: 0; padding: 0 0 30px 0; font-size: 27px; color: #363636;  font-family: 'Helvetica-Normal';}
+
+.homeblock2 .mat-card-content mat-card-subtitle .home_block2img{ width: 219px; float: left; }
+
+.homeblock2 .mat-card-content mat-card-subtitle .home_block2img img{ width: 100%; border: solid 1px #fff;}
+
+.homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext{ width: 246px; float: right;}
+
+.homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext h3{ font-weight: normal; margin: 0; padding: 0; font-size: 13px; color: #434243;}
+.homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext h3 label{ display: block; color: #e01b50;}
+
+.homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext h4{ height: 106px; padding: 0px; margin: 10px 0; position: relative; font-size: 18px; color: #434243; font-family: 'Helvetica-Normal'; font-weight: normal; line-height: 20px;}
+
+.homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext h4 span{ display: table-cell; vertical-align: middle; height: 106px;}
+
+.homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext h5{ text-align: right; margin: 0; padding: 0 0 13px 0; font-size: 14px; color: #434243;  font-family: 'Helvetica-Normal'; font-weight: normal; text-transform: uppercase;}
+
+.homeblock2_subsociallink{ display: inline-block; float: left;}
+
+.homeblock2_subsociallink img{ width: 22px; margin-right: 1px; cursor: pointer;}
+
+.homeblock2_readlink{ display: block; float: right; width: 78px; text-align: center; font-size: 14px; color: #0277c1; border-bottom: solid 1px #0277c1; cursor: pointer;  font-family: 'Helvetica-Normal'; margin: 2px 0 0 0; outline: none;}
+ .homeblock2_readlink:hover{ border: none;}
+
+ .homeblock2link{ width: 164px; display: block; line-height: 45px; margin: 12px 0.5% 14px 0!important; background: #13b9af; text-align: center;font-size: 14px; color: #ffffff; text-transform: uppercase;  font-family: 'Helvetica-Normal'; border-radius: 0px; float: right; padding: 0px!important; height: 40px; }
+
+
+
+ 
+
+
+@media(max-width:1750px) {
+
+    .mySlides img{  margin-left: -90px; }
+}
+
+
+@media(max-width:1660px) {
+
+    .mySlides img{   margin-left: -220px; }
+
+    .banner_text_span{   margin: 0 0 0 20%; }
+  
+}
+
+
+
+
+
+@media(max-width:1600px) {
+    .homeblock2 .mat-card-content {
+        width: 1400px;
+    }
+
+    .homeblock2 .mat-card-content mat-card-subtitle h2{   font-size: 24px;}
+
+    .homeblock2 .mat-card-content mat-card-subtitle .home_block2img{ width: 190px;  }
+
+    .homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext{ width: 218px; }
+
+    .homeblock2_subsociallink img{ width: 20px;  }
+
+    .homeblock2_readlink{ margin: 1px 0 0 0; }
+
+
+    .homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext h4{ height: 90px;  font-size: 16px; line-height: 18px;}
+
+    .homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext h4 span{ height: 90px;}
+
+}
+
+@media(max-width:1525px) {
+
+    .mySlides img{   margin-left: -380px; }
+
+    .banner_text_span{   margin: 0 0 0 12%; }
+}
+
+
+@media(max-width:1480px) {
+
+    .homeblock3_wrapper ul li .services_li_text{ height: 420px;}
+}
+
+
+@media(max-width:1440px) {
+
+    .homeblock3_wrapper ul li .services_li_text{   width: 48%;}
+
+    .homeblock7 .homeblock7_wrapper { width: 1300px;}
+}
+
+@media(max-width:1400px) {
+
+    .mySlides img{  margin-left: -520px; }
+
+    .banner_text_span{   margin: 0 0 0 4%; }
+
+
+    .homeblock2 .mat-card-content {
+        width: 1190px;
+    }
+
+    .homeblock2 .mat-card-content mat-card-subtitle h2{   font-size: 20px;}
+
+    .homeblock2 .mat-card-content mat-card-subtitle .home_block2img{ width: 140px;  }
+
+    .homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext{ width: 208px; }
+
+    
+}
+
+
+@media(max-width:1240px) {
+
+    .mySlides img{  margin-left: -580px; }
+
+    .banner_text_span{   margin: 0 0 0 2%; }
+}
+
+
+@media(max-width:1199px) {
+
+    .banner_text{ position: inherit; width: 100%; height: 100%; margin: 0px!important; left: 0; top: 0; background: #d2dee5;}
+
+    .banner_text_span{   margin: -4px 0 0 0!important; width: auto; padding: 15px; padding-bottom: 60px; }
+
+    .mySlides img{ margin-left: -37%;
+        width: 140%;  }
+
+
+    .homeblock2 .mat-card-content {
+        width: 90%;
+    }
+
+    .homeblock2 .mat-card-content mat-card-subtitle{ float: none; width: auto; padding: 15px; margin:0;  clear: both; overflow: hidden; display: block; }
+
+    .homeblock2 .mat-card-content mat-card-subtitle:nth-of-type(2){ margin: 15px 0;}
+
+    .homeblock2 .mat-card-content mat-card-subtitle h2{   font-size: 27px; text-align: center; padding: 5px 0 15px 0; height: auto!important;}
+
+    .homeblock2 .mat-card-content mat-card-subtitle .home_block2img{ width: 100%; float: none; display: block; }
+
+    .homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext{ width: 100%; float: none; text-align: center; padding: 15px 0 0 0; display: block; }
+
+    .homeblock2link{ margin: 15px auto!important; float: none; display: block;}
+
+    .homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext h4{height: auto; text-align: center;}
+
+    .homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext h4 span{ height: auto; text-align: center;  display: block; }
+
+    .homeblock2_subsociallink{ display: inline-block; float: none;}
+
+    .homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext h5{ text-align: center;}
+
+    .homeblock2_readlink{   float: none; width: 78px;  margin: 2px auto; margin-top: 10px;}
+
+    
+
+    .homeblock3sublink{ display: block; margin: 0 auto!important; position: inherit; left: 0; margin-top: 25px!important;}
+
+    .homeblock3link{ margin-top: 0px!important;}
+
+
+   
+}
+
+@media(max-width:991px) {
+    .homeblock4_wrapper .doc_searcform {
+        width: auto;
+    }
+
+  .homeblock4_wrapper mat-form-field{  width: 28.2%;}
+
+    .homeblock4_wrapper  button{ width: 14%;}
+
+    .homeblock5{  padding: 76% 0 0 0!important;}
+    .homeblock7 .homeblock7_wrapper  ul li {  width: 98%; float: none; margin: 5px auto;   }
+
+}
+
+@media(max-width:767px) {
+
+    .mySlides img{  margin-left: -98%;
+        width: 200%  }
+
+
+    .banner_text_span h1{ line-height: 62px; padding-bottom: 10px; padding-top: 5px;}
+    .banner_text_span h2{  width: 100%;}
+
+    .homeblock4_wrapper mat-form-field{  width: 100%; float: none;}
+
+    .homeblock4_wrapper  button{ width: 100%; float: none; margin-top: 6px;}
+
+    .selectfild{ margin-top: 5px; margin-bottom: 5px;}
+
+
+}
+
+@media(max-width:540px) {
+    .banner_text_span h1{ line-height: 52px;  font-size: 50px;}
+
+    .homeblock3_wrapper ul li h3{ height: auto; line-height: 30px; padding: 8px 10px 5px 10px; width: auto; display: block;}
+
+
+    .homeblock7 .homeblock7_wrapper  ul li {  padding-bottom: 12px;  }
+
+    .homeblock7  .homeblock7_wrapper  .homegallertext_footer {
+        display: block;
+        position: inherit;
+        left: 0;
+        bottom: 0px;
+        width: auto;
+    }
+
+    .homeblock7  .homeblock7_wrapper  .homegallertext_span1  {
+        display: block;
+        width: 100%;
+        float: none;
+         text-align: center;
+        padding-left: 0;
+    }
+
+    .homeblock7  .homeblock7_wrapper  .homegallertext_span2  {
+        display: block;
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding-right: 0; padding-top: 10px;
+    }
+
+    .homeblock7  .homeblock7_wrapper  .homegallertext_span2  .homegallertext_span2_share{ display: block; width: 100%; text-align: center; float: none; padding-top: 10px;}
+
+    .homeblock7  .homeblock7_wrapper  .homegallertext_span2  .homegallertext_span2_share img{ width: 25px;}
+
+    .homeblock7  .homeblock7_wrapper .homegallertext { text-align: center;}
+}
+
+
+@media(max-width:480px) {
+
+    .mySlides img {
+        margin-left: -140%;
+        width: 250%
+    }
+
+    .homeblock5{  padding: 77% 0 0 0!important;}
+
+}

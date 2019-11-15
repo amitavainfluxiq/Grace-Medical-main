@@ -53,6 +53,11 @@ import { AddMediaComponent } from './components/backend/admin-dashboard/add-medi
 import { AdminSubscribersComponent } from './components/backend/admin-dashboard/admin-subscribers/admin-subscribers.component';
 
 import { AdminNewsSettingsComponent } from './components/backend/admin-dashboard/admin-news-settings/admin-news-settings.component';
+import { HomeblogComponent } from './components/frontend/homeblog/homeblog.component';
+import { HomedoctorsComponent } from './components/frontend/homedoctors/homedoctors.component';
+import { HometestimonialComponent } from './components/frontend/hometestimonial/hometestimonial.component';
+import { HomeservicesComponent } from './components/frontend/homeservices/homeservices.component';
+import { HomegalleryComponent } from './components/frontend/homegallery/homegallery.component';
 
 const routes: Routes = [
 
@@ -84,10 +89,6 @@ const routes: Routes = [
   {path: 'admin_news_settings', component: AdminNewsSettingsComponent},
 
 
-
-
-
-
   {path: 'admin_dashboard', component: DashboardComponent},
 
 
@@ -103,6 +104,11 @@ const routes: Routes = [
   {path: 'admin_testimonial', component: AdminTestimonialComponent},
   {path: 'admin_newsletter', component: AdminNewsletterComponent},
   {path: 'admin_gallery_manager', component: AdminGalleryManagerComponent},
+  {path: 'homeblog', component: HomeblogComponent},
+  {path: 'homedoctors', component: HomedoctorsComponent},
+  {path: 'hometestimonial', component: HometestimonialComponent},
+  {path: 'homeservices', component: HomeservicesComponent},
+  {path: 'homegallery', component: HomegalleryComponent},
 
 
 
