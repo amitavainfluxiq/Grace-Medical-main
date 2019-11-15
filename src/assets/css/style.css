@@ -238,7 +238,24 @@ input.mat-input-element {
     margin: 0px!important;
 }
 
-.contact_text2 .mat-form-field-prefix, .contact_text2 .mat-form-field-suffix{ top: -10px!important; color: #193150!important;}
+.contact_text2 .mat-form-field-prefix, .contact_text2 .mat-form-field-suffix{ top: -10px!important; color: #193150!important;  }
 
-.contact_text2 .mat-form-field-flex:nth-of-type(1){}
+.contact_text2 .from button{ width: 254px!important; height: 50px!important; float: right!important; background: #58a3ca!important; text-align: center!important; line-height: 58px!important; border: none!important; box-shadow: none!important; cursor: pointer!important; outline: none!important; font-size: 24px!important; color: #ffffff!important;font-family: 'Helvetica-Normal'!important; margin: 10px 0 0 0.5%!important; display: block!important; text-transform: uppercase!important; border-radius: 0px!important;}
+
+.contact_text2 .example-container  {
+    display: flex!important; flex-wrap: wrap!important;
+    flex-direction: row!important; clear: both!important; overflow: hidden!important;
+}
+
+.contact_text2 .mat-form-field {
+    display: block!important;}
+
+.contact_text2 .fromClass:nth-child(1) { display: flex!important; margin: 0 0.5%; flex: 1 1 32.33%;  margin-bottom: 5px!important; }
+.contact_text2 .fromClass:nth-child(2) { display: flex!important; margin: 0 0.5%; flex: 1 1 32.33%;  margin-bottom: 5px!important; }
+.contact_text2 .fromClass:nth-child(3) { display: flex!important; margin: 0 0.5%; flex: 1 1 32.33%;  margin-bottom: 5px!important; }
+
+.contact_text2 .fromClass { display: flex!important; margin: 0 0.5%; flex: 1;  margin-bottom: 5px!important; }
+
+.contact_text2 .fromClass:nth-last-child(-n+3){ display: flex!important; flex:1 1 100%; float: none!important; clear: both!important; overflow: hidden!important; margin-bottom: 5px!important;}
+
 /*----------------contact us end--------------------------*/
