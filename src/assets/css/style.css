@@ -258,8 +258,16 @@ input.mat-input-element {
 
 .contact_text2 .fromClass:nth-last-child(-n+3){ display: flex!important; flex:1 1 100%; float: none!important; clear: both!important; overflow: hidden!important; margin-bottom: 5px!important;}
 
-<<<<<<< HEAD
-.contact_text2 .mat-form-field-flex:nth-of-type(1){}
+.contact_text2 .fromClass:nth-last-child(-n+2) textarea{ height: 180px!important;}
+
+.contact_text2 .fromClass:nth-last-child(-n+2) .mat-form-field-appearance-legacy .mat-form-field-label {
+    top: -119px !important;
+    transform: inherit !important;
+}
+
+
+
+
 /*----------------contact us end--------------------------*/
 
 
@@ -278,6 +286,3 @@ input.mat-input-element {
     }
 }
 /* --------------------- avijit css end ----------------- */
-=======
-/*----------------contact us end--------------------------*/
->>>>>>> 8611b478dcca804fe3b23392799158dd55c0e0bb
