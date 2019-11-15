@@ -63,6 +63,7 @@ import {ListingModule} from "listing-angular7";
 import { NgxUploaderModule } from 'ngx-uploader';
 
 
+import { MetaModule } from '@ngx-meta/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -118,7 +119,8 @@ import { NgxUploaderModule } from 'ngx-uploader';
     MatCarouselModule.forRoot(),
     ContactusModule,
     ListingModule,
-    NgxUploaderModule
+    NgxUploaderModule,
+    AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule,
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]

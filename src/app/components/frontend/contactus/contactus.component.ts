@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { MetaService } from '@ngx-meta/core';
+
 @Component({
   selector: 'app-contactus',
   templateUrl: './contactus.component.html',
@@ -17,13 +19,13 @@ export class ContactusComponent implements OnInit {
   };
   public getDataUrl: any = 'datalist';
   public routeingUrl: any = 'dashboard';
-  constructor() {
+  constructor(private readonly meta: MetaService) {
     window.scrollTo(500, 0);
-    // this.meta.setTitle('Contact Us dynamic');
-    // this.meta.setTag('og:description', 'This is dynamic decription ');
-    // this.meta.setTag('og:title', 'This is dynamic title with meta og ');
-    // this.meta.setTag('og:type', 'website');
-    // this.meta.setTag('og:image', 'https://upload.wikimedia.org/wikipedia/commons/f/f8/superraton.jpg');
+    this.meta.setTitle('Contact Us dynamic');
+    this.meta.setTag('og:description', 'This is dynamic decription ');
+    this.meta.setTag('og:title', 'This is dynamic title with meta og ');
+    this.meta.setTag('og:type', 'website');
+    this.meta.setTag('og:image', 'https://upload.wikimedia.org/wikipedia/commons/f/f8/superraton.jpg');
 
   }
 
