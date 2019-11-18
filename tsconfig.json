@@ -18,10 +18,7 @@
       "es2018",
       "dom"
     ],
-<<<<<<< HEAD
-=======
 
->>>>>>> 8611b478dcca804fe3b23392799158dd55c0e0bb
     "paths": {
       "contactus": [
         "dist/contactus"
@@ -31,10 +28,7 @@
       ]
 
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> 8611b478dcca804fe3b23392799158dd55c0e0bb
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
