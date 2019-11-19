@@ -18,23 +18,28 @@
       "es2018",
       "dom"
     ],
-<<<<<<< HEAD
-=======
-
->>>>>>> 8611b478dcca804fe3b23392799158dd55c0e0bb
     "paths": {
       "contactus": [
         "dist/contactus"
       ],
       "contactus/*": [
         "dist/contactus/*"
-      ]
+      ],
+      "servicelib": [
+        "dist/servicelib"
+      ],
+      "servicelib/*": [
+        "dist/servicelib/*"
+      ],
+      "file-upload": [
+        "dist/file-upload"
+      ],
+      "file-upload/*": [
+        "dist/file-upload/*"
+      ],
 
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 8611b478dcca804fe3b23392799158dd55c0e0bb
+    
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

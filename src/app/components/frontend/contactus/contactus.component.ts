@@ -11,7 +11,7 @@ export class ContactusComponent implements OnInit {
   public formTitle: any = "";      // Enter the Forl Title
   public pageUrl: any = 'home';
   public modaleLogo: any = '';
-  public serverUrl: any = this.ApiService.serverUrlDemo ;
+  public serverUrl: any = this.ApiService.serverUrl ;
 
 
   public addEndpoint: any = {

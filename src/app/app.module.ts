@@ -70,7 +70,10 @@ import { HomegalleryComponent } from './components/frontend/homegallery/homegall
 import { MetaModule } from '@ngx-meta/core';
 
 import { ApiService } from './api.service';
+import {ServicelibModule} from 'servicelib';
+import {FileUploadModule} from 'file-upload';
 
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 @NgModule({
   declarations: [
@@ -132,7 +135,10 @@ import { ApiService } from './api.service';
     MatCarouselModule.forRoot(),
     ContactusModule,
     ListingModule,
+    ServicelibModule,
     NgxUploaderModule,
+    FileUploadModule,
+    CKEditorModule,
     AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule,
   ],
   providers: [CookieService, ApiService],

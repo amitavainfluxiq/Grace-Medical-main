@@ -278,6 +278,34 @@ input.mat-input-element {
 /* --------------------- avijit css start --------------- */
 .mat-list-base.serveceblockwrapper .mat-list-item.servecerow .mat-list-item-content{align-items: stretch !important;padding: 0;}
 .mat-list-base.serveceblockwrapper .mat-list-item.servecerow:nth-child(even) .mat-list-item-content{flex-direction: row-reverse;}
+.blockwraooer .mat-list-item.block .mat-list-item-content{flex-wrap: wrap;padding: 0;}
+
+/* .mat-list-base .mat-list-item .mat-list-item-content{flex-wrap: wrap;} */
+
+
+.generalcls .testibottomcontent .mat-card-title {font-size: 24px!important;line-height: normal!important; margin-bottom: 15px !important; font-family: 'Helvetica-Normal'; text-align: center;}
+.generalcls .testicontent .quatation p{text-align:left;}
+.generalcls .testicontent .quatation p .quotestarticon{ float: left; margin-right: 10px;margin-top: -10px; width: 28px;}
+.generalcls .testicontent .quatation p .quoteendicon{float: right;margin-left: 10px; margin-bottom: -10px; width: 28px;}
+.generalcls.blog .mat-card-title {font-size: 24px!important;line-height: normal!important;justify-content: space-between;    margin-bottom: 15px!important; margin-top: 15px!important;text-transform: capitalize;}
+
+.absolute{
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+}
+.contentsection .blogsociallists {margin-top: 0px;}
+
+.quatation a {
+    float: left;
+    color: #1bbef7;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+
+.testimonialwrapper .mat-list .mat-list-item.testimonialserv .mat-list-item-content{padding: 0; display: block; position: initial !important;}
+
 @media(max-width:1199px) {
     .mat-list-base.serveceblockwrapper .mat-list-item.servecerow .mat-list-item-content {
         align-items: stretch !important;
@@ -285,4 +313,5 @@ input.mat-input-element {
         flex-wrap: wrap;
     }
 }
+.gpsearchbuttonwrapper .mat-list-item-content{padding: 0!important;}
 /* --------------------- avijit css end ----------------- */

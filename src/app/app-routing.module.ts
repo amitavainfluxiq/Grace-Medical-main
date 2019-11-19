@@ -1,6 +1,7 @@
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './components/frontend/login/login.component';
+import { ResolveService } from './resolve.service';
 /*
 import { AuthGuard } from './auth.guard';
 import { ResolveService } from './resolve.service';
@@ -69,7 +70,12 @@ const routes: Routes = [
   
   {path: 'login', component: LoginComponent},
   {path: 'ourphysicians', component: OurphysiciansComponent},
-  {path: 'services', component: ServicesComponent},
+  {
+    path: 'service/list',
+    component: ServicesComponent,
+    resolve: { serviceList: ResolveService },
+    data: { requestcondition: { source: 'services', condition: {} }, endpoint: 'datalist' }
+  },
   {path: 'journals', component: JournalsComponent},
   {path: 'imagegallery', component: ImagegalleryComponent},
   {path: 'videogallery', component: VideogalleryComponent},
@@ -112,8 +118,6 @@ const routes: Routes = [
   {path: 'hometestimonial', component: HometestimonialComponent},
   {path: 'homeservices', component: HomeservicesComponent},
   {path: 'homegallery', component: HomegalleryComponent},
-
-
 
 
 ];

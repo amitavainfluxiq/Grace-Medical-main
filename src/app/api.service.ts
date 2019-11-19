@@ -12,7 +12,7 @@ import {environment } from '../environments/environment';
 })
 export class ApiService {
 
-  public serverUrlDemo =  environment["API_URL"];
+  public serverUrl =  environment["API_URL"];
   public nodesslurl =  environment["nodesslurl"];
   public uploadurl =  environment["uploadurl"];
   public base64encode =  environment["base64encode"];
@@ -30,7 +30,6 @@ export class ApiService {
   public uploaderror: any = '';
   public accesstoken:any = this.cookieService.get('jwtToken');
   fileservername: any = [];
-  serverUrl: any;
   addendpointUrl: any;
   uploadEndpointUrl:any; //souresh
   updateendpointUrl: any;
@@ -39,13 +38,7 @@ export class ApiService {
   deletemultiple_endpointUrl: any;
   updatestatus_multiple_endpointUrl: any;
   getdata_endpointUrl: any;
-  private subjectForServerUrl = new Subject<any>();
-  private subjectForaddEndpointUrl = new Subject<any>();
-  private subjectForuploadEndpointUrl = new Subject<any>();  //added by souresh
-  private subjectForupdateEndpointUrl = new Subject<any>();
-  private subjectFordeletesingleEndpointUrl = new Subject<any>();
-  private subjectForupdatestatusSingleEndpointUrl = new Subject<any>();
-  private subjectForGetdataEndpointUrl = new Subject<any>();
+ 
   public subscriptionServer: Subscription;
   public subscriptionaddEndpoint: Subscription;
   public subscriptionuploadEndpoint: Subscription;   //added by souresh
@@ -56,157 +49,10 @@ export class ApiService {
   public tokenVal: any;
   constructor(private _http: HttpClient, private cookieService :CookieService) {
 
-
-      // this._http.get(this.serverUrlDemo + 'gettemptoken').subscribe((res: any)=>{
-      //   this.tokenVal = res;
-      //   console.log('token')
-      //   console.log(this.tokenVal)
-      //   console.log(this.tokenVal.token.length)
-      // });
-
-      this.fileimgsslurl = 'http://api.nexgentesting.com/';
-
-
-    this.subscriptionServer = this.getServerUrl().subscribe(message => {
-     let result: any;
-      result = message;
-      if (result != null) {
-        this.serverUrl = result;
-      } else {
-        this.serverUrl = null;
-      }
-    });
-    this.subscriptionaddEndpoint = this.getaddEndpoint().subscribe(message => {
-      let result: any;
-      result = message;
-      if (result != null) {
-        this.addendpointUrl = result;
-      } else {
-        this.addendpointUrl = null;
-      }
-    });
-    /*********added by souresh***********/
-    this.subscriptionuploadEndpoint=this.getuploadEndpoint().subscribe(message=>{
-      let result:any;
-      result=message;
-        if(result!=null){
-          this.uploadEndpointUrl = result;
-        } else{
-          this.uploadEndpointUrl = null;
-        }
-    })
-    /************souresh end here**************/
-    this.subscriptionupdateEndpoint = this.getupdateEndpoint().subscribe(message => {
-      let result: any;
-      result = message;
-      if (result != null) {
-        this.updateendpointUrl = result;
-      } else {
-        this.updateendpointUrl = null;
-      }
-    });
-    this.subscriptiondeletesingleEndpoint = this.getdeletesingleEndpoint().subscribe(message => {
-      let result: any;
-      result = message;
-      if (result != null) {
-        this.deletesingle_endpointUrl = result;
-      } else {
-        this.deletesingle_endpointUrl = null;
-      }
-    });
-    this.subscriptionupdatestatusSingleEndpoint = this.getupdatestatus_singleEndpoint().subscribe(message => {
-      let result: any;
-      result = message;
-      if (result != null) {
-        this.updatestatus_single_endpointUrl = result;
-      } else {
-        this.updatestatus_single_endpointUrl = null;
-      }
-    });
-    this.subscriptionGetdataEndpoint = this.getdataEndpoint().subscribe(message => {
-      let result: any;
-      result = message;
-      if (result != null) {
-        this.getdata_endpointUrl = result;
-      } else {
-        this.getdata_endpointUrl = null;
-      }
-    });
-
-    
+      this.fileimgsslurl = 'http://api.nexgentesting.com/';    
   }
 
-  setServerUrl(value: any) {
-    this.subjectForServerUrl.next(value);
-  }
-  public clearServerUrl() {
-    this.subjectForServerUrl.next(null);
-  }
-  public getServerUrl(): Observable<any> {
-    return this.subjectForServerUrl.asObservable();
-  }
-
-  setaddEndpoint(value: any) {
-    this.subjectForaddEndpointUrl.next(value);
-  }
-  public clearaddEndpoint() {
-    this.subjectForaddEndpointUrl.next(null);
-  }
-  public getaddEndpoint(): Observable<any> {
-    return this.subjectForaddEndpointUrl.asObservable();
-  }
-/*****added by souresh******/
-  setuploadEndpont(value:any){
-    this.subjectForuploadEndpointUrl.next(value);
-  }
-  public clearuploadEndpoint(){
-    this.subjectForuploadEndpointUrl.next(null);
-  }
-  public getuploadEndpoint(): Observable <any> {
-    return this.subjectForuploadEndpointUrl.asObservable();
-  }
-   /********souresh end here********/
-
-
-  setupdateEndpoint(value: any) {
-    this.subjectForupdateEndpointUrl.next(value);
-  }
-  public clearupdateEndpoint() {
-    this.subjectForupdateEndpointUrl.next(null);
-  }
-  public getupdateEndpoint(): Observable<any> {
-    return this.subjectForupdateEndpointUrl.asObservable();
-  }
-
-  setdeletesingleEndpoint(value: any) {
-    this.subjectFordeletesingleEndpointUrl.next(value);
-  }
-  public cleardeletesingleEndpoint() {
-    this.subjectFordeletesingleEndpointUrl.next(null);
-  }
-  public getdeletesingleEndpoint(): Observable<any> {
-    return this.subjectFordeletesingleEndpointUrl.asObservable();
-  }
-
-  setupdatestatus_singleEndpoint(value: any) {
-    this.subjectForupdatestatusSingleEndpointUrl.next(value);
-  }
-  public clearupdatestatus_singleEndpoint() {
-    this.subjectForupdatestatusSingleEndpointUrl.next(null);
-  }
-  public getupdatestatus_singleEndpoint(): Observable<any> {
-    return this.subjectForupdatestatusSingleEndpointUrl.asObservable();
-  }
-
-  setgetdataEndpoint(value: any) {
-    this.subjectForGetdataEndpointUrl.next(value);
-  }
-  public cleargetdataEndpoint() {
-    this.subjectForGetdataEndpointUrl.next(null);
-  }
-  public getdataEndpoint(): Observable<any> {
-    return this.subjectForGetdataEndpointUrl.asObservable();
-  }
+  
 
 
 
@@ -282,7 +128,7 @@ getDataForDatalist(endpoint: any) {
   };
 
   // this.isTokenExpired()
-  var result = this._http.post(this.serverUrlDemo + 'datalist', endpoint, httpOptions).pipe(map(res => res));
+  var result = this._http.post(this.serverUrl + 'datalist', endpoint, httpOptions).pipe(map(res => res));
 
   return result;
 }
@@ -296,7 +142,7 @@ getDatalist(requestdata: any) {
       'Authorization': this.accesstoken
     })
   };
-  var result = this._http.post(this.serverUrlDemo + requestdata.endpoint, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
+  var result = this._http.post(this.serverUrl + requestdata.endpoint, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
   return result;
 
 
@@ -308,12 +154,12 @@ getDatalistWithToken(requestdata: any, newdata: any){
         'Authorization': newdata.token
       })
     };
-    var result = this._http.post(this.serverUrlDemo + requestdata.endpoint, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
+    var result = this._http.post(this.serverUrl + requestdata.endpoint, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
     return result;
 }
 
 getTempToken() {
-  var result = this._http.get(this.serverUrlDemo + 'gettemptoken').pipe(map(res => res));
+  var result = this._http.get(this.serverUrl + 'gettemptoken').pipe(map(res => res));
   return result;
 }
 /*************** Added by himadri end here ***************/ 
@@ -327,7 +173,7 @@ getDatalistForResolve(requestdata: any) {
   };
   console.log(requestdata)
   
-  var result = this._http.post(this.serverUrlDemo + requestdata.endpoint, JSON.stringify(requestdata.requestcondition), httpOptions).pipe(map(res => res));
+  var result = this._http.post(this.serverUrl + requestdata.endpoint, JSON.stringify(requestdata.requestcondition), httpOptions).pipe(map(res => res));
   return result;
 
 
@@ -418,12 +264,12 @@ forgetPassword(requestdata: any) {
         'Authorization': this.accesstoken
       })
     };
-    var result = this._http.post(this.serverUrlDemo + endpoint, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
+    var result = this._http.post(this.serverUrl + endpoint, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
     return result;
   }
 
   gettemptoken(){
-    var result = this._http.get(this.serverUrlDemo + 'gettemptoken').pipe(map(res=>res));
+    var result = this._http.get(this.serverUrl + 'gettemptoken').pipe(map(res=>res));
     return result;
   }
 
