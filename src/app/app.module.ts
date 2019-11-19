@@ -14,8 +14,8 @@ import { HomefrontendfooterComponent } from './components/frontend/homefrontendf
 import { OurphysiciansComponent } from './components/frontend/ourphysicians/ourphysicians.component';
 import { ServicesComponent } from './components/frontend/services/services.component';
 import { JournalsComponent } from './components/frontend/journals/journals.component';
-import { ImagegalleryComponent } from './components/frontend/imagegallery/imagegallery.component';
-import { VideogalleryComponent } from './components/frontend/videogallery/videogallery.component';
+import { ImagegalleryComponent, GalleryZoom } from './components/frontend/imagegallery/imagegallery.component';
+import { VideogalleryComponent, VideoZoom } from './components/frontend/videogallery/videogallery.component';
 import { TestimonialComponent } from './components/frontend/testimonial/testimonial.component';
 import { ContactusComponent } from './components/frontend/contactus/contactus.component';
 import { AppointmentsfrontendComponent } from './components/frontend/appointmentsfrontend/appointmentsfrontend.component';
@@ -124,6 +124,8 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
     HometestimonialComponent,
     HomegalleryComponent,
 
+    GalleryZoom,
+    VideoZoom,
 
 
   ],
@@ -141,6 +143,7 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
     CKEditorModule,
     AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule,
   ],
+  entryComponents: [GalleryZoom, VideoZoom],
   providers: [CookieService, ApiService],
   bootstrap: [AppComponent]
 })
