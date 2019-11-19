@@ -2,16 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb5622c8-38a8-4e54-a5a4-3be9de3de4d8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/blogdetailimg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/folder_icon1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/folder_icon2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/gallery_banner.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/gallery_img10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/gallery_img11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/gallery_img12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/gallery_img7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/gallery_img8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/gallery_img9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/image_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/components/frontend/imagegallery/galleryzoom.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/components/frontend/videogallery/videozoom.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/journals-detail/journals-detail.component.css" afterPath="$PROJECT_DIR$/src/app/components/frontend/journals-detail/journals-detail.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/journals-detail/journals-detail.component.html" afterPath="$PROJECT_DIR$/src/app/components/frontend/journals-detail/journals-detail.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/journals/journals.component.css" afterPath="$PROJECT_DIR$/src/app/components/frontend/journals/journals.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/journals/journals.component.html" afterPath="$PROJECT_DIR$/src/app/components/frontend/journals/journals.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.css" afterPath="$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.html" afterPath="$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.ts" afterPath="$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.css" afterPath="$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.html" afterPath="$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.ts" afterPath="$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/style.css" afterPath="$PROJECT_DIR$/src/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsconfig.json" afterPath="$PROJECT_DIR$/tsconfig.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,37 +35,110 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="journals-detail.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/components/frontend/journals-detail/journals-detail.component.html">
+      <file leaf-file-name="videogallery.component.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="56" column="53" lean-forward="false" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
+            <state relative-caret-position="155">
+              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="478">
+              <caret line="362" column="0" lean-forward="true" selection-start-line="362" selection-start-column="0" selection-end-line="362" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="videogallery.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="377" column="13" lean-forward="false" selection-start-line="377" selection-start-column="13" selection-end-line="377" selection-end-column="13" />
               <folding>
-                <element signature="n#mat-card#0;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#mat-card-content#0;n#mat-card#1;n#!!top" expanded="false" />
-                <element signature="n#mat-card-content#1;n#mat-card#1;n#!!top" expanded="false" />
+                <element signature="n#li#0;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+                <element signature="n#span#1;n#span#1;n#li#0;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+                <element signature="n#li#1;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+                <element signature="n#li#2;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+                <element signature="n#li#3;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+                <element signature="n#li#4;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+                <element signature="n#span#1;n#span#1;n#li#4;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+                <element signature="n#li#5;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+                <element signature="n#li#6;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+                <element signature="n#li#7;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+                <element signature="n#li#8;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+                <element signature="n#span#1;n#span#1;n#li#8;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+                <element signature="n#li#9;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+                <element signature="n#li#10;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+                <element signature="n#li#11;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="journals-detail.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/frontend/journals-detail/journals-detail.component.css">
+      <file leaf-file-name="videozoom.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/frontend/videogallery/videozoom.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="194" column="19" lean-forward="true" selection-start-line="194" selection-start-column="7" selection-end-line="194" selection-end-column="19" />
+            <state relative-caret-position="85">
+              <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="139" column="42" lean-forward="false" selection-start-line="139" selection-start-column="42" selection-end-line="139" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="videogallery.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="imagegallery.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+                <element signature="n#!!block;n#openDialog#0;n#ImagegalleryComponent#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ami_top_menu</find>
-      <find>amitoplogin</find>
-      <find>ami_footer1_menu</find>
       <find>ami_footer1_wrapper</find>
       <find>background: #000;</find>
       <find>consult4health</find>
@@ -84,9 +166,13 @@
       <find>journals_blog_left</find>
       <find>journalsmainimg</find>
       <find>journals_wrapper</find>
+      <find>journals</find>
+      <find>label</find>
+      <find>gallery_con_box</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>gallery</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\angular_2\Grace-Medical-main</dir>
@@ -98,15 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/app/components/frontend/ourphysicians/ourphysicians.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/components/frontend/services/services.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/components/frontend/journals/journals.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/components/frontend/ourphysicians-detail/ourphysicians-detail.component.html" />
-        <option value="$PROJECT_DIR$/src/app/components/frontend/ourphysicians/ourphysicians.component.html" />
-        <option value="$PROJECT_DIR$/src/app/components/frontend/ourphysicians-detail/ourphysicians-detail.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/components/frontend/journals-detail/journals-detail.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/components/backend/admin-dashboard/dashboard/dashboard.component.html" />
-        <option value="$PROJECT_DIR$/src/app/components/backend/admin-dashboard/manage-lesson/manage-lesson.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/backend/admin-dashboard/add-lesson/add-lesson.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/backend/admin-dashboard/manage-category/manage-category.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/backend/admin-dashboard/edit-category/edit-category.component.html" />
@@ -143,12 +220,21 @@
         <option value="$PROJECT_DIR$/src/app/components/frontend/contactus/contactus.component.css" />
         <option value="$PROJECT_DIR$/src/app/components/frontend/services/services.component.html" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/src/assets/css/style.css" />
         <option value="$PROJECT_DIR$/src/app/components/frontend/journals/journals.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/frontend/journals-detail/journals-detail.component.css" />
         <option value="$PROJECT_DIR$/src/app/components/frontend/journals/journals.component.css" />
         <option value="$PROJECT_DIR$/src/app/components/frontend/journals-detail/journals-detail.component.html" />
+        <option value="E:/Project _psd/MD-STOCK-MAIL-PAGE.html" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.html" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/imagegallery/galleryzoom.html" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.css" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/videogallery/videozoom.html" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.css" />
+        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.ts" />
+        <option value="$PROJECT_DIR$/src/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.html" />
       </list>
     </option>
   </component>
@@ -317,34 +403,8 @@
               <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="journals-detail" />
+              <option name="myItemId" value="videogallery" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -371,10 +431,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="journals" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -404,7 +460,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="homegallery" />
+              <option name="myItemId" value="imagegallery" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -522,17 +578,18 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\angular_2\Grace-Medical-vm\src\app\components\backend\admin-dashboard" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\angular_2\Grace-Medical-main\src\assets\images" />
       <recent name="D:\angular_2\Grace-Medical-main\src\environments" />
       <recent name="D:\angular_2\Grace-Medical-main\src\assets\font" />
       <recent name="D:\angular_2\Grace-Medical-vm\src\assets\images" />
       <recent name="D:\angular_2\Grace-Medical-vm\dist\consult4health-vm\assets\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\angular_2\Grace-Medical-vm\src\app\components\backend\admin-dashboard" />
     </key>
   </component>
   <component name="RunManager">
@@ -635,18 +692,21 @@
       <workItem from="1573813516199" duration="3643000" />
       <workItem from="1573821255326" duration="1654000" />
       <workItem from="1574052103744" duration="8361000" />
-      <workItem from="1574071117101" duration="7384000" />
+      <workItem from="1574071117101" duration="8440000" />
+      <workItem from="1574138341825" duration="7312000" />
+      <workItem from="1574155653620" duration="9332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236173000" />
+    <option name="totallyTimeSpent" value="253873000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.49166667" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22864583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5083333" order="0" side_tool="true" content_ui="tabs" />
@@ -657,7 +717,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.49166667" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -668,54 +727,18 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/app.module.ts</url>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/components/backend/admin-dashboard/manage-article-category/manage-article-category.component.html" />
-    <entry file="file://$PROJECT_DIR$/src/app/components/backend/admin-dashboard/manage-article/manage-article.component.html" />
-    <entry file="file://$PROJECT_DIR$/src/app/components/backend/admin-dashboard/dashboard/dashboard.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/backend/admin-dashboard/add-article/add-article.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/backend/admin-dashboard/add-article-category/add-article-category.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="79" lean-forward="false" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/backend/admin-dashboard/admin-category-manager/admin-category-manager.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/backend/admin-dashboard/admin-article-manager/admin-article-manager.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/backend/admin-dashboard/add-media/add-media.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/backend/admin-dashboard/admin-gallery-manager/admin-gallery-manager.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -869,13 +892,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="45" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/api.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -954,13 +970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="132" column="19" lean-forward="false" selection-start-line="132" selection-start-column="4" selection-end-line="132" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homedoctors/homedoctors.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2735">
@@ -982,37 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="309" column="243" lean-forward="true" selection-start-line="309" selection-start-column="39" selection-end-line="309" selection-end-column="243" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/journals/journals.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="39" column="15" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="383" selection-end-column="49" />
-          <folding>
-            <element signature="n#mat-card#0;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#mat-card-content#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#2;n#mat-card-content#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#3;n#mat-card-content#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#span#4;n#mat-card-content#0;n#mat-card#1;n#!!top" expanded="false" />
-            <element signature="n#mat-card-content#1;n#mat-card#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/journals-detail/journals-detail.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="194" column="19" lean-forward="true" selection-start-line="194" selection-start-column="7" selection-end-line="194" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/frontend/journals/journals.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
@@ -1021,14 +999,155 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://E:/Project _psd/MD-STOCK-MAIL-PAGE.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/journals-detail/journals-detail.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="194" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="205" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/frontend/journals-detail/journals-detail.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="56" column="53" lean-forward="false" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
+        <state relative-caret-position="119">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="35" />
           <folding>
             <element signature="n#mat-card#0;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#mat-card-content#0;n#mat-card#1;n#!!top" expanded="false" />
             <element signature="n#mat-card-content#1;n#mat-card#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/journals/journals.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="73" column="31" lean-forward="true" selection-start-line="65" selection-start-column="17" selection-end-line="73" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="35" column="33" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="467" selection-end-column="49" />
+          <folding>
+            <element signature="n#span#1;n#span#1;n#li#0;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#1;n#li#1;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#1;n#li#2;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#1;n#li#3;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#1;n#li#4;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#1;n#li#5;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#1;n#li#6;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#1;n#li#7;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#1;n#li#8;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#1;n#li#9;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#1;n#li#10;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#1;n#li#11;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#1;n#li#12;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#1;n#li#13;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#1;n#li#14;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#1;n#li#15;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="46" column="17" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="173" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/imagegallery/galleryzoom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/videogallery/videozoom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="139" column="42" lean-forward="false" selection-start-line="139" selection-start-column="42" selection-end-line="139" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+            <element signature="n#!!block;n#openDialog#0;n#ImagegalleryComponent#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="362" column="0" lean-forward="true" selection-start-line="362" selection-start-column="0" selection-end-line="362" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="377" column="13" lean-forward="false" selection-start-line="377" selection-start-column="13" selection-end-line="377" selection-end-column="13" />
+          <folding>
+            <element signature="n#li#0;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#1;n#li#0;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#li#1;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#li#3;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#li#4;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#1;n#li#4;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#li#5;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#li#6;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#li#7;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#li#8;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#1;n#li#8;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#li#9;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#li#10;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
+            <element signature="n#li#11;n#ul#0;n#mat-card#1;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
