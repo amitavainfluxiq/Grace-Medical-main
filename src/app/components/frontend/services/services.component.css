@@ -12,8 +12,8 @@
 .servicemaincontainer{background: #f2f4f4;display: block; padding-bottom: 50px;}
 
 .servecemainwrapper{width: 1660px; display: block; margin: 0 auto;box-shadow: none; padding: 0;background: none;}
-.servecetextwrapper{text-align: center; padding: 50px 0;    margin: 0;}
-.servecetextwrapper h2{font-size: 30px; font-family: 'HelveticaBold'; color: #1f1f1f; margin: 0; padding-bottom: 25px;text-transform: uppercase;}
+.servecetextwrapper{text-align: center; padding: 40px 0;    margin: 0;}
+.servecetextwrapper h2{font-size: 30px; font-family: 'HelveticaBold'; color: #1f1f1f; margin: 0; padding-bottom: 15px;text-transform: uppercase;}
 .servecetextwrapper p{font-size: 18px; font-family: 'HelveticaBold'; color: #1f1f1f; width: 880px; margin: 0 auto; line-height: 27px;}
 
 
