@@ -25,6 +25,15 @@
       "contactus/*": [
         "dist/contactus/*"
       ],
+
+      "login": [
+        "dist/login"
+      ],
+      "login/*": [
+        "dist/login/*"
+      ],
+
+
       "servicelib": [
         "dist/servicelib"
       ],

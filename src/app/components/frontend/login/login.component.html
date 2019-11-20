@@ -1,6 +1,11 @@
 <mat-card-content class="loginBg">
     <mat-card-content class="image_wrapper">
-        <img src="/assets/images/login.png"> 
-        <button mat-flat-button routerLink="/admin_dashboard">Login</button>
+      <!--  <img src="/assets/images/login.png">-->
+
+     <lib-login [fromTitle]="fromTitle" [fullUrl]="fullUrl" [forgetRouteingUrl]="forgetRouteingUrl" class="formgenrl login-form"
+                   [signUpRouteingUrl]='signUpRouteingUrl' [routerStatus]="routerStatus" [endpoint]="endpoint" [logo]="logo" [buttonName]="buttonName"></lib-login>
+
+
+      <!--  <button mat-flat-button routerLink="/admin_dashboard">Login</button>-->
     </mat-card-content>
 </mat-card-content>

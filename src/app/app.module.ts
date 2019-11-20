@@ -75,6 +75,8 @@ import {FileUploadModule} from 'file-upload';
 
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
+import { LoginModule } from 'login';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -142,6 +144,8 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
     FileUploadModule,
     CKEditorModule,
     AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule,
+
+    LoginModule
   ],
   entryComponents: [GalleryZoom, VideoZoom],
   providers: [CookieService, ApiService],

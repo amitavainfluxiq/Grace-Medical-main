@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+import { MetaService } from '@ngx-meta/core';
+import {ApiService} from "../../../api.service";
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,7 +11,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponentfrontend implements OnInit {
 
-  constructor() { window.scrollTo(500, 0);}
+  constructor( public apiService: ApiService, private readonly meta: MetaService) { window.scrollTo(500, 0);
+
+    this.meta.setTitle('Grace Medical - Specializing in You');
+    this.meta.setTag('og:description', 'Grace Medical brings Top-Quality Medical Care and Preventative Healthcare Services focused on keeping patients in premium health condition through focused patient-care and yearly check-ups.');
+    this.meta.setTag('twitter:description', 'Grace Medical brings Top-Quality Medical Care and Preventative Healthcare Services focused on keeping patients in premium health condition through focused patient-care and yearly check-ups.');
+    this.meta.setTag('og:keyword', 'Grace Medical, Top-Quality Medical Care, Preventative Healthcare Services, Focused Patient-Care');
+    this.meta.setTag('twitter:keyword', 'Grace Medical, Top-Quality Medical Care, Preventative Healthcare Services, Focused Patient-Care');
+    this.meta.setTag('og:title', 'Grace Medical - Specializing in You');
+    this.meta.setTag('twitter:title', 'Grace Medical - Specializing in You');
+    this.meta.setTag('og:type', 'website');
+    this.meta.setTag('og:image', '../../assets/images/logo2.png');
+    this.meta.setTag('twitter:image', '../../assets/images/logo2.png');
+
+  }
 
 
 

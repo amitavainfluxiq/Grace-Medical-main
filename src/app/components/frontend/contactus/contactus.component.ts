@@ -23,11 +23,16 @@ export class ContactusComponent implements OnInit {
   public routeingUrl: any = 'dashboard';
   constructor(private readonly meta: MetaService, public ApiService: ApiService) {
     window.scrollTo(500, 0);
-    this.meta.setTitle('Grace Medical');
-    this.meta.setTag('og:description', 'This is dynamic decription ');
-    this.meta.setTag('og:title', 'This is dynamic title with meta og ');
+    this.meta.setTitle('Grace Medical - Contact Us');
+    this.meta.setTag('og:description', 'At Grace Medical, we are always available to our patients and customers, aiding them with expert advice and counsel about the Healthcare industry and services, whenever they are in need. Contact Us TODAY and we will be happy to respond to your queries!');
+    this.meta.setTag('twitter:description', 'At Grace Medical, we are always available to our patients and customers, aiding them with expert advice and counsel about the Healthcare industry and services, whenever they are in need. Contact Us TODAY and we will be happy to respond to your queries!');
+    this.meta.setTag('og:keyword', 'Grace Medical Contact Us, Contact Us, Grace Medical');
+    this.meta.setTag('twitter:keyword', 'Grace Medical Contact Us, Contact Us, Grace Medical');
+    this.meta.setTag('og:title', 'Grace Medical - Contact Us');
+    this.meta.setTag('twitter:title', 'Grace Medical - Contact Us');
     this.meta.setTag('og:type', 'website');
-    this.meta.setTag('og:image', 'https://upload.wikimedia.org/wikipedia/commons/f/f8/superraton.jpg');
+    this.meta.setTag('og:image', '../../assets/images/logo2.png');
+    this.meta.setTag('twitter:image', '../../assets/images/logo2.png');
 
   }
 
