@@ -172,3 +172,10 @@
     .gallery_blog_share{   position: inherit;  left: 0px; bottom: 0px; margin-top: 12px;}
 
 }
+
+
+@media(max-width:480px) {
+
+    .gallery_banner_wrapper_text h2  {
+        font-size: 46px;}
+}

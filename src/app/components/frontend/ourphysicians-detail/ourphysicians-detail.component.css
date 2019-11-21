@@ -31,6 +31,7 @@
 .block2content .mat-card-content h3{font-family: "Helvetica-Normal"; font-size: 18px; margin: 0; padding: 15px 0;padding-bottom: 10px;}
 .block2content .mat-card-content h3 span{font-size: 16px; color: #656667;font-weight: normal;}
 .block2content .mat-card-content p{font-family: "Helvetica-Normal"; font-size: 16px; color: #656667;margin: 0; padding-bottom: 8px;display: flex; align-items: center;}
+.block2content .mat-card-content p a{color: #656667; text-decoration: none; outline: none;}
 .block2content .mat-card-content p i{margin-right: 5px;display: inline-block;}
 .block2content .mat-card-content p i img{display: block; margin-top: -5px;}
 .block2content .mat-card-content h2{font-family: "Helvetica-Normal"; font-size: 24px;}
@@ -42,7 +43,7 @@
 
 .block1.mat-list-item{}
 
-.imgwrapper{background: #eaf0f2;padding: 8px;max-height: 360px;}
+.imgwrapper{background: #eaf0f2;padding: 8px; padding-bottom: 4px; max-height: 360px;}
 
 
 .block1.mat-list-item img{width: 100%;}

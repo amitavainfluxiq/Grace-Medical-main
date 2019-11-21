@@ -92,6 +92,7 @@
 
 @media(max-width:1199px) {
 
+    .contact_banner_wrapper_text h3 { width: 100%;}
     .contact_banner{ background-position: top right!important; height: auto!important; background-size: 280%!important; padding-top: 57%; background-color: #edf1f2!important; padding-bottom: 25px;}
 
     .contact_banner_wrapper{ width: 100%; height: auto; display: block;    }
@@ -119,4 +120,10 @@
 @media(max-width:767px) {
     .contact_banner{  background-size: 390%!important; padding-top: 82%; }
 
+}
+
+@media(max-width:480px) {
+
+    .contact_banner_wrapper_text h2  {
+        font-size: 46px;}
 }

@@ -90,7 +90,7 @@
     height: auto!important;
     background-size: 318%!important;
     padding-top: 67%;
-    background-color: #edf1f2!important;
+    background-color: #e4e4e2!important;
     padding-bottom: 49px;
     }
     .contact_banner_wrapper_text{
@@ -112,3 +112,9 @@
 }
 
 
+
+@media(max-width:480px) {
+
+    .contact_banner_wrapper_text h2  {
+        font-size: 46px;}
+}

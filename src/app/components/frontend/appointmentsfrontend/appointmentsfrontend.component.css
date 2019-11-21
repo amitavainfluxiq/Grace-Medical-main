@@ -96,7 +96,7 @@
     .appointment_block1{ width: 90%;}
 
 
-
+    .appointment_banner_wrapper_text h3{ width: 100%;}
 
 
     .appointment_block1_sub{display: block; flex-direction: inherit;  padding: 15px;  width: auto;    margin-top: 0px!important;}
@@ -129,4 +129,12 @@
 @media(max-width:767px) {
     .appointment_banner{  background-size: 390%!important; padding-top: 82%; }
 
+
+
+}
+
+@media(max-width:480px) {
+
+    .appointment_banner_wrapper_text h2  {
+        font-size: 46px;}
 }
