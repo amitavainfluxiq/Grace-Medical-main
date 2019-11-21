@@ -20,15 +20,15 @@ export class LoginComponent implements OnInit {
 
   public buttonName: any = 'Login';
   public signUpRouteingUrl: any = {
-    "path": "sign-up",
-    "buttonName": "sign-up",
+    "path": "signup",
+    "buttonName": "Sign Up",
     "customLink": "",
     "customURl": ""
   };
 
   public forgetRouteingUrl: any = {
-    "path": "forget-password",
-    "buttonName": "forget-password",
+    "path": "forgetpassword",
+    "buttonName": "Forget Password",
     "customLink": "",
     "customURl": ""
   };
@@ -39,8 +39,8 @@ export class LoginComponent implements OnInit {
 
 
     this.meta.setTitle('Grace Medica - Login');
-    this.meta.setTag('og:description', 'Grace Medic');
-    this.meta.setTag('twitter:description', 'Grace Medic');
+    this.meta.setTag('og:description', 'Grace Medic Login');
+    this.meta.setTag('twitter:description', 'Grace Medic Login');
     this.meta.setTag('og:keyword', 'Grace Medical Login, Login, Grace MedicalA');
     this.meta.setTag('twitter:keyword', 'Grace Medical Login, Login, Grace MedicalA');
     this.meta.setTag('og:title', 'Grace Medica - Login');
