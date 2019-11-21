@@ -1,13 +1,57 @@
 <app-homefrontendheader></app-homefrontendheader>
-<span style="display: block; position: relative;">
-<img src=" /assets/images/ourphysiciansdetail_img.png" alt="#" style="width: 100%;">
 
-<button mat-button routerLink="/sacheduleappointment" style="       width: 11.5%;
-    height: 4.5%;
-    position: absolute;
-    right: 8.6%;
-    bottom: 20.7%; "></button>
-
+<mat-card class="contact_banner">
+    <span class="contact_banner_wrapper">
+ <span class="contact_banner_wrapper_text">
+         <h2>PHYSICIAN PROFILE  </h2>
+        <h3>Lorem ipsum dolor sit amet, consectetur 
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h3>
+ </span>
     </span>
+
+</mat-card>
+
+<mat-card class="updetailmainwrapper">
+    <mat-list class="updetailsubwrapper">
+        <mat-list-item class="block1"> 
+            <span class="imgwrapper">
+                    <img src="../../../../assets/images/updrimage.png">
+            </span>
+            
+        </mat-list-item>
+        <mat-list-item class="block2"> 
+            <h2 class="title">Ryan Hope, <span>MD*</span> </h2>
+            <span class="block2content">
+            <mat-card-content class="block1">
+                <h3>Clinical Expertise: </h3>
+                <p><i><img src="../../../../assets/images/updetailicon.png"></i> Diabetes</p>
+                <p><i><img src="../../../../assets/images/updetailicon.png"></i> Family Medicine </p>
+                <p><i><img src="../../../../assets/images/updetailicon.png"></i> Pediatrics</p>
+                <h3>Location: </h3>
+                <p>Rocksprings, WY</p>
+                <h3>Office Phone:</h3>
+                <p><i><img src="../../../../assets/images/updetailicon2.png"></i> 307-320-0804</p>
+            </mat-card-content>
+            <mat-card-content class="block2">
+                <h2>About Me</h2>
+                <h3>Education: <span>MD, Duke University</span></h3>
+                <h3>Board Certifications: <span> Pediatrics</span></h3>
+                <h3>Description:
+                    <span>I am a Pediatric and Diabetic expert who graduated from Duke University in 2014. The same year I 
+                    started with Grace Medical. I enjoy finding solutions for individuals that may be struggling with their 
+                    health to help them have a better quality of life. I currently reside in Rockspring, WY with my wife 
+                    Lisa and two daughters, Lily and Madison. When I am not practicing my work, 
+                    I enjoy going rock climbing and camping with my family. </span>
+                </h3>
+                <span class="buttonwrapper">
+                    <button routerLink="/sacheduleappointment" mat-button class="sabtn">Schedule Appointment</button>
+                </span>
+            </mat-card-content>
+        </span>
+        </mat-list-item>
+       </mat-list>
+</mat-card>
+
+
 
 <app-homefrontendfooter></app-homefrontendfooter>
