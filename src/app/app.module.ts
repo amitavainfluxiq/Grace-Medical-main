@@ -76,6 +76,8 @@ import {FileUploadModule} from 'file-upload';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 import { LoginModule } from 'login';
+import { ForgetpasswordComponent } from './components/frontend/forgetpassword/forgetpassword.component';
+import { SignupComponent } from './components/frontend/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -128,6 +130,8 @@ import { LoginModule } from 'login';
 
     GalleryZoom,
     VideoZoom,
+    ForgetpasswordComponent,
+    SignupComponent,
 
 
   ],

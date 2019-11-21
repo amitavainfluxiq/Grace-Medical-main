@@ -63,6 +63,10 @@ import { HometestimonialComponent } from './components/frontend/hometestimonial/
 import { HomeservicesComponent } from './components/frontend/homeservices/homeservices.component';
 import { HomegalleryComponent } from './components/frontend/homegallery/homegallery.component';
 
+
+import { ForgetpasswordComponent } from './components/frontend/forgetpassword/forgetpassword.component';
+import { SignupComponent } from './components/frontend/signup/signup.component';
+
 const routes: Routes = [
 
   {path: 'home', component: HomeComponentfrontend},
@@ -118,6 +122,9 @@ const routes: Routes = [
   {path: 'hometestimonial', component: HometestimonialComponent},
   {path: 'homeservices', component: HomeservicesComponent},
   {path: 'homegallery', component: HomegalleryComponent},
+
+  {path: 'forgetpassword', component: ForgetpasswordComponent},
+  {path: 'signup', component: SignupComponent},
 
 
 ];
