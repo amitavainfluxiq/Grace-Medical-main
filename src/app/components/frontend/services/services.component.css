@@ -117,3 +117,9 @@
 }
 
 
+
+@media(max-width:480px) {
+
+    .contact_banner_wrapper_text h2  {
+        font-size: 46px;}
+}

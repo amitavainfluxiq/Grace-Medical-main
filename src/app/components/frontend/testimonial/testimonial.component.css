@@ -224,3 +224,10 @@
       width: 100% !important;
     }
   }
+
+
+@media(max-width:480px) {
+
+    .contact_banner_wrapper_text h2  {
+        font-size: 40px;}
+}

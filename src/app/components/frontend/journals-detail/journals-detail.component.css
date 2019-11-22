@@ -204,3 +204,9 @@
     .journals_banner{  background-size: 390%!important; padding-top: 82%;  background-position: 88% top!important; }
 
 }
+
+@media(max-width:480px) {
+
+    .journals_banner_wrapper_text h2  {
+        font-size: 46px;}
+}
