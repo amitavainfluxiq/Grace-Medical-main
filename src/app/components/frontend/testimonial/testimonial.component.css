@@ -175,6 +175,9 @@
     .contact_banner_wrapper_text {margin: 0 0 0 12%;}
     .testimonialwrapper .mainwrappercontent {width: 96%;}
   }
+
+
+
   @media only screen and (max-width:1540px) {
     .testimonialwrapper .mat-list .mat-list-item.testimonialserv {width: 25.91%;}
   }
@@ -190,19 +193,23 @@
   }
 
   @media only screen and (max-width:1199px) {
+
+
+      .contact_banner_wrapper_text  h3 { width: auto;}
+
     .contact_banner{
-      background-size: 399% !important;
+      background-size: 280% !important;
       height: auto !important;
-      padding-top: 78%;
-      padding-bottom: 0;
+      padding-top: 57%;
+      padding-bottom: 25px!important;
       background-color: #f2f2f3 !important;
     }
     .titlewrapper h3{width: 100%;}
     .contact_banner_wrapper_text{
       margin: 0 auto;
-      width: 100%;
+      width: auto; padding: 0 15px;
   }
-   .contact_banner_wrapper{height: auto;padding: 30px 0;}
+   .contact_banner_wrapper{height: auto; }
 
       .testimonialwrapper .mat-list .mat-list-item.testimonialserv {
         width: 42.91% !important;
@@ -217,13 +224,19 @@
 
 
   @media only screen and (max-width:768px) {
-    .contact_banner_wrapper_text h3{
+  /*  .contact_banner_wrapper_text h3{
       width: 98%;
-    }
+    }*/
     .testimonialwrapper .mat-list .mat-list-item.testimonialserv {
       width: 100% !important;
     }
   }
+
+
+@media(max-width:767px) {
+    .contact_banner{  background-size: 390%!important; padding-top: 82%;  background-position: 88% top!important; }
+
+}
 
 
 @media(max-width:480px) {

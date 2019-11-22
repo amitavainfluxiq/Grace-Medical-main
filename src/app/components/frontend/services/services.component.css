@@ -88,15 +88,14 @@
     .contact_banner{
     background-position: top right!important;
     height: auto!important;
-    background-size: 318%!important;
-    padding-top: 63%;
+    background-size: 280%!important;
+    padding-top: 58%;
     background-color: #d7dfe2!important;
-    padding-bottom: 0;
+    padding-bottom: 25px;
     }
     .contact_banner_wrapper_text{
-        width: 100%;
-        margin: 0 auto;
-        padding: 30px 0;
+        width:auto;
+        padding:0 15px;     margin: 0 0 0 0;
     }
     
     .contact_banner_wrapper_text h3{    width: 94%;}
@@ -126,10 +125,16 @@
 @media(max-width:991px) {
     .servecetextwrapper p {width: 100%;}
     .contact_banner_wrapper_text h3 {
-        width: 95%;
+        width: auto;
     }
 }
 
+
+
+@media(max-width:767px) {
+    .contact_banner{  background-size: 390%!important; padding-top: 82%;  background-position: 88% top!important; }
+
+}
 
 
 @media(max-width:480px) {

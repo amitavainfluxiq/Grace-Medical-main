@@ -132,6 +132,10 @@
         .team_items:before {
             top: -39px;
             height: 270px;}
+
+    .Team_members_block .team_items .member_content_wrapper {
+        margin-top: 34%;
+    }
 }
 
 @media screen and (max-width: 1500px){
@@ -145,6 +149,14 @@
         margin: 0 0 0 6%;
     }
 }
+@media screen and (max-width: 1400px){
+
+.Team_members_block .team_items .member_content_wrapper {
+    margin-top: 40%;
+}
+
+}
+
 @media screen and (max-width: 1620px){
     .contact_banner{
         background-position: right -261px top !important;
@@ -153,25 +165,44 @@
 @media screen and (max-width: 1300px){
     .Team_members_block .team_items {
         width: 31%;}
+
+    .Team_members_block .team_items .member_content_wrapper {
+        margin-top: 30%;
+    }
 }
 
 @media screen and (max-width: 1199px){
     .contact_banner {
         background-position: right -196px top !important;
-        background-size: 291% !important;
+        background-size: 280% !important;
         padding-top: 57%;
-        padding-bottom: 0 !important;
+        padding-bottom: 25px !important;
         height: auto !important;
         background-color: #edf1f2!important;
     }
     .contact_banner_wrapper_text {
         margin: 0 auto;
-        width: 100%;
+        width: auto; display: block; padding: 0 15px;
     }
-    .contact_banner_wrapper{height: auto; padding: 30px 0;}
+    .contact_banner_wrapper{height: auto; }
     .contact_banner_wrapper_text h3{width: 94%;}
+
+    .Team_members_block .team_items .member_content_wrapper {
+        margin-top: 34%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+    .Team_members_block .team_items .member_content_wrapper {
+        margin-top: 40%;
+    }
 }
 @media screen and (max-width: 991px){
+
+    .Team_members_block .team_items .member_content_wrapper {
+        margin-top: 26%;
+    }
     .ceadchnbarcontainer{
         flex-wrap: wrap;
         padding: 2% .5%;
@@ -187,9 +218,27 @@
 
 }
 
+@media screen and (max-width: 900px) {
+
+    .Team_members_block .team_items .member_content_wrapper {
+        margin-top: 30%;
+    }
+
+}
+@media(max-width:767px) {
+    .contact_banner{  background-size: 390%!important; padding-top: 82%;  background-position: 88% top!important; }
+
+    .Team_members_block .team_items .member_content_wrapper {
+        margin-top: 35%;
+    }
+
+}
 @media screen and (max-width: 680px){
     .Team_members_block .team_items {
         width: 100%;
+    }
+    .Team_members_block .team_items .member_content_wrapper {
+        margin-top: 115px;
     }
 }
 
@@ -199,6 +248,8 @@
 @media screen and (max-width: 480px){
     .contact_banner{background-position: right -123px top !important;}
     .contact_banner_wrapper_text h2{font-size: 46px;}
+
+    .ceadchnbarcontainer mat-list-item input{ width: 82%;}
 }
 
 
