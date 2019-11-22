@@ -107,9 +107,9 @@
 
 
     .contact_banner{
-        background-size: 280% !important;
+        background-size: 200% !important;
         height: auto !important;
-        padding-top: 57%;
+        padding-top:41%;
         background-color: #cfdde2 !important;
         padding-bottom: 25px;
     }
@@ -151,7 +151,7 @@
 
 
 @media(max-width:767px) {
-    .contact_banner{  background-size: 390%!important; padding-top: 82%;  background-position: 88% top!important; }
+    .contact_banner{  background-size: 300%!important; padding-top: 62%;  background-position: 85% top!important; }
 
 }
 /*
@@ -166,6 +166,8 @@
 
     .contact_banner_wrapper_text h2  {
         font-size: 40px;}
+
+    .contact_banner{  background-size: 344%!important; padding-top: 74%;  background-position: 80% top!important; }
 }
 
 

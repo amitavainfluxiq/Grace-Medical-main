@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb5622c8-38a8-4e54-a5a4-3be9de3de4d8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/appointmentsfrontend/appointmentsfrontend.component.css" afterPath="$PROJECT_DIR$/src/app/components/frontend/appointmentsfrontend/appointmentsfrontend.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/contactus/contactus.component.css" afterPath="$PROJECT_DIR$/src/app/components/frontend/contactus/contactus.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.css" afterPath="$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/journals-detail/journals-detail.component.css" afterPath="$PROJECT_DIR$/src/app/components/frontend/journals-detail/journals-detail.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/journals/journals.component.css" afterPath="$PROJECT_DIR$/src/app/components/frontend/journals/journals.component.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/ourphysicians-detail/ourphysicians-detail.component.css" afterPath="$PROJECT_DIR$/src/app/components/frontend/ourphysicians-detail/ourphysicians-detail.component.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/ourphysicians/ourphysicians.component.css" afterPath="$PROJECT_DIR$/src/app/components/frontend/ourphysicians/ourphysicians.component.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/schedule-appointment/schedule-appointment.component.css" afterPath="$PROJECT_DIR$/src/app/components/frontend/schedule-appointment/schedule-appointment.component.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/services/services.component.css" afterPath="$PROJECT_DIR$/src/app/components/frontend/services/services.component.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/testimonial/testimonial.component.css" afterPath="$PROJECT_DIR$/src/app/components/frontend/testimonial/testimonial.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.css" afterPath="$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,61 +27,41 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="journals.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/frontend/journals/journals.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="903">
-              <caret line="228" column="0" lean-forward="true" selection-start-line="228" selection-start-column="0" selection-end-line="232" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testimonial.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/frontend/testimonial/testimonial.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="178" column="0" lean-forward="true" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ourphysicians-detail.component.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/frontend/ourphysicians-detail/ourphysicians-detail.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="941">
-              <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="155" selection-end-column="1" />
+            <state relative-caret-position="223">
+              <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ourphysicians.component.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ourphysicians.component.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/frontend/ourphysicians/ourphysicians.component.css">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="253" column="115" lean-forward="true" selection-start-line="253" selection-start-column="3" selection-end-line="253" selection-end-column="115" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="appointmentsfrontend.component.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/frontend/appointmentsfrontend/appointmentsfrontend.component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="466">
+              <caret line="140" column="3" lean-forward="false" selection-start-line="140" selection-start-column="3" selection-end-line="140" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contactus.component.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/components/frontend/contactus/contactus.component.css">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="495">
-              <caret line="240" column="25" lean-forward="false" selection-start-line="240" selection-start-column="25" selection-end-line="240" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="schedule-appointment.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/frontend/schedule-appointment/schedule-appointment.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="233" column="0" lean-forward="false" selection-start-line="233" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="services.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/frontend/services/services.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="91" column="19" lean-forward="false" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
+              <caret line="129" column="70" lean-forward="false" selection-start-line="129" selection-start-column="70" selection-end-line="129" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -93,7 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>clear</find>
       <find>.clear</find>
       <find>services_li_text</find>
       <find>mat-form-field-label-wrapper</find>
@@ -123,6 +107,7 @@
       <find>145</find>
       <find>contact_banner_wrapper_text</find>
       <find>Team_members_block</find>
+      <find>appointment_banner</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -174,21 +159,21 @@
         <option value="$PROJECT_DIR$/src/app/components/frontend/login/login.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/frontend/ourphysicians-detail/ourphysicians-detail.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/frontend/ourphysicians-detail/ourphysicians-detail.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/components/frontend/appointmentsfrontend/appointmentsfrontend.component.css" />
-        <option value="$PROJECT_DIR$/src/app/components/frontend/journals/journals.component.css" />
-        <option value="$PROJECT_DIR$/src/app/components/frontend/journals-detail/journals-detail.component.css" />
-        <option value="$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.css" />
-        <option value="$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.css" />
-        <option value="$PROJECT_DIR$/src/app/components/frontend/contactus/contactus.component.css" />
         <option value="$PROJECT_DIR$/src/app/components/frontend/signup/signup.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/frontend/contactus/contactus.component.ts" />
         <option value="$PROJECT_DIR$/src/assets/css/style.css" />
         <option value="E:/Project _psd/contactmail.html" />
-        <option value="$PROJECT_DIR$/src/app/components/frontend/ourphysicians-detail/ourphysicians-detail.component.css" />
         <option value="$PROJECT_DIR$/src/app/components/frontend/schedule-appointment/schedule-appointment.component.css" />
-        <option value="$PROJECT_DIR$/src/app/components/frontend/services/services.component.css" />
-        <option value="$PROJECT_DIR$/src/app/components/frontend/testimonial/testimonial.component.css" />
         <option value="$PROJECT_DIR$/src/app/components/frontend/ourphysicians/ourphysicians.component.css" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/ourphysicians-detail/ourphysicians-detail.component.css" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/appointmentsfrontend/appointmentsfrontend.component.css" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/services/services.component.css" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/journals/journals.component.css" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/journals-detail/journals-detail.component.css" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.css" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.css" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/testimonial/testimonial.component.css" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/contactus/contactus.component.css" />
       </list>
     </option>
   </component>
@@ -364,246 +349,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="testimonial" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="signup" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="schedule-appointment" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ourphysicians-detail" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ourphysicians" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="login" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="journals" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forgetpassword" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -812,15 +557,15 @@
       <workItem from="1574229592632" duration="5929000" />
       <workItem from="1574253317171" duration="3181000" />
       <workItem from="1574309710351" duration="15808000" />
-      <workItem from="1574398566687" duration="13302000" />
+      <workItem from="1574398566687" duration="15452000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294470000" />
+    <option name="totallyTimeSpent" value="296620000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1101,46 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/appointmentsfrontend/appointmentsfrontend.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="139" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/journals-detail/journals-detail.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3519">
-          <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="211" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="191" column="0" lean-forward="true" selection-start-line="191" selection-start-column="0" selection-end-line="194" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/contactus/contactus.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="128" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="180" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/frontend/signup/signup.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1180,7 +885,7 @@
         <state relative-caret-position="170">
           <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="37" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1231,50 +936,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/journals/journals.component.css">
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/schedule-appointment/schedule-appointment.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="228" column="0" lean-forward="true" selection-start-line="228" selection-start-column="0" selection-end-line="232" selection-end-column="1" />
+        <state relative-caret-position="1048">
+          <caret line="234" column="1" lean-forward="false" selection-start-line="234" selection-start-column="1" selection-end-line="234" selection-end-column="117" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/frontend/ourphysicians-detail/ourphysicians-detail.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="941">
-          <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="155" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/schedule-appointment/schedule-appointment.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="233" column="0" lean-forward="false" selection-start-line="233" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+        <state relative-caret-position="223">
+          <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/frontend/services/services.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="91" column="19" lean-forward="false" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
+        <state relative-caret-position="325">
+          <caret line="134" column="100" lean-forward="false" selection-start-line="134" selection-start-column="100" selection-end-line="134" selection-end-column="100" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/testimonial/testimonial.component.css">
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/journals/journals.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="178" column="0" lean-forward="true" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+        <state relative-caret-position="325">
+          <caret line="230" column="116" lean-forward="true" selection-start-line="230" selection-start-column="3" selection-end-line="230" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/journals-detail/journals-detail.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="203" column="116" lean-forward="false" selection-start-line="203" selection-start-column="116" selection-end-line="203" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/videogallery/videogallery.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="149" column="135" lean-forward="false" selection-start-line="149" selection-start-column="135" selection-end-line="149" selection-end-column="135" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/imagegallery/imagegallery.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="181" column="1" lean-forward="true" selection-start-line="181" selection-start-column="1" selection-end-line="181" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/frontend/ourphysicians/ourphysicians.component.css">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="253" column="115" lean-forward="true" selection-start-line="253" selection-start-column="3" selection-end-line="253" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/testimonial/testimonial.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="236" column="100" lean-forward="false" selection-start-line="236" selection-start-column="100" selection-end-line="236" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/appointmentsfrontend/appointmentsfrontend.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="140" column="3" lean-forward="false" selection-start-line="140" selection-start-column="3" selection-end-line="140" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/contactus/contactus.component.css">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
-          <caret line="240" column="25" lean-forward="false" selection-start-line="240" selection-start-column="25" selection-end-line="240" selection-end-column="25" />
+          <caret line="129" column="70" lean-forward="false" selection-start-line="129" selection-start-column="70" selection-end-line="129" selection-end-column="70" />
           <folding />
         </state>
       </provider>
