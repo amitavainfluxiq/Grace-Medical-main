@@ -166,6 +166,7 @@
         height: auto !important;
         background-size: 200% !important;
         padding-top: 39%;
+        background-color: #d2dee5 !important;
     }
     .contact_banner_wrapper{height: auto;}
     .contact_banner_wrapper_text{margin: 0 auto; padding: 30px 0;}
