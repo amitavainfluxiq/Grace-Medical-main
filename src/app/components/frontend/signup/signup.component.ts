@@ -20,7 +20,7 @@ export class SignupComponent implements OnInit {
   public serverUrl: any = this.apiService.serverUrl;
   public addEndpoint: any = {
     endpoint:'addorupdatedata',
-    source:'user'
+    source:'users'
   };
 
   constructor(private readonly meta: MetaService, public apiService: ApiService) {window.scrollTo(500, 0);

@@ -149,6 +149,7 @@ textarea.mat-input-element {
     margin: 0px 0!important; height: 45px!important;
 }
 
+
 .mat-form-field-appearance-legacy .mat-form-field-subscript-wrapper {
     margin-top: 8px!important;
 }
@@ -476,6 +477,54 @@ input.mat-input-element {
 .loginBg .logowrapper{ display: block!important; margin-top: 5px!important;}
 
 
+.cdk-overlay-pane{ width: auto!important; height: auto!important; max-width: inherit!important;     display: block!important;}
+
+
+
+
+.mat-dialog-actions {
+    padding: 0px 0!important;
+    display: block!important;
+    min-height: inherit!important;
+    margin-bottom: 0!important;
+}
+
+
+.mat-dialog-content {
+    display: block!important;
+    margin: 0 0px!important;
+    padding: 0 0px!important;
+    max-height: inherit!important;
+    overflow: auto!important;}
+
+
+snack-bar-container{ padding: 15px!important;}
+
+snack-bar-container .example { background: none!important; font-size: 18px!important; color: #fff!important;}
+
+
+.mat-dialog-container{
+    display: inline-table !important
+}
+successmodal {
+    display: block!important;
+    padding: 15px!important;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+successmodal button{height: 38px;
+    background-color: #02a4ef!important;
+    color: #fff!important;
+    width: 10px!important; display: block!important;
+
+    margin:5px auto!important;
+    font-size: 18px!important;
+    font-family: 'Helvetica-Normal'!important; line-height: 42px!important;}
+
+
 @media(max-width:991px) {
 
 
@@ -513,6 +562,8 @@ input.mat-input-element {
 @media(max-width:640px) {
 
     .loginBg .from { width:380px!important;}
+
+    .mat-dialog-container{ width: 96%!important; margin-left: auto!important; margin-right: auto!important; display: table!important;}
 }
 
 
@@ -522,6 +573,8 @@ input.mat-input-element {
 @media(max-width:460px) {
 
     .loginBg .from { width:260px!important;}
+
+    successmodal{ width: auto!important;}
 }
 
 
@@ -556,4 +609,5 @@ input.mat-input-element {
     }
 
 }
+
 /*----------------login css end--------------------------*/
