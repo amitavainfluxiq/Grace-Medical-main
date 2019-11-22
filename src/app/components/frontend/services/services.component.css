@@ -90,24 +90,38 @@
     height: auto!important;
     background-size: 318%!important;
     padding-top: 63%;
-    background-color: #edf1f2!important;
+    background-color: #d7dfe2!important;
     padding-bottom: 0;
     }
     .contact_banner_wrapper_text{
         width: 100%;
         margin: 0 auto;
-        padding: 40px 0;
+        padding: 30px 0;
     }
-    .contact_banner_wrapper_text{
-        width: 100%;
-    margin: 0 auto;
-    }
-    .contact_banner_wrapper_text h3{    width: 571px;}
+    
+    .contact_banner_wrapper_text h3{    width: 94%;}
     .contact_banner_wrapper{height: auto;}
     .servececol {
         width: 100%;
     }
     .servececolimgwrapper img{width: 100%;}
+
+
+    .serviceblocktextwrapper p {
+        text-align: center;
+    }
+    .serviceblocktextwrapper h3 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .serviceblocktextwrapper .blockicon {
+        margin-right:0;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+    .serviceblocktextwrapper h3 .blocktext{text-align: center;}
+
 }
 @media(max-width:991px) {
     .servecetextwrapper p {width: 100%;}

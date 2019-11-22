@@ -157,21 +157,24 @@
 
 @media screen and (max-width: 1199px){
     .contact_banner {
-        background-position: right top !important;
-        background-size: 182% !important;
-        padding-top: 39%;
+        background-position: right -196px top !important;
+        background-size: 291% !important;
+        padding-top: 57%;
         padding-bottom: 0 !important;
         height: auto !important;
+        background-color: #edf1f2!important;
     }
     .contact_banner_wrapper_text {
         margin: 0 auto;
         width: 100%;
     }
-    .contact_banner_wrapper{height: auto;}
+    .contact_banner_wrapper{height: auto; padding: 30px 0;}
+    .contact_banner_wrapper_text h3{width: 94%;}
 }
 @media screen and (max-width: 991px){
     .ceadchnbarcontainer{
         flex-wrap: wrap;
+        padding: 2% .5%;
     }
     .Team_members_block .team_items {
         width: 47%;
@@ -193,6 +196,9 @@
 @media screen and (max-width: 600px){
     .contact_banner_wrapper_text h3{width: 100%;}
 }
-
+@media screen and (max-width: 480px){
+    .contact_banner{background-position: right -123px top !important;}
+    .contact_banner_wrapper_text h2{font-size: 46px;}
+}
 
 
