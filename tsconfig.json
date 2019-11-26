@@ -47,6 +47,19 @@
         "dist/file-upload/*"
       ],
 
+      "blog": [
+        "dist/blog"
+      ],
+      "blog/*": [
+        "dist/blog/*"
+      ],
+      "testimonial": [
+        "dist/testimonial"
+      ],
+      "testimonial/*": [
+        "dist/testimonial/*"
+      ],
+
     }
     
   },
