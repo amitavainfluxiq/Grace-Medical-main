@@ -16,8 +16,8 @@ export class ContactusComponent implements OnInit {
 
   public addEndpoint: any = {
     endpoint:'addorupdatedata',
-    source:'contactusForm',
-    token:1
+    source:'contactusForm'
+
   };
   public getDataUrl: any = 'datalist';
   public routeingUrl: any = 'dashboard';

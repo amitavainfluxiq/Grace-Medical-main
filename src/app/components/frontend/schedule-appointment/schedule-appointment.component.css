@@ -132,9 +132,11 @@
 
 
 
-
-
-
+@media(max-width:1820px) {
+    .contact_banner_wrapper_text {  width: 770px;
+        margin: 0 0 0 5%;
+    }
+}
 
 
 @media(max-width:1720px) {
@@ -147,10 +149,30 @@
 }
 @media(max-width:1600px) {
     .block{width: 30% !important;}
+
+    .contact_banner{ background-position: -260px top!important;}
 }
+
 @media(max-width:1500px) {
     .contact_banner {background-position: right -90px top !important;}
+
+    .contact_banner_wrapper_text  {
+        width: 660px;}
+
+    .contact_banner_wrapper_text{
+        margin: 0 0 0 4%;
+    }
 }
+@media(max-width:1480px) {
+    .contact_banner {
+        background-position: right -140px top !important;
+    }
+
+    .contact_banner_wrapper_text h3 {
+        display: block;
+        width: 485px;}
+}
+
 @media(max-width:1360px) {
     .contact_banner{
         background-position: right -248px top !important;
@@ -164,15 +186,20 @@
 }
 @media(max-width:1199px) {
     .contact_banner {
-        background-position: right 17% top !important;
+        background-position: right top !important;
         height: auto !important;
-        background-size: 332% !important;
-        padding-top: 65%;
+        background-size: 200% !important;
+        padding-top: 41%; padding-bottom: 25px;
         background-color: #d2dee5 !important;
     }
     .contact_banner_wrapper{height: auto;}
-    .contact_banner_wrapper_text{margin: 0 auto; padding: 30px 0;width: 100%;}
-    .contact_banner_wrapper_text h3 {width: 94%;}
+    .contact_banner_wrapper_text {
+        margin: 0 auto;
+        width: auto; display: block; padding: 0 15px;
+    }
+
+    .contact_banner_wrapper_text h3{ width: auto;}
+
 }
 @media(max-width:1024px) {
     .searchwrapper{width: 100%;}
@@ -183,7 +210,7 @@
 }
 
 @media(max-width:991px) {
-    .contact_banner_wrapper_text{width: 100%;}
+
     .searchwrapper {
         width:100%;
     }
@@ -204,6 +231,10 @@
     .titlewrapper p{width: 100%;}
 }
 
+@media(max-width:767px) {
+    .contact_banner{  background-size: 300%!important; padding-top: 62%;  background-position: right top!important; }
+
+}
 
 
 @media(max-width:520px) {
@@ -229,6 +260,8 @@
 
     .searchwrapper .button1, .searchwrapper .button2{width: 89px;font-size: 15px;}
     .searchwrapper mat-card-content input {width: 182px !important;}
+
+    .contact_banner{  background-size: 344%!important; padding-top: 74%;  background-position: 88% top!important; }
 }
 
 

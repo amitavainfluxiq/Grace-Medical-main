@@ -165,7 +165,7 @@
 
 @media(max-width:1199px) {
 
-    .journals_banner{ background-position: top right!important; height: auto!important; background-size: 280%!important; padding-top: 57%; background-color: #edf1f2!important; padding-bottom: 25px;}
+    .journals_banner{ background-position: top right!important; height: auto!important; background-size: 200%!important; padding-top: 41%; background-color: #edf1f2!important; padding-bottom: 25px;}
 
     .journals_banner_wrapper{ width: 100%; height: auto; display: block;    }
 
@@ -201,7 +201,7 @@
 }
 
 @media(max-width:767px) {
-    .journals_banner{  background-size: 390%!important; padding-top: 82%;  background-position: 88% top!important; }
+    .journals_banner{  background-size: 300%!important; padding-top: 62%;  background-position: 88% top!important; }
 
 }
 
@@ -209,4 +209,6 @@
 
     .journals_banner_wrapper_text h2  {
         font-size: 46px;}
+
+    .journals_banner{  background-size: 344%!important; padding-top: 74%;  }
 }
