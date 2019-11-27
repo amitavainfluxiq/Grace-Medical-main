@@ -76,7 +76,7 @@ export class ApiService {
       })
     };
 
-    console.log('httpoptions',httpOptions,this.serverUrl,requestdata);
+    //console.log('httpoptions',httpOptions,this.serverUrl,requestdata);
     var result = this._http.post(this.serverUrl + this.addendpointUrl, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
     return result;
   }
