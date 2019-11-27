@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'app-hometestimonial',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HometestimonialComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cdr: ChangeDetectorRef) { }
 
   ngOnInit() {
+  }
+
+  ngAfterViewInit(): void {
+    this.cdr.detectChanges();
   }
 
 }

@@ -171,7 +171,7 @@ getDatalistForResolve(requestdata: any) {
       'Authorization': this.accesstoken
     })
   };
-  console.log(requestdata)
+  // console.log(requestdata)
   
   var result = this._http.post(this.serverUrl + requestdata.endpoint, JSON.stringify(requestdata.requestcondition), httpOptions).pipe(map(res => res));
   return result;

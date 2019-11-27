@@ -84,10 +84,10 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'ourphysicians', component: OurphysiciansComponent},
   {
-    path: 'service/list',
+    path: 'service',
     component: ServicesComponent,
     resolve: { serviceList: ResolveService },
-    data: { requestcondition: { source: 'services', condition: {} }, endpoint: 'datalist' }
+    data: { requestcondition: { source: 'service_view', condition: {} }, endpoint: 'datalistwithouttoken' }
   },
   {path: 'journals', component: JournalsComponent},
   {path: 'imagegallery', component: ImagegalleryComponent},
@@ -142,13 +142,13 @@ const routes: Routes = [
     path: 'managewebsites/service/list',
     component: ListingServiceComponent,
     resolve: { serviceList: ResolveService },
-    data: { requestcondition: { source: 'services_view', condition: {} }, endpoint: 'datalist' }
+    data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist' }
   },
   {
     path: 'managewebsites/service/edit/:_id',
     component: AddEditServiceComponent,
     resolve: { serviceList: ResolveService },
-    data: { requestcondition: { source: 'services', condition: {} }, endpoint: 'datalist' }
+    data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist' }
   },
 
    /**Blog category**/

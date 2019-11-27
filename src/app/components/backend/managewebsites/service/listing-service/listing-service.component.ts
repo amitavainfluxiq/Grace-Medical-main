@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
+import { environment } from '../../../../../../environments/environment.dev';
 
 
 
@@ -13,16 +14,16 @@ export class ListingServiceComponent implements OnInit {
 
     /************** lib list setup start here *************/
     public serviceListConfig:any = {
-      apiBaseUrl: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/",
+      apiBaseUrl: environment.API_URL,
       listEndPoint: "datalist",
       datasource: "",
-      tableName: "services",
+      tableName: "service",
       updateurl: "addorupdatedata",
       editUrl: "managewebsites/service/edit",
       jwtToken: "",
       deleteEndPoint: "deletesingledata",
       addLink: "managewebsites/service/add",
-      view:"services_view"
+      view:"service"
     }
   
   constructor( private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService ) { 

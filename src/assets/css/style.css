@@ -377,7 +377,7 @@ input.mat-input-element {
 
 
 /* --------------------- avijit css start --------------- */
-.mat-list-base.serveceblockwrapper .mat-list-item.servecerow .mat-list-item-content{align-items: stretch !important;padding: 0;}
+.mat-list-base.serveceblockwrapper .mat-list-item.servecerow .mat-list-item-content{align-items: stretch !important;padding: 0;width: 100%;}
 .mat-list-base.serveceblockwrapper .mat-list-item.servecerow:nth-child(even) .mat-list-item-content{flex-direction: row-reverse;}
 .blockwraooer .mat-list-item.block .mat-list-item-content{flex-wrap: wrap;padding: 0;}
 
