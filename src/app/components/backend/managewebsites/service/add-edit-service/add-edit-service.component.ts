@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { Router , ActivatedRoute } from '@angular/router';
+import { environment } from '../../../../../../environments/environment.dev';
 
 @Component({
   selector: 'app-add-edit-service',
@@ -11,7 +12,7 @@ export class AddEditServiceComponent implements OnInit {
 
   public configAddEdit: any = {
     action: "add",
-    endpoint: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/addorupdatedata",
+    endpoint: environment.API_URL+'addorupdatedata',
     source: "service",
     condition: {},
     defaultData: null,
