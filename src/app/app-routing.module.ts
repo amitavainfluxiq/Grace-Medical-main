@@ -137,15 +137,15 @@ const routes: Routes = [
 
 
   /**Services**/
-  { path: 'managewebsites/service/add', component: AddEditServiceComponent },
+  { path: 'manage-service/add', component: AddEditServiceComponent },
   {
-    path: 'managewebsites/service/list',
+    path: 'manage-service/list',
     component: ListingServiceComponent,
     resolve: { serviceList: ResolveService },
     data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist' }
   },
   {
-    path: 'managewebsites/service/edit/:_id',
+    path: 'manage-service/edit/:_id',
     component: AddEditServiceComponent,
     resolve: { serviceList: ResolveService },
     data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist' }
@@ -184,15 +184,15 @@ const routes: Routes = [
 
 
      /**Testimonial**/
-     { path: 'managewebsites/testimonial/add', component: AddEditTestimonialComponent },
+     { path: 'manage-testimonial/add', component: AddEditTestimonialComponent },
      {
-       path: 'managewebsites/testimonial/list',
+       path: 'manage-testimonial/list',
        component: ListingTestimonialComponent,
        resolve: { data: ResolveService },
        data: { requestcondition: { source: 'testimonial_view', condition: {} }, endpoint: 'datalist' }
      },
      {
-       path: 'managewebsites/testimonial/edit/:_id',
+       path: 'manage-testimonial/edit/:_id',
        component: AddEditTestimonialComponent,
        resolve: { data: ResolveService },
        data: { requestcondition: { source: 'testimonial', condition: {} }, endpoint: 'datalist' }

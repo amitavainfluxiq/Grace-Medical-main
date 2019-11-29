@@ -1,14 +1,51 @@
-<mat-card>
-    <mat-toolbar color="primary" style="justify-content: center; align-items: center;">
-        <h2 class="headerSpan">Testimonials List</h2>
-    </mat-toolbar>
+<app-adminheader>
+        <span class="admwrapper">
+        <!-- <img src="/assets/images/admin_testimonial_img.png" alt="#" style="width: 100%;  "> -->
 
-    <!-- ---------------------Button for adding new role------------------------------ -->
-    <mat-toolbar class="buttonsetToolbar">
-        <button class="singleButton" mat-raised-button color="primary" [routerLink]="['/testimonial/add']">Add a testimonial</button>
-    </mat-toolbar>
-    
+        <mat-card class="adminnerbannerwrapper"> 
+            <mat-card-content class="adminnerbanner"> 
+                <span class="innerbannercontainer">
+                    <span class="innerbannerimage">
+                        <span class="innerbannerimagemain">
+                            <img src="/assets/images/admbanner-testimonial.jpg" alt="#">
+                        </span>
+                    </span>
+                    <span class="content">
+                        <mat-card-title>Testimonial</mat-card-title>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </span>
+                </span>
+            </mat-card-content>
 
-    <!-- to listing library -->
-    <lib-testimonial [config]="testimonialListConfig"></lib-testimonial>
-</mat-card>
+            <!-- <mat-card-content class="adminnerbanner">
+                <span class="parallelogram"> 
+                    <span class="image" style="background-image: url('../../assets/images/admbanner-testimonial.jpg')">
+                        
+                    </span>                             
+                </span>
+                <span class="content">
+                    <mat-card-title>Testimonial</mat-card-title>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </span>
+            </mat-card-content>                        -->
+        </mat-card>
+
+        <mat-card>
+               
+                <!-- ---------------------Button for adding new role------------------------------ -->
+                <mat-toolbar class="buttonsetToolbar">
+                    <button class="singleButton" mat-raised-button color="primary" [routerLink]="['/manage-testimonial/add']">Add a testimonial</button>
+                </mat-toolbar>
+                
+            
+                <!-- to listing library -->
+                <lib-testimonial [config]="testimonialListConfig"></lib-testimonial>
+            </mat-card>
+        </span>
+
+    <app-adminfooter></app-adminfooter>
+        
+</app-adminheader>
+
+
+
