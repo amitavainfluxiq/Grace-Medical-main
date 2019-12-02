@@ -80,8 +80,8 @@ import { NewsTitleModule } from 'news-title-lib-influxiq';
 
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
-// import { LoginModule } from 'login';
-import { LoginModule } from 'login-lib-influxiq';
+import { LoginModule } from 'login';
+// import { LoginModule } from 'login-lib-influxiq';
 import { ForgetpasswordComponent } from './components/frontend/forgetpassword/forgetpassword.component';
 import { SignupComponent } from './components/frontend/signup/signup.component';
 
