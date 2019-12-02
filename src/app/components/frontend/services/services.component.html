@@ -24,12 +24,19 @@
             <img src="{{ item.service_img }}">
 
             <span class="servecesowrapper">
-                <a><img alt="#" src="/assets/images/share_this_1.png"></a>
-                <a><img alt="#" src="/assets/images/share_this_2.png"></a>
-                <a><img alt="#" src="/assets/images/share_this_3.png"></a>
-                <a><img alt="#" src="/assets/images/share_this_4.png"></a>
-                <a><img alt="#" src="/assets/images/share_this_5.png"></a>
-                <a><img alt="#" src="/assets/images/share_this_6.png"></a>
+                <a class="sociallink fa fb" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdev.arniefonseca.influxiq.com%2Fourservices%2F{{item._id}}" target="_blank">
+                    <img alt="#" src="/assets/images/share_this_1.png">
+                </a>
+                <a class="sociallink fa twi" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdev.arniefonseca.influxiq.com%2Fourservices%2F{{item._id}}" target="_blank">
+                    <img alt="#" src="/assets/images/share_this_2.png">
+                  </a>
+                  <a class="sociallink fa lin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdev.arniefonseca.influxiq.com%2Fourservices%2F{{item._id}}" target="_blank">
+                    <img alt="#" src="/assets/images/share_this_4.png">
+                  </a>
+                <!-- <a><img alt="#" src="/assets/images/share_this_5.png"></a> -->
+                <a (click)="copyText('https://dev.arniefonseca.influxiq.com/blog%2F?affid='+item._id)">
+                    <img alt="#" src="/assets/images/share_this_6.png">
+                </a>
             </span>
 
         </span>
