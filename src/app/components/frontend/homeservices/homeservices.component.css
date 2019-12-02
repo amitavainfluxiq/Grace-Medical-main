@@ -23,6 +23,63 @@
 .homeblock3link{ width: 164px; display: block; line-height: 46px; margin:30px auto!important; background: #13b9af; text-align: center; font-size: 18px; color: #ffffff;   font-family: 'Helvetica-Normal'; border-radius: 0px;   padding: 0px!important; height: 45px; border: solid 1px #fff; margin-bottom: 10px!important;   }
 
 .clear{clear: both; display: block;}
+
+
+.homeservicemainimgwrappeer{display: flex;}
+.homeserviceimg {
+    width: 284px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+.homeserviceimg:after{
+    content: '';
+    height: 390px;
+    width: 390px;
+    background: rgba(255, 255, 255, .15);
+    border-radius: 50%;
+    position: absolute;
+    left: 69%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.homeserviceimg::before{
+    content: '';
+    height: 330px;
+    width: 330px;
+    background: rgba(255, 255, 255, .30);
+    border-radius: 50%;
+    position: absolute;
+    left: 67%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imgwraooer{
+    height: 260px;
+    width: 260px;
+    background: rgba(255, 255, 255, .15);
+    border: 14px solid rgba(255,255,255, .70);
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 9;
+    position: absolute;
+    left: 67%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.imgwraooer img{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    min-height: 100%;
+}
+.homeblock3_wrapper ul li:nth-child(-n+3){
+    display: none;
+}
+
 @media(max-width:1800px) {
     .homeblock5_wrapper {
         padding: 0 200px 0 670px;

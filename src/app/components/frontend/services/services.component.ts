@@ -25,7 +25,8 @@ export class ServicesComponent implements OnInit {
   //   addLink: "/service/add",
   //   view:"services_view"
   // }
-  constructor( private activatedRoute : ActivatedRoute , private cookieService : CookieService, public apiService: ApiService, private readonly meta: MetaService) { window.scrollTo(500, 0);
+  constructor( private activatedRoute : ActivatedRoute , private cookieService : CookieService, public apiService: ApiService, private readonly meta: MetaService) {
+     window.scrollTo(500, 0);
 
 
     this.meta.setTitle('Grace Medical Services');
@@ -45,6 +46,7 @@ export class ServicesComponent implements OnInit {
     this.activatedRoute.data.subscribe(resolveData => {
       console.log(resolveData.serviceList.res)
       this.serviceData = resolveData.serviceList.res;
+      console.log("true data" + resolveData)
     });
   
   }
