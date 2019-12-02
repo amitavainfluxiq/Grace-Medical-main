@@ -18,17 +18,18 @@ export class ListingTestimonialComponent implements OnInit {
   datasource: "",
   tableName: "testimonial",
   updateurl: "addorupdatedata",
-  editUrl: "testimonial/edit",
+  editUrl: "manage-testimonial/edit",
   jwtToken: "",   
   deleteEndPoint: "deletesingledata",
-  addLink: "/testimonial/add",
+  addLink: "/manage-testimonial/add",
   view: "testimonial_view"
 }
 
 constructor(private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService) { 
 
 this.activatedRoute.data.subscribe(resolveData => {
-  this.testimonialListConfig.datasource = resolveData.data.res;
+  this.testimonialListConfig.datasource = resolveData.testimonialList.res;
+ // console.log('---------------kbtest testimonialList-------------', this.testimonialListConfig.datasource );
   this.testimonialListConfig.jwtToken = this.cookieService.get('jwtToken');
   
 });

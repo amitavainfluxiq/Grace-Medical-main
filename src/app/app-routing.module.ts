@@ -70,7 +70,7 @@ import { AddEditServiceComponent } from './components/backend/managewebsites/ser
 import { ListingServiceComponent } from './components/backend/managewebsites/service/listing-service/listing-service.component';
 import { AddEditBlogcatComponent } from './components/backend/managewebsites/blogs/add-edit-blogcat/add-edit-blogcat.component';
 import { ListingBlogComponent } from './components/backend/managewebsites/blogs/listing-blog/listing-blog.component';
-import { AddeditBlogmanagementComponent } from 'dist/blog/lib/addedit-blogmanagement/addedit-blogmanagement.component';
+// import { AddeditBlogmanagementComponent } from 'dist/blog/lib/addedit-blogmanagement/addedit-blogmanagement.component';
 import { AddEditBlogComponent } from './components/backend/managewebsites/blogs/add-edit-blog/add-edit-blog.component';
 import { ListingBlogcatComponent } from './components/backend/managewebsites/blogs/listing-blogcat/listing-blogcat.component';
 import { AddEditTestimonialComponent } from './components/backend/managewebsites/testimonial/add-edit-testimonial/add-edit-testimonial.component';
@@ -188,13 +188,13 @@ const routes: Routes = [
      {
        path: 'manage-testimonial/list',
        component: ListingTestimonialComponent,
-       resolve: { data: ResolveService },
+       resolve: { testimonialList: ResolveService },
        data: { requestcondition: { source: 'testimonial_view', condition: {} }, endpoint: 'datalist' }
      },
      {
        path: 'manage-testimonial/edit/:_id',
        component: AddEditTestimonialComponent,
-       resolve: { data: ResolveService },
+       resolve: { testimonialData: ResolveService },
        data: { requestcondition: { source: 'testimonial', condition: {} }, endpoint: 'datalist' }
      },
 

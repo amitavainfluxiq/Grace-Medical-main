@@ -60,6 +60,7 @@ import {ListingModule} from "listing-angular7";
 
 import { NgxUploaderModule } from 'ngx-uploader';
 import { ContactusModule } from 'contactus';
+
 import { HomeblogComponent } from './components/frontend/homeblog/homeblog.component';
 import { HomeservicesComponent } from './components/frontend/homeservices/homeservices.component';
 import { HomedoctorsComponent } from './components/frontend/homedoctors/homedoctors.component';
@@ -71,23 +72,31 @@ import { MetaModule } from '@ngx-meta/core';
 
 import { ApiService } from './api.service';
 
-import {FileUploadModule} from 'file-upload';
+import { FileUploadModule } from 'file-upload-lib-influxiq';
+
+import { NewsTitleModule } from 'news-title-lib-influxiq';
+
+// import {FileUploadModule} from 'file-upload';
 
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
-import { LoginModule } from 'login';
+// import { LoginModule } from 'login';
+import { LoginModule } from 'login-lib-influxiq';
 import { ForgetpasswordComponent } from './components/frontend/forgetpassword/forgetpassword.component';
 import { SignupComponent } from './components/frontend/signup/signup.component';
 
 
 /** services **/
-import {ServicelibModule} from 'servicelib';
+// import {ServicelibModule} from 'servicelib';
+import { ServicelibModule } from 'service-lib-influxiq';
 import { AddEditServiceComponent } from './components/backend/managewebsites/service/add-edit-service/add-edit-service.component';
 import { ListingServiceComponent } from './components/backend/managewebsites/service/listing-service/listing-service.component';
 
 
 /** blogs **/
-import { BlogModule } from 'blog';
+// import { BlogModule } from 'blog';
+
+import { BlogModule } from 'blog-lib-influxiq';
 import { AddEditBlogcatComponent } from './components/backend/managewebsites/blogs/add-edit-blogcat/add-edit-blogcat.component';
 import { ListingBlogcatComponent } from './components/backend/managewebsites/blogs/listing-blogcat/listing-blogcat.component';
 import { AddEditBlogComponent } from './components/backend/managewebsites/blogs/add-edit-blog/add-edit-blog.component';
@@ -95,7 +104,8 @@ import { ListingBlogComponent } from './components/backend/managewebsites/blogs/
 
 
 /** testimonial **/
-import { TestimonialModule } from 'testimonial';
+// import { TestimonialModule } from 'testimonial';
+import { TestimonialModule } from 'testimonial-lib-influxiq';
 import { ListingTestimonialComponent } from './components/backend/managewebsites/testimonial/listing-testimonial/listing-testimonial.component';
 import { AddEditTestimonialComponent } from './components/backend/managewebsites/testimonial/add-edit-testimonial/add-edit-testimonial.component';
 
@@ -178,7 +188,8 @@ import { AddEditTestimonialComponent } from './components/backend/managewebsites
     TestimonialModule,
     AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule,
 
-    LoginModule
+    LoginModule,
+    NewsTitleModule
   ],
   entryComponents: [GalleryZoom, VideoZoom],
   providers: [CookieService, ApiService],

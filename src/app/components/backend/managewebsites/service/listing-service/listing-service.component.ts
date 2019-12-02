@@ -19,10 +19,10 @@ export class ListingServiceComponent implements OnInit {
       datasource: "",
       tableName: "service",
       updateurl: "addorupdatedata",
-      editUrl: "managewebsites/service/edit",
+      editUrl: "manage-service/edit",
       jwtToken: "",
       deleteEndPoint: "deletesingledata",
-      addLink: "managewebsites/service/add",
+      addLink: "manage-service/add",
       view:"service"
     }
   

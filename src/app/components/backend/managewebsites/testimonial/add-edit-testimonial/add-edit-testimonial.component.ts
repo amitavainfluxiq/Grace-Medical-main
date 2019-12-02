@@ -15,12 +15,12 @@ export class AddEditTestimonialComponent implements OnInit {
 public configAddEdit: any = {
   action: "add",
   // endpoint: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/addorupdatedata",
-  endpoint: environment.API_URL+'addorupdatedata',
+  endpoint: environment.API_URL + 'addorupdatedata',
   source: "testimonial",
   condition: {},
   defaultData: null,
   jwtToken: this.cookieService.get('jwtToken'),
-  callBack: "testimonial/list",
+  callBack: "manage-testimonial/list",
   userData: { id: "18801017007", name: "Admin" },
 }
 
@@ -42,7 +42,7 @@ public configData: any = {
     this.activatedRoute.params.subscribe(params => {
       if(params._id) {
         this.activatedRoute.data.subscribe(resolveData => {
-          this.configAddEdit.defaultData = resolveData.data.res[0];
+          this.configAddEdit.defaultData = resolveData.testimonialData.res[0];
           this.configAddEdit.action = "edit";
           this.configAddEdit.condition = { id: params._id };
         });
