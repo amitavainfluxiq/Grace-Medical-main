@@ -90,3 +90,8 @@ body{ margin: 0!important; padding: 0!important;}
 .adminnerbanner .adminnerbannerpara p {font-size: 24px; color: #ffffff; font-family: "HelveticaBold"; margin: 0;}
 
 /*---End Inner Banner css----*/
+
+
+
+.formfilterdiv {}
+.formfilterdiv table td br {display: none;}
