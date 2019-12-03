@@ -21,7 +21,7 @@ export class AddEditBlogcatComponent implements OnInit {
     condition: {},
     defaultData: null,
     jwtToken: this.cookieService.get('jwtToken'),
-    callBack: "/manage-article-category/list",
+    callBack: "manage-article-category/list",
     userData: { id: "18801017007", name: "Admin" },
     defaultDataAlways: null
   }

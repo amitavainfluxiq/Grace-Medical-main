@@ -1,4 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component, OnInit} from '@angular/core';
+// import { MatAccordion, MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
+// import { MatTreeNestedDataSource } from '@angular/material/tree';
+import { Router, ActivatedRoute } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
+// import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
+// import { NestedTreeControl } from '@angular/cdk/tree';
+// import { BehaviorSubject, observable, of as observableOf } from 'rxjs';
 
 
 import { MetaService } from '@ngx-meta/core';
@@ -11,7 +19,12 @@ import {ApiService} from "../../../api.service";
 })
 export class JournalsComponent implements OnInit {
 
-  constructor( public apiService: ApiService, private readonly meta: MetaService) { window.scrollTo(500, 0);
+  
+  public journalList: any;
+  public indexval:any=4;
+  public journalListing:any;
+
+  constructor( public apiService: ApiService, private readonly meta: MetaService, private activatedRoute: ActivatedRoute, public router: Router, private cookieservice: CookieService) { window.scrollTo(500, 0);
 
     this.meta.setTitle('Grace Medical - Medical Journals');
     this.meta.setTag('og:description', 'Stay updated with all the new developments taking place in the Healthcare and Medical industry with the latest Medical Journals maintained by some of the most esteemed professionals of the Medical World.');
@@ -27,6 +40,19 @@ export class JournalsComponent implements OnInit {
   }
 
   ngOnInit() {
+     //**all blog category and blog list from resolve in routing**//
+
+     this.activatedRoute.data.forEach((data: any) => {
+      this.journalList = data;
+      //console.log('>>>>>>>>>>>>>>',this.journalList)
+
+    })
+
+    //****total blog list****//
+    this.journalListing = this.journalList.journalListData.blogs
+    //console.log('---------------',this.journalListing)
+    
+
   }
 
 }

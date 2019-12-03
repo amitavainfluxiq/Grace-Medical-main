@@ -294,7 +294,31 @@ postdata(requestdata: any) {
   return result;
 }
 
+
+
+/** call api via post method */
+httpViaPost(endpoint, jsonData): Observable<any> {
+  /*set common header */
+  const httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': this.cookieService.get('jwtToken')
+    })
+  };
+
+  return this._http.post(this.serverUrl + endpoint, jsonData,httpOptions);
 }
+
+
+
+
+
+
+
+
+}
+
+
 
 
 

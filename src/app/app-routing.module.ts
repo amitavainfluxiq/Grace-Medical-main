@@ -90,7 +90,11 @@ const routes: Routes = [
     resolve: { serviceList: ResolveService },
     data: { requestcondition: { source: 'service_view', condition: {} }, endpoint: 'datalistwithouttoken' }
   },
-  {path: 'journals', component: JournalsComponent},
+  {path: 'journals', component: JournalsComponent, resolve: { journalListData: ResolveService },
+  data: { requestcondition: { condition: { "limit": 1, "skip": 1 } }, endpoint: 'blogdata' }
+  },
+
+
   {path: 'imagegallery', component: ImagegalleryComponent},
   {path: 'videogallery', component: VideogalleryComponent},
 
