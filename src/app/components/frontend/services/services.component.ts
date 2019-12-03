@@ -51,4 +51,8 @@ export class ServicesComponent implements OnInit {
   
   }
 
+  copyText(val:any){
+    console.log('');
+  }
+
 }
