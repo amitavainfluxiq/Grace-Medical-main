@@ -5,6 +5,9 @@ import { FormBuilder, Validators, FormGroup} from '@angular/forms';
 import  {ApiService} from '../../../api.service';
 import {CookieService} from "ngx-cookie-service";
 
+
+export interface DialogData {}
+
 @Component({
   selector: 'app-homefrontendfooter',
   templateUrl: './homefrontendfooter.component.html',
@@ -39,13 +42,18 @@ export class HomefrontendfooterComponent implements OnInit {
     console.log('do Submit');
     // this.data = this.myform.value;
     // console.log(this.data);
-    this.newslatterViewModal(this.data);
+   // this.newslatterViewModal(this.data);
+
+
+    this.data = this.myform.get('email').value;
+    this.cookie.set('email_modal',this.data);
+    //console.log('test amitava',this.dataemail);
 
     for (let i in this.myform.controls) {
       this.myform.controls[i].markAsTouched();
     }
     if (this.myform.valid) {
-      // this.newslatterViewModal(this.data);
+      this.newslatterViewModal(this.data);
       let link = '';
       let data = {data: this.myform.value};
       this.apiService.postdata(data).subscribe(res => {
@@ -54,7 +62,7 @@ export class HomefrontendfooterComponent implements OnInit {
         result = res;
         // console.log(result);
         if (result.status == 'success') {
-          /*  this.newslatterViewModal();*/
+          /*  this.newslatterViewModal();
           this.myform.reset();
           // this.opencontactDialog();
           /* const dialogRef = this.dialog.open(SubmitpopupComponent);*/
@@ -93,6 +101,9 @@ export class NewslatterDialogComponent {
 
   public myformnews: FormGroup
 
+
+
+
   public serverUrl:any;
   public tokenViaCookie :any;
   constructor(public dialogRef: MatDialogRef<NewslatterDialogComponent>,
@@ -110,8 +121,15 @@ export class NewslatterDialogComponent {
 
 // this.myformnews.value.email.setvalue();
 
+      this.myformnews.patchValue({
+            email: this.cookie.get('email_modal'),
+
+      });
+
 
   }
+
+
 
   public onNoClick(): void {
     this.dialogRef.close();

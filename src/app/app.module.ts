@@ -108,11 +108,10 @@ import { ListingBlogComponent } from './components/backend/managewebsites/blogs/
 import { TestimonialModule } from 'testimonial-lib-influxiq';
 import { ListingTestimonialComponent } from './components/backend/managewebsites/testimonial/listing-testimonial/listing-testimonial.component';
 import { AddEditTestimonialComponent } from './components/backend/managewebsites/testimonial/add-edit-testimonial/add-edit-testimonial.component';
-<<<<<<< HEAD
+
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-=======
+
 import { AuthGuard } from './auth.guard';
->>>>>>> 4e5c5a208c2efae258b61d07137823a95506acfb
 
 @NgModule({
   declarations: [
@@ -199,13 +198,8 @@ import { AuthGuard } from './auth.guard';
       FormsModule,
       ReactiveFormsModule
   ],
-<<<<<<< HEAD
   entryComponents: [GalleryZoom, VideoZoom, NewslatterDialogComponent, NewslattersuccessDialogComponent],
-  providers: [CookieService, ApiService],
-=======
-  entryComponents: [GalleryZoom, VideoZoom],
-  providers: [CookieService, ApiService, AuthGuard],
->>>>>>> 4e5c5a208c2efae258b61d07137823a95506acfb
+  providers: [CookieService, ApiService,AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

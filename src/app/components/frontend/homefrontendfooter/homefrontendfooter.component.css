@@ -19,7 +19,8 @@
 .newsletterbox span{ display: block; margin: 0; padding: 3px 0 0 0; font-size: 14px; color: #868686; font-family: 'Helvetica-Normal';}
 
 
-.newsletterbox form input{ display: block; width: 270px; height: 38px!important; background: #fff; border: none; padding: 0 15px!important; outline: none; float: left; margin: 0px!important;}
+.newsletterbox form input{ display: block;  height: 36px!important; background: #fff; border: none;  outline: none; float: left; margin: 0px!important;     padding: 0 2%!important;
+    width: 96%;}
 
 .newsletterbox  button{ display: block; float: right; width: 46px; height: 38px; cursor: pointer; border:  none; outline: none; background: #21c4e1; padding: 0px; min-width: inherit; border-radius: 0px;}
 
@@ -42,7 +43,6 @@
 .ami_footer1_wrapper .ami_footer1_menu_right img{  display: inline-block; margin: 0 12px; cursor: pointer; }
 
 .footer_logo{ display: block; float: left; margin: 49px 0 0 460px; cursor: pointer; outline: none;}
-
 
 
 
@@ -95,9 +95,11 @@
 }
 
 
-@media(max-width:400px) {
+
+
+@media(max-width:420px) {
 
     .ami_footer1_wrapper .footer_left{ width: 280px;  }
 
-    .newsletterbox form input{   width: 170px;}
+    .newsletterbox form input{   width: 160px;}
 }

@@ -7,20 +7,18 @@ import{CookieService} from 'ngx-cookie-service';
 import {environment } from '../environments/environment';
 
 
-@Injectable({   
+@Injectable({
   providedIn: 'root'
 })
 export class ApiService {
 
-  public serverUrl =  environment["API_URL"];
+  public serverUrl:any =  environment["API_URL"];
   public nodesslurl =  environment["nodesslurl"];
   public uploadurl =  environment["uploadurl"];
   public base64encode =  environment["base64encode"];
   public uploadsslurl: any= environment["download_url"];
 
   public fileimgsslurl: any;
-
-
 
   public lengthis;
   public percentageis;
@@ -30,6 +28,7 @@ export class ApiService {
   public uploaderror: any = '';
   public accesstoken:any = this.cookieService.get('jwtToken');
   fileservername: any = [];
+  // serverUrl: any;
   addendpointUrl: any;
   uploadEndpointUrl:any; //souresh
   updateendpointUrl: any;
@@ -38,7 +37,13 @@ export class ApiService {
   deletemultiple_endpointUrl: any;
   updatestatus_multiple_endpointUrl: any;
   getdata_endpointUrl: any;
- 
+  private subjectForServerUrl = new Subject<any>();
+  private subjectForaddEndpointUrl = new Subject<any>();
+  private subjectForuploadEndpointUrl = new Subject<any>();  //added by souresh
+  private subjectForupdateEndpointUrl = new Subject<any>();
+  private subjectFordeletesingleEndpointUrl = new Subject<any>();
+  private subjectForupdatestatusSingleEndpointUrl = new Subject<any>();
+  private subjectForGetdataEndpointUrl = new Subject<any>();
   public subscriptionServer: Subscription;
   public subscriptionaddEndpoint: Subscription;
   public subscriptionuploadEndpoint: Subscription;   //added by souresh
@@ -49,10 +54,157 @@ export class ApiService {
   public tokenVal: any;
   constructor(private _http: HttpClient, private cookieService :CookieService) {
 
-      this.fileimgsslurl = 'http://api.nexgentesting.com/';    
+
+    // this._http.get(this.serverUrl + 'gettemptoken').subscribe((res: any)=>{
+    //   this.tokenVal = res;
+    //   console.log('token')
+    //   console.log(this.tokenVal)
+    //   console.log(this.tokenVal.token.length)
+    // });
+
+    this.fileimgsslurl = 'http://api.nexgentesting.com/';
+
+
+    this.subscriptionServer = this.getServerUrl().subscribe(message => {
+      let result: any;
+      result = message;
+      if (result != null) {
+        this.serverUrl = result;
+      } else {
+        this.serverUrl = null;
+      }
+    });
+    this.subscriptionaddEndpoint = this.getaddEndpoint().subscribe(message => {
+      let result: any;
+      result = message;
+      if (result != null) {
+        this.addendpointUrl = result;
+      } else {
+        this.addendpointUrl = null;
+      }
+    });
+    /*********added by souresh***********/
+    this.subscriptionuploadEndpoint=this.getuploadEndpoint().subscribe(message=>{
+      let result:any;
+      result=message;
+      if(result!=null){
+        this.uploadEndpointUrl = result;
+      } else{
+        this.uploadEndpointUrl = null;
+      }
+    })
+    /************souresh end here**************/
+    this.subscriptionupdateEndpoint = this.getupdateEndpoint().subscribe(message => {
+      let result: any;
+      result = message;
+      if (result != null) {
+        this.updateendpointUrl = result;
+      } else {
+        this.updateendpointUrl = null;
+      }
+    });
+    this.subscriptiondeletesingleEndpoint = this.getdeletesingleEndpoint().subscribe(message => {
+      let result: any;
+      result = message;
+      if (result != null) {
+        this.deletesingle_endpointUrl = result;
+      } else {
+        this.deletesingle_endpointUrl = null;
+      }
+    });
+    this.subscriptionupdatestatusSingleEndpoint = this.getupdatestatus_singleEndpoint().subscribe(message => {
+      let result: any;
+      result = message;
+      if (result != null) {
+        this.updatestatus_single_endpointUrl = result;
+      } else {
+        this.updatestatus_single_endpointUrl = null;
+      }
+    });
+    this.subscriptionGetdataEndpoint = this.getdataEndpoint().subscribe(message => {
+      let result: any;
+      result = message;
+      if (result != null) {
+        this.getdata_endpointUrl = result;
+      } else {
+        this.getdata_endpointUrl = null;
+      }
+    });
+
+
   }
 
-  
+  setServerUrl(value: any) {
+    this.subjectForServerUrl.next(value);
+  }
+  public clearServerUrl() {
+    this.subjectForServerUrl.next(null);
+  }
+  public getServerUrl(): Observable<any> {
+    return this.subjectForServerUrl.asObservable();
+  }
+
+  setaddEndpoint(value: any) {
+    this.subjectForaddEndpointUrl.next(value);
+  }
+  public clearaddEndpoint() {
+    this.subjectForaddEndpointUrl.next(null);
+  }
+  public getaddEndpoint(): Observable<any> {
+    return this.subjectForaddEndpointUrl.asObservable();
+  }
+  /*****added by souresh******/
+  setuploadEndpont(value:any){
+    this.subjectForuploadEndpointUrl.next(value);
+  }
+  public clearuploadEndpoint(){
+    this.subjectForuploadEndpointUrl.next(null);
+  }
+  public getuploadEndpoint(): Observable <any> {
+    return this.subjectForuploadEndpointUrl.asObservable();
+  }
+  /********souresh end here********/
+
+
+  setupdateEndpoint(value: any) {
+    this.subjectForupdateEndpointUrl.next(value);
+  }
+  public clearupdateEndpoint() {
+    this.subjectForupdateEndpointUrl.next(null);
+  }
+  public getupdateEndpoint(): Observable<any> {
+    return this.subjectForupdateEndpointUrl.asObservable();
+  }
+
+  setdeletesingleEndpoint(value: any) {
+    this.subjectFordeletesingleEndpointUrl.next(value);
+  }
+  public cleardeletesingleEndpoint() {
+    this.subjectFordeletesingleEndpointUrl.next(null);
+  }
+  public getdeletesingleEndpoint(): Observable<any> {
+    return this.subjectFordeletesingleEndpointUrl.asObservable();
+  }
+
+  setupdatestatus_singleEndpoint(value: any) {
+    this.subjectForupdatestatusSingleEndpointUrl.next(value);
+  }
+  public clearupdatestatus_singleEndpoint() {
+    this.subjectForupdatestatusSingleEndpointUrl.next(null);
+  }
+  public getupdatestatus_singleEndpoint(): Observable<any> {
+    return this.subjectForupdatestatusSingleEndpointUrl.asObservable();
+  }
+
+  setgetdataEndpoint(value: any) {
+    this.subjectForGetdataEndpointUrl.next(value);
+  }
+  public cleargetdataEndpoint() {
+    this.subjectForGetdataEndpointUrl.next(null);
+  }
+  public getdataEndpoint(): Observable<any> {
+    return this.subjectForGetdataEndpointUrl.asObservable();
+  }
 
 
 
@@ -76,18 +228,18 @@ export class ApiService {
       })
     };
 
-    //console.log('httpoptions',httpOptions,this.serverUrl,requestdata);
+    console.log('httpoptions',httpOptions,this.serverUrl,requestdata);
     var result = this._http.post(this.serverUrl + this.addendpointUrl, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
     return result;
   }
-  
+
   /*******added by souresh************/
   uploadFile(requestdata:any){
     const httpOptions={
-        headers: new HttpHeaders({
-          'Content-Type':'application/json',
-          'access-token':this.accesstoken          //hard code written access-token(temp)
-        })
+      headers: new HttpHeaders({
+        'Content-Type':'application/json',
+        'access-token':this.accesstoken          //hard code written access-token(temp)
+      })
     };
     var result=this._http.post(this.serverUrl + this.uploadEndpointUrl,JSON.stringify(requestdata),httpOptions).pipe(map(res=>res));
     return result;
@@ -115,39 +267,39 @@ export class ApiService {
     return result;
 
   }
-/*************** Added by himadri start here ***************/ 
+  /*************** Added by himadri start here ***************/
 
 
-getDataForDatalist(endpoint: any) {
+  getDataForDatalist(endpoint: any) {
 
-  const httpOptions = {
+    const httpOptions = {
       headers: new HttpHeaders({
-          'Content-Type':  'application/json',
-          'Authorization': this.accesstoken
+        'Content-Type':  'application/json',
+        'Authorization': this.accesstoken
       })
-  };
+    };
 
-  // this.isTokenExpired()
-  var result = this._http.post(this.serverUrl + 'datalist', endpoint, httpOptions).pipe(map(res => res));
+    // this.isTokenExpired()
+    var result = this._http.post(this.serverUrl + 'datalist', endpoint, httpOptions).pipe(map(res => res));
 
-  return result;
-}
+    return result;
+  }
 // getData end
-/*************** Added by himadri using for datalist start here ***************/ 
+  /*************** Added by himadri using for datalist start here ***************/
 
-getDatalist(requestdata: any) {
-  const httpOptions = {
-    headers: new HttpHeaders({
-      'Content-Type': 'application/json',
-      'Authorization': this.accesstoken
-    })
-  };
-  var result = this._http.post(this.serverUrl + requestdata.endpoint, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
-  return result;
+  getDatalist(requestdata: any) {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        'Authorization': this.accesstoken
+      })
+    };
+    var result = this._http.post(this.serverUrl + requestdata.endpoint, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
+    return result;
 
 
-}
-getDatalistWithToken(requestdata: any, newdata: any){
+  }
+  getDatalistWithToken(requestdata: any, newdata: any){
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json',
@@ -156,28 +308,28 @@ getDatalistWithToken(requestdata: any, newdata: any){
     };
     var result = this._http.post(this.serverUrl + requestdata.endpoint, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
     return result;
-}
+  }
 
-getTempToken() {
-  var result = this._http.get(this.serverUrl + 'gettemptoken').pipe(map(res => res));
-  return result;
-}
-/*************** Added by himadri end here ***************/ 
+  getTempToken() {
+    var result = this._http.get(this.serverUrl + 'gettemptoken').pipe(map(res => res));
+    return result;
+  }
+  /*************** Added by himadri end here ***************/
 
-getDatalistForResolve(requestdata: any) {
-  const httpOptions = {
-    headers: new HttpHeaders({
-      'Content-Type': 'application/json',
-      'Authorization': this.accesstoken
-    })
-  };
-  // console.log(requestdata)
-  
-  var result = this._http.post(this.serverUrl + requestdata.endpoint, JSON.stringify(requestdata.requestcondition), httpOptions).pipe(map(res => res));
-  return result;
+  getDatalistForResolve(requestdata: any) {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        'Authorization': this.accesstoken
+      })
+    };
+    console.log(requestdata)
+
+    var result = this._http.post(this.serverUrl + requestdata.endpoint, JSON.stringify(requestdata.requestcondition), httpOptions).pipe(map(res => res));
+    return result;
 
 
-}
+  }
 
 
 
@@ -195,23 +347,23 @@ getDatalistForResolve(requestdata: any) {
     var result = this._http.post(this.serverUrl + this.addendpointUrl, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
     return result;
   }
-  /*************** Added by himadri end here ***************/ 
+  /*************** Added by himadri end here ***************/
 
-/*************** Added by himadri start here ***************/ 
-forgetPassword(requestdata: any) {
-  console.log('in forgetPassword apiservice');
-  const httpOptions = {
-    headers: new HttpHeaders({
-      'Content-Type': 'application/json'
-      // 'Authorization': this.accesstoken          //hard code written access-token(temp)
-    })
-  };
+  /*************** Added by himadri start here ***************/
+  forgetPassword(requestdata: any) {
+    console.log('in forgetPassword apiservice');
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+        // 'Authorization': this.accesstoken          //hard code written access-token(temp)
+      })
+    };
 
-  console.log(this.serverUrl,requestdata);
-  var result = this._http.post(this.serverUrl + this.addendpointUrl, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
-  return result;
-}
-/*************** Added by himadri end here ***************/ 
+    console.log(this.serverUrl,requestdata);
+    var result = this._http.post(this.serverUrl + this.addendpointUrl, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
+    return result;
+  }
+  /*************** Added by himadri end here ***************/
 
 
   deleteSingleData(requestdata: any) {
@@ -277,23 +429,43 @@ forgetPassword(requestdata: any) {
   getJsonObject(path:any){
     var result = this._http.get(path).pipe(map(res => res));
     return result;
-}
+  }
 
-/**add postData */
-postdata(requestdata: any) {
-  console.log('post Data');
-  const httpOptions = {
-    headers: new HttpHeaders({
-      'Content-Type': 'application/json'
-      // 'Authorization': this.accesstoken          //hard code written access-token(temp)
-    })
-  };
+  /**add postData */
+  postdata(requestdata: any) {
+    console.log('post Data');
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+        // 'Authorization': this.accesstoken          //hard code written access-token(temp)
+      })
+    };
 
-  console.log(this.serverUrl,requestdata);
-  var result = this._http.post(this.serverUrl + this.addendpointUrl, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
-  return result;
-}
-
+    console.log(this.serverUrl,requestdata);
+    var result = this._http.post(this.serverUrl + this.addendpointUrl, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
+    return result;
+  }
+  addDataWithoutToken(requestdata: any, endpoint:any ) {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        'Authorization': this.accesstoken
+      })
+    };
+    var result = this._http.post(this.serverUrl + endpoint, JSON.stringify(requestdata), httpOptions).pipe(map(res => res));
+    return result;
+  }
+  postDatawithoutToken(endpoint:any, data) {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json'
+      })
+    };
+    console.log('endpoint');
+    console.log(endpoint);
+    var result = this._http.post(this.serverUrl+endpoint, JSON.stringify(data), httpOptions).pipe(map(res => res));
+    return result;
+  }
 
 }
 
