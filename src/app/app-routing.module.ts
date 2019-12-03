@@ -128,7 +128,9 @@ const routes: Routes = [
   {path: 'training_report', component: TrainingReportComponent},
   {path: 'admin_appointments', component: AdminAppointmentsComponent},
   {path: 'admin_social_advo', component: AdminSocialAdvoComponent},
-  {path: 'admin_article_manager', component: AdminArticleManagerComponent},
+
+  // {path: 'admin_article_manager', component: AdminArticleManagerComponent},
+
   {path: 'admin_testimonial', component: AdminTestimonialComponent},
   {path: 'admin_newsletter', component: AdminNewsletterComponent},
   {path: 'admin_gallery_manager', component: AdminGalleryManagerComponent},
@@ -157,32 +159,32 @@ const routes: Routes = [
     data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist' }
   },
 
-   /**Blog category**/
-   { path: 'managewebsites/blog-category/add', component: AddEditBlogcatComponent },
+   /**Article category**/
+   { path: 'manage-article-category/add', component: AddEditBlogcatComponent },
    {
-     path: 'managewebsites/blog-category/list',
+     path: 'manage-article-category/list',
      component: ListingBlogcatComponent,
      resolve: { data: ResolveService },
      data: { requestcondition: { source: 'blog_category_view', condition: {} }, endpoint: 'datalist' }
    },
    {
-     path: 'managewebsites/blog-category/edit/:_id',
+     path: 'manage-article-category/edit/:_id',
      component: AddEditBlogcatComponent,
      resolve: { data: ResolveService },
      data: { requestcondition: { source: 'blog_category', condition: {} }, endpoint: 'datalist' }
    },
 
 
-     /**Blog management**/
-     { path: 'managewebsites/blog-management/add', component: AddEditBlogComponent },
+     /**Article management**/
+     { path: 'manage-article/add', component: AddEditBlogComponent },
      {
-       path: 'managewebsites/blog-management/list',
+       path: 'manage-article/list',
        component: ListingBlogComponent,
        resolve: { data: ResolveService },
        data: { requestcondition: { source: 'blogs_view', condition: {} }, endpoint: 'datalist' }
      },
      {
-       path: 'managewebsites/blog-management/edit/:_id',
+       path: 'manage-article/edit/:_id',
        component: AddEditBlogComponent,
        resolve: { data: ResolveService },
        data: { requestcondition: { source: 'blogs', condition: {} }, endpoint: 'datalist' }
