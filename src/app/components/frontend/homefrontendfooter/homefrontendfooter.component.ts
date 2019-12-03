@@ -124,12 +124,21 @@ export class NewslatterDialogComponent {
       this.myformnews.patchValue({
             email: this.cookie.get('email_modal'),
 
+
+
+
       });
+
+
+
 
 
   }
 
-
+  inputUntouch(form: any, val: any) {
+    console.log('on blur .....');
+    form.controls[val].markAsUntouched();
+  }
 
   public onNoClick(): void {
     this.dialogRef.close();

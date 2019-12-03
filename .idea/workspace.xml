@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb5622c8-38a8-4e54-a5a4-3be9de3de4d8" name="Default" comment="" />
+    <list default="true" id="bb5622c8-38a8-4e54-a5a4-3be9de3de4d8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.ts" afterPath="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-dialog.html" afterPath="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-dialog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-success-dialog.html" afterPath="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-success-dialog.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,25 +20,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="homefrontendfooter.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="15" column="104" lean-forward="false" selection-start-line="15" selection-start-column="99" selection-end-line="15" selection-end-column="104" />
-              <folding>
-                <element signature="n#span#1;n#mat-card-content#0;n#mat-card#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homefrontendfooter.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homefrontendfooter.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="126" column="9" lean-forward="true" selection-start-line="123" selection-start-column="5" selection-end-line="126" selection-end-column="9" />
+            <state relative-caret-position="404">
+              <caret line="140" column="3" lean-forward="false" selection-start-line="140" selection-start-column="3" selection-end-line="140" selection-end-column="3" />
               <folding>
                 <element signature="e#0#84#0" expanded="true" />
+                <element signature="n#!!block;n#donewsSubmit#0;n#NewslatterDialogComponent#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -42,38 +36,18 @@
       <file leaf-file-name="newsletter-dialog.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-dialog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="33" />
+            <state relative-caret-position="425">
+              <caret line="25" column="100" lean-forward="false" selection-start-line="25" selection-start-column="100" selection-end-line="25" selection-end-column="100" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newsletter-success-dialog.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="newsletter-success-dialog.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-success-dialog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="57" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assets/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="716" column="17" lean-forward="false" selection-start-line="716" selection-start-column="17" selection-end-line="716" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homefrontendfooter.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            <state relative-caret-position="34">
+              <caret line="2" column="51" lean-forward="false" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -177,15 +151,15 @@
         <option value="$PROJECT_DIR$/src/app/components/frontend/testimonial/testimonial.component.css" />
         <option value="$PROJECT_DIR$/src/app/components/frontend/contactus/contactus.component.css" />
         <option value="$PROJECT_DIR$/src/app/components/frontend/homeservices/homeservices.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-dialog.html" />
         <option value="$PROJECT_DIR$/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/src/app/components/backend/admin-dashboard/admin-article-manager/add-edit-blog/add-edit-blog.component.ts" />
         <option value="$PROJECT_DIR$/src/app/api.service.ts" />
-        <option value="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-success-dialog.html" />
         <option value="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.css" />
         <option value="$PROJECT_DIR$/src/assets/css/style.css" />
         <option value="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.html" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-dialog.html" />
         <option value="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-success-dialog.html" />
       </list>
     </option>
   </component>
@@ -633,12 +607,12 @@
       <workItem from="1574425085678" duration="2491000" />
       <workItem from="1574744351650" duration="58000" />
       <workItem from="1575283089207" duration="285000" />
-      <workItem from="1575350349308" duration="22962000" />
+      <workItem from="1575350349308" duration="24547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="323611000" />
+    <option name="totallyTimeSpent" value="325196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -1024,14 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-success-dialog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="57" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1048,14 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-dialog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1068,11 +1026,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="126" column="9" lean-forward="true" selection-start-line="123" selection-start-column="5" selection-end-line="126" selection-end-column="9" />
+        <state relative-caret-position="404">
+          <caret line="140" column="3" lean-forward="false" selection-start-line="140" selection-start-column="3" selection-end-line="140" selection-end-column="3" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
+            <element signature="n#!!block;n#donewsSubmit#0;n#NewslatterDialogComponent#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-dialog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="100" lean-forward="false" selection-start-line="25" selection-start-column="100" selection-end-line="25" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-success-dialog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="51" lean-forward="false" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
