@@ -1,4 +1,4 @@
-<app-adminheader>
+<!-- <app-adminheader>
       <span style="display: block; position: relative;">
 
 
@@ -27,4 +27,95 @@
 
       </span>
     <app-adminfooter></app-adminfooter>
+</app-adminheader> -->
+
+<app-adminheader>
+
+
+        <span class="admwrapper">
+                <!-- <img src="/assets/images/manage-article-img.jpg" alt="#" style="width: 100%;  "> -->
+            <span class="adminnerbannerwrapper"> 
+                <mat-card-content class="adminnerbanner"> 
+                    <span class="innerbannercontainer">
+                                <span class="innerbannerimage">
+                                    <span class="innerbannerimagemain">
+                                        <img src="/assets/images/admbanner-testimonial.jpg" alt="#">
+                                    </span>
+                                </span>
+                                <span class="content">
+                                    <mat-card-title>Testimonial</mat-card-title>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </span>
+                    </span>
+                </mat-card-content>        
+                <mat-tab-group class="tabwrapper">
+                    <mat-tab>
+                                    <ng-template mat-tab-label>
+                                        <h2 class="innertitle2">Article List</h2>
+                                    </ng-template>          
+                                  <ng-template matTabContent>    
+                                    <span class="bloglists">      
+                                    
+                                        <mat-card>
+                                            <span class="searchblock">
+                                                <span class="searchblockwrapper">
+                                                    <span>
+                                                        <h2>Manage Article</h2>
+                                                    </span>
+                                                    <span>
+                                                        <button class="singleButton" mat-raised-button color="primary" [routerLink]="['/manage-article/add']">Add Article</button>
+                                                    </span>                    
+                                                </span>
+                                            </span>
+                                            <div class="tablediv">
+                                                     <!-- to listing library -->
+                            <lib-listing-blogmanagementlib class="formfilterdiv" [config]="blogListConfig"></lib-listing-blogmanagementlib>
+        
+                                                <!-- <lib-listing-blogmanagementlib class="formfilterdiv" *ngIf="blogListConfig.datasource != null && blogListConfig.datasource.length > 0" [config]="blogListConfig"></lib-listing-blogmanagementlib> -->
+                                            </div>
+                                        </mat-card>
+                                    </span>
+                                  </ng-template>
+                    </mat-tab>
+                    <mat-tab>            
+                                    <ng-template mat-tab-label>
+                                      <h2>Article Catagory List</h2>
+                                    </ng-template>           
+                                    <ng-template matTabContent>
+                                        <span class="blogcatlists"> 
+            
+                                          <!-- Selector -->
+                                          <mat-card>       
+                                              <span class="searchblock">
+                                                  <span class="searchblockwrapper">
+                                                      <span>
+                                                          <h2>Manage Article Category</h2>
+                                                      </span>
+                                                      <span>
+                                                                <button class="singleButton" mat-raised-button color="primary" [routerLink]="['/manage-article-category/add']"><i class="material-icons">add</i> Add Article Category</button>
+        
+                                                          <!-- <button mat-button class="btngreen sim-button" [routerLink]="['/blog-category/add']"><i class="material-icons">add</i> Add Blog Category</button> -->
+                                                      </span>                    
+                                                  </span>
+                                              </span>
+                                              <div class="tablediv">
+                                                      <!-- to listing library -->
+                                                      <lib-Blog class="formfilterdiv" [config]="blogCatConfig"></lib-Blog>
+        
+                                                <!-- <lib-Blog class="formfilterdiv" [config]="blogCatConfig"></lib-Blog> -->
+            
+                                               <!-- <lib-Blog *ngIf="blogCatConfig.datasource != null && blogCatConfig.datasource.length > 0" [config]="blogCatConfig"></lib-Blog> -->
+                                              </div>
+                                      </mat-card>
+            
+                                            <!-- <app-listing-blogcat></app-listing-blogcat>                          -->
+                                        </span>
+                                    </ng-template>
+                    </mat-tab>                      
+                </mat-tab-group>                  
+            </span>
+        </span>
+
+    <app-adminfooter></app-adminfooter>
 </app-adminheader>
+    

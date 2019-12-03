@@ -2,6 +2,7 @@ import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './components/frontend/login/login.component';
 import { ResolveService } from './resolve.service';
+import { AuthGuard } from './auth.guard';
 /*
 import { AuthGuard } from './auth.guard';
 import { ResolveService } from './resolve.service';
@@ -68,10 +69,10 @@ import { ForgetpasswordComponent } from './components/frontend/forgetpassword/fo
 import { SignupComponent } from './components/frontend/signup/signup.component';
 import { AddEditServiceComponent } from './components/backend/managewebsites/service/add-edit-service/add-edit-service.component';
 import { ListingServiceComponent } from './components/backend/managewebsites/service/listing-service/listing-service.component';
-import { AddEditBlogcatComponent } from './components/backend/managewebsites/blogs/add-edit-blogcat/add-edit-blogcat.component';
+import { AddEditBlogcatComponent } from './components/backend/admin-dashboard/admin-article-manager/add-edit-blogcat/add-edit-blogcat.component';
 import { ListingBlogComponent } from './components/backend/managewebsites/blogs/listing-blog/listing-blog.component';
 // import { AddeditBlogmanagementComponent } from 'dist/blog/lib/addedit-blogmanagement/addedit-blogmanagement.component';
-import { AddEditBlogComponent } from './components/backend/managewebsites/blogs/add-edit-blog/add-edit-blog.component';
+import { AddEditBlogComponent } from './components/backend/admin-dashboard/admin-article-manager/add-edit-blog/add-edit-blog.component';
 import { ListingBlogcatComponent } from './components/backend/managewebsites/blogs/listing-blogcat/listing-blogcat.component';
 import { AddEditTestimonialComponent } from './components/backend/managewebsites/testimonial/add-edit-testimonial/add-edit-testimonial.component';
 import { ListingTestimonialComponent } from './components/backend/managewebsites/testimonial/listing-testimonial/listing-testimonial.component';
@@ -128,7 +129,18 @@ const routes: Routes = [
   {path: 'training_report', component: TrainingReportComponent},
   {path: 'admin_appointments', component: AdminAppointmentsComponent},
   {path: 'admin_social_advo', component: AdminSocialAdvoComponent},
-  {path: 'admin_article_manager', component: AdminArticleManagerComponent},
+
+  {path: 'manage-article', component: AdminArticleManagerComponent, canActivate: [AuthGuard],
+    resolve: { blogsList: ResolveService },
+    data: {
+      requestcondition: {
+        source: 'blogs_view',
+        condition: {}
+      },
+      endpoint: 'datalist'
+    },
+  },
+
   {path: 'admin_testimonial', component: AdminTestimonialComponent},
   {path: 'admin_newsletter', component: AdminNewsletterComponent},
   {path: 'admin_gallery_manager', component: AdminGalleryManagerComponent},
@@ -157,35 +169,54 @@ const routes: Routes = [
     data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist' }
   },
 
-   /**Blog category**/
-   { path: 'managewebsites/blog-category/add', component: AddEditBlogcatComponent },
+   /**Article category**/
+   { path: 'manage-article-category/add', component: AddEditBlogcatComponent },
    {
-     path: 'managewebsites/blog-category/list',
+     path: 'manage-article-category/list',
      component: ListingBlogcatComponent,
-     resolve: { data: ResolveService },
-     data: { requestcondition: { source: 'blog_category_view', condition: {} }, endpoint: 'datalist' }
+     resolve: { blogCatList: ResolveService },
+     data: { 
+       requestcondition: { 
+         source: 'blog_category_view', 
+         condition: {} 
+        }, 
+      endpoint: 'datalist' 
+    }
    },
    {
-     path: 'managewebsites/blog-category/edit/:_id',
+     path: 'manage-article-category/edit/:_id',
      component: AddEditBlogcatComponent,
-     resolve: { data: ResolveService },
-     data: { requestcondition: { source: 'blog_category', condition: {} }, endpoint: 'datalist' }
+     
+     resolve: { blogCatList: ResolveService },
+     data: { 
+       requestcondition: { 
+         source: 'blog_category', 
+         condition: {} 
+        }, 
+      endpoint: 'datalist' 
+    }
    },
 
 
-     /**Blog management**/
-     { path: 'managewebsites/blog-management/add', component: AddEditBlogComponent },
+     /**Article management**/
+
+     { path: 'manage-article/add', component: AddEditBlogComponent },
+
      {
-       path: 'managewebsites/blog-management/list',
-       component: ListingBlogComponent,
-       resolve: { data: ResolveService },
-       data: { requestcondition: { source: 'blogs_view', condition: {} }, endpoint: 'datalist' }
-     },
+       path: 'manage-article/list', component: ListingBlogComponent },
+
      {
-       path: 'managewebsites/blog-management/edit/:_id',
+       path: 'manage-article/edit/:_id',
        component: AddEditBlogComponent,
-       resolve: { data: ResolveService },
-       data: { requestcondition: { source: 'blogs', condition: {} }, endpoint: 'datalist' }
+
+       resolve: { blogsList: ResolveService },
+       data: { 
+         requestcondition: { 
+           source: 'blogs', 
+           condition: {} 
+        }, 
+        endpoint: 'datalist' 
+      }
      },
 
 

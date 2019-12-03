@@ -97,9 +97,9 @@ import { ListingServiceComponent } from './components/backend/managewebsites/ser
 // import { BlogModule } from 'blog';
 
 import { BlogModule } from 'blog-lib-influxiq';
-import { AddEditBlogcatComponent } from './components/backend/managewebsites/blogs/add-edit-blogcat/add-edit-blogcat.component';
+import { AddEditBlogcatComponent } from './components/backend/admin-dashboard/admin-article-manager/add-edit-blogcat/add-edit-blogcat.component';
 import { ListingBlogcatComponent } from './components/backend/managewebsites/blogs/listing-blogcat/listing-blogcat.component';
-import { AddEditBlogComponent } from './components/backend/managewebsites/blogs/add-edit-blog/add-edit-blog.component';
+import { AddEditBlogComponent } from './components/backend/admin-dashboard/admin-article-manager/add-edit-blog/add-edit-blog.component';
 import { ListingBlogComponent } from './components/backend/managewebsites/blogs/listing-blog/listing-blog.component';
 
 
@@ -108,7 +108,11 @@ import { ListingBlogComponent } from './components/backend/managewebsites/blogs/
 import { TestimonialModule } from 'testimonial-lib-influxiq';
 import { ListingTestimonialComponent } from './components/backend/managewebsites/testimonial/listing-testimonial/listing-testimonial.component';
 import { AddEditTestimonialComponent } from './components/backend/managewebsites/testimonial/add-edit-testimonial/add-edit-testimonial.component';
+<<<<<<< HEAD
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+=======
+import { AuthGuard } from './auth.guard';
+>>>>>>> 4e5c5a208c2efae258b61d07137823a95506acfb
 
 @NgModule({
   declarations: [
@@ -195,8 +199,13 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
       FormsModule,
       ReactiveFormsModule
   ],
+<<<<<<< HEAD
   entryComponents: [GalleryZoom, VideoZoom, NewslatterDialogComponent, NewslattersuccessDialogComponent],
   providers: [CookieService, ApiService],
+=======
+  entryComponents: [GalleryZoom, VideoZoom],
+  providers: [CookieService, ApiService, AuthGuard],
+>>>>>>> 4e5c5a208c2efae258b61d07137823a95506acfb
   bootstrap: [AppComponent]
 })
 export class AppModule { }
