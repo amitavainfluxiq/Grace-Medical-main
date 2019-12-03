@@ -58,7 +58,7 @@
 .leftpannel   .active{ background: #064785;}
 
 
-
+button.mat-menu-item {text-transform: capitalize;}
 
 
 @media(max-width:1260px) {

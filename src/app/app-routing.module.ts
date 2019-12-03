@@ -66,6 +66,15 @@ import { HomegalleryComponent } from './components/frontend/homegallery/homegall
 
 import { ForgetpasswordComponent } from './components/frontend/forgetpassword/forgetpassword.component';
 import { SignupComponent } from './components/frontend/signup/signup.component';
+import { AddEditServiceComponent } from './components/backend/managewebsites/service/add-edit-service/add-edit-service.component';
+import { ListingServiceComponent } from './components/backend/managewebsites/service/listing-service/listing-service.component';
+import { AddEditBlogcatComponent } from './components/backend/managewebsites/blogs/add-edit-blogcat/add-edit-blogcat.component';
+import { ListingBlogComponent } from './components/backend/managewebsites/blogs/listing-blog/listing-blog.component';
+// import { AddeditBlogmanagementComponent } from 'dist/blog/lib/addedit-blogmanagement/addedit-blogmanagement.component';
+import { AddEditBlogComponent } from './components/backend/managewebsites/blogs/add-edit-blog/add-edit-blog.component';
+import { ListingBlogcatComponent } from './components/backend/managewebsites/blogs/listing-blogcat/listing-blogcat.component';
+import { AddEditTestimonialComponent } from './components/backend/managewebsites/testimonial/add-edit-testimonial/add-edit-testimonial.component';
+import { ListingTestimonialComponent } from './components/backend/managewebsites/testimonial/listing-testimonial/listing-testimonial.component';
 
 const routes: Routes = [
 
@@ -75,15 +84,21 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'ourphysicians', component: OurphysiciansComponent},
   {
-    path: 'service/list',
+    path: 'service',
     component: ServicesComponent,
     resolve: { serviceList: ResolveService },
-    data: { requestcondition: { source: 'services', condition: {} }, endpoint: 'datalist' }
+    data: { requestcondition: { source: 'service_view', condition: {} }, endpoint: 'datalistwithouttoken' }
   },
   {path: 'journals', component: JournalsComponent},
   {path: 'imagegallery', component: ImagegalleryComponent},
   {path: 'videogallery', component: VideogalleryComponent},
-  {path: 'testimonial', component: TestimonialComponent},
+
+  {
+    path: 'testimonial', component: TestimonialComponent,
+    resolve: { testimonialList: ResolveService },
+    data: { requestcondition: { source: 'testimonial_view', condition: {} }, endpoint: 'datalistwithouttoken' }
+  },
+
   {path: 'contactus', component: ContactusComponent},
   {path: 'appointment', component: AppointmentsfrontendComponent},
   {path: 'sacheduleappointment', component: ScheduleAppointmentComponent},
@@ -125,6 +140,69 @@ const routes: Routes = [
 
   {path: 'forgetpassword', component: ForgetpasswordComponent},
   {path: 'signup', component: SignupComponent},
+
+
+  /**Services**/
+  { path: 'manage-service/add', component: AddEditServiceComponent },
+  {
+    path: 'manage-service/list',
+    component: ListingServiceComponent,
+    resolve: { serviceList: ResolveService },
+    data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist' }
+  },
+  {
+    path: 'manage-service/edit/:_id',
+    component: AddEditServiceComponent,
+    resolve: { serviceList: ResolveService },
+    data: { requestcondition: { source: 'service', condition: {} }, endpoint: 'datalist' }
+  },
+
+   /**Blog category**/
+   { path: 'managewebsites/blog-category/add', component: AddEditBlogcatComponent },
+   {
+     path: 'managewebsites/blog-category/list',
+     component: ListingBlogcatComponent,
+     resolve: { data: ResolveService },
+     data: { requestcondition: { source: 'blog_category_view', condition: {} }, endpoint: 'datalist' }
+   },
+   {
+     path: 'managewebsites/blog-category/edit/:_id',
+     component: AddEditBlogcatComponent,
+     resolve: { data: ResolveService },
+     data: { requestcondition: { source: 'blog_category', condition: {} }, endpoint: 'datalist' }
+   },
+
+
+     /**Blog management**/
+     { path: 'managewebsites/blog-management/add', component: AddEditBlogComponent },
+     {
+       path: 'managewebsites/blog-management/list',
+       component: ListingBlogComponent,
+       resolve: { data: ResolveService },
+       data: { requestcondition: { source: 'blogs_view', condition: {} }, endpoint: 'datalist' }
+     },
+     {
+       path: 'managewebsites/blog-management/edit/:_id',
+       component: AddEditBlogComponent,
+       resolve: { data: ResolveService },
+       data: { requestcondition: { source: 'blogs', condition: {} }, endpoint: 'datalist' }
+     },
+
+
+     /**Testimonial**/
+     { path: 'manage-testimonial/add', component: AddEditTestimonialComponent },
+     {
+       path: 'manage-testimonial/list',
+       component: ListingTestimonialComponent,
+       resolve: { testimonialList: ResolveService },
+       data: { requestcondition: { source: 'testimonial_view', condition: {} }, endpoint: 'datalist' }
+     },
+     {
+       path: 'manage-testimonial/edit/:_id',
+       component: AddEditTestimonialComponent,
+       resolve: { testimonialData: ResolveService },
+       data: { requestcondition: { source: 'testimonial', condition: {} }, endpoint: 'datalist' }
+     },
 
 
 ];

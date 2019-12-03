@@ -11,20 +11,22 @@ import { MetaService } from '@ngx-meta/core';
   styleUrls: ['./services.component.css']
 })
 export class ServicesComponent implements OnInit {
+  public serviceData: any ='';
 
-  public serviceListConfig:any = {
-    apiBaseUrl: this.apiService.serverUrl,
-    listEndPoint: "datalist",
-    datasource: "",
-    tableName: "services",
-    updateurl: "addorupdatedata",
-    editUrl: "service/edit",
-    jwtToken: "",
-    deleteEndPoint: "deletesingledata",
-    addLink: "/service/add",
-    view:"services_view"
-  }
-  constructor( private activatedRoute : ActivatedRoute , private cookieService : CookieService, public apiService: ApiService, private readonly meta: MetaService) { window.scrollTo(500, 0);
+  // public serviceListConfig:any = {
+  //   apiBaseUrl: this.apiService.serverUrl,
+  //   listEndPoint: "datalist",
+  //   datasource: "",
+  //   tableName: "services",
+  //   updateurl: "addorupdatedata",
+  //   editUrl: "service/edit",
+  //   jwtToken: "",
+  //   deleteEndPoint: "deletesingledata",
+  //   addLink: "/service/add",
+  //   view:"services_view"
+  // }
+  constructor( private activatedRoute : ActivatedRoute , private cookieService : CookieService, public apiService: ApiService, private readonly meta: MetaService) {
+     window.scrollTo(500, 0);
 
 
     this.meta.setTitle('Grace Medical Services');
@@ -42,11 +44,15 @@ export class ServicesComponent implements OnInit {
 
   ngOnInit() {
     this.activatedRoute.data.subscribe(resolveData => {
-      this.serviceListConfig.datasource = resolveData.serviceList.res;
-      console.log("Data asche->",this.serviceListConfig.datasource);
-      this.serviceListConfig.jwtToken = this.cookieService.get('jwtToken');
+      console.log(resolveData.serviceList.res)
+      this.serviceData = resolveData.serviceList.res;
+      console.log("true data" + resolveData)
     });
   
+  }
+
+  copyText(val:any){
+    console.log('');
   }
 
 }

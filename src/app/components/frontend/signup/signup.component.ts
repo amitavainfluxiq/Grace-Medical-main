@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MetaService } from '@ngx-meta/core';
 import { ApiService } from 'src/app/api.service';
-
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import{CookieService} from 'ngx-cookie-service';
 @Component({
   selector: 'app-signup',
   templateUrl: 'signup.component.html',
@@ -23,7 +24,9 @@ export class SignupComponent implements OnInit {
     source:'users'
   };
 
-  constructor(private readonly meta: MetaService, public apiService: ApiService) {window.scrollTo(500, 0);
+  constructor(private readonly meta: MetaService, public apiService: ApiService,public http:HttpClient,public cookieService:CookieService) {window.scrollTo(500, 0);
+
+    //console.log('---avijit----', this.apiService.serverUrl);
 
     this.meta.setTitle('Grace Medica - Sign Up');
     this.meta.setTag('og:description', 'Grace Medic Sign Up');
@@ -38,6 +41,11 @@ export class SignupComponent implements OnInit {
   }
 
   ngOnInit() {
+    const link = this.apiService.serverUrl + 'temptoken';
+    this.http.post(link, {}).subscribe(res => {
+      console.log(res);
+       let result: any = res;
+       this.cookieService.set('jwtToken', result.token);
+    });
   }
-
 }

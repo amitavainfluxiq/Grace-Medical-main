@@ -6,33 +6,33 @@
 
 
 
-        <mat-carousel [autoplay]="true" slides="2"  [hideArrows]="false"   proportion="0"   orientation="rtl">
+        <mat-carousel [autoplay]="true"  [hideArrows]="false" proportion="0" orientation="rtl" >
 
-            <mat-carousel-slide>
+            <mat-carousel-slide *ngFor="let testmonhome of TestimonialListArray">
 
               <span class="slidercontain">
 
-                <span class="homeblock6_img"><img src="/assets/images/home_tes_blockimg.jpg" alt="#"  ></span>
+                <span class="homeblock6_img"><img src="{{testmonhome.testimonial_image}}" alt="#"  ></span>
 
 
                 <span class="homeblock6_text">
 <img src="/assets/images/home_tes_blockimg2.png" alt="#" class="homequotationimg1" >
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-<br/><br/>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                      <span  routerLink="/testimonial" class="homeblock6readmorelink">Read More...</span>
+                    
+                    <p class="truncate" [ngClass]="{'truncate truncateopen':testmonhome._id == p_id }">                                    
+                        <span [innerHtml]="testmonhome.description"></span>                           
+                    </p>
+                    <span class="homeblock6readmorelink" *ngIf="testmonhome.description != '' && testmonhome != '' && testmonhome.description.length >= 254 " [ngClass]="{'hide':testmonhome._id == p_id}" (click)="showmore(testmonhome)">Read More...</span>
                     <img src="/assets/images/home_tes_blockimg3.png" alt="#"  class="homequotationimg1">
 <span class="clear"></span>
-                    <label>John Doe, Los Angeles</label>
-                    <span class="homeblock6_rating">
-                    <i class="material-icons">star</i>
-                    <i class="material-icons">star</i>
-                    <i class="material-icons">star_half</i>
-                    <i class="material-icons">star_border</i>
-                    <i class="material-icons">star_border</i>
+                    <label>{{testmonhome.name}}</label>
+                    <!-- <span class="homeblock6_rating">
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star_half</i>
+                        <i class="material-icons">star_border</i>
+                        <i class="material-icons">star_border</i>
 
-                    </span>
+                    </span> -->
 
 
                 </span>
@@ -41,36 +41,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
             </span>
             </mat-carousel-slide>
 
-            <mat-carousel-slide>
-<span class="slidercontain">
-
-                <span class="homeblock6_img"><img src="/assets/images/home_tes_blockimg.jpg" alt="#"  ></span>
-
-
-                <span class="homeblock6_text">
-<img src="/assets/images/home_tes_blockimg2.png" alt="#" class="homequotationimg1" >
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-<br/><br/>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <span  routerLink="/testimonial" class="homeblock6readmorelink">Read More...</span>
-                    <img src="/assets/images/home_tes_blockimg3.png" alt="#"  class="homequotationimg1">
-<span class="clear"></span>
-                    <label>John Doe, Los Angeles</label>
-                    <span class="homeblock6_rating">
-                    <i class="material-icons">star</i>
-                    <i class="material-icons">star</i>
-                    <i class="material-icons">star_half</i>
-                    <i class="material-icons">star_border</i>
-                    <i class="material-icons">star_border</i>
-
-                    </span>
-
-
-                </span>
-
-
-            </span>
-            </mat-carousel-slide>
+            
 
         </mat-carousel>
 
