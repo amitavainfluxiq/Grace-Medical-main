@@ -92,7 +92,13 @@ const routes: Routes = [
   {path: 'journals', component: JournalsComponent},
   {path: 'imagegallery', component: ImagegalleryComponent},
   {path: 'videogallery', component: VideogalleryComponent},
-  {path: 'testimonial', component: TestimonialComponent},
+
+  {
+    path: 'testimonial', component: TestimonialComponent,
+    resolve: { testimonialList: ResolveService },
+    data: { requestcondition: { source: 'testimonial_view', condition: {} }, endpoint: 'datalistwithouttoken' }
+  },
+
   {path: 'contactus', component: ContactusComponent},
   {path: 'appointment', component: AppointmentsfrontendComponent},
   {path: 'sacheduleappointment', component: ScheduleAppointmentComponent},
