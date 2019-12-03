@@ -97,9 +97,9 @@ import { ListingServiceComponent } from './components/backend/managewebsites/ser
 // import { BlogModule } from 'blog';
 
 import { BlogModule } from 'blog-lib-influxiq';
-import { AddEditBlogcatComponent } from './components/backend/managewebsites/blogs/add-edit-blogcat/add-edit-blogcat.component';
+import { AddEditBlogcatComponent } from './components/backend/admin-dashboard/admin-article-manager/add-edit-blogcat/add-edit-blogcat.component';
 import { ListingBlogcatComponent } from './components/backend/managewebsites/blogs/listing-blogcat/listing-blogcat.component';
-import { AddEditBlogComponent } from './components/backend/managewebsites/blogs/add-edit-blog/add-edit-blog.component';
+import { AddEditBlogComponent } from './components/backend/admin-dashboard/admin-article-manager/add-edit-blog/add-edit-blog.component';
 import { ListingBlogComponent } from './components/backend/managewebsites/blogs/listing-blog/listing-blog.component';
 
 
@@ -108,6 +108,7 @@ import { ListingBlogComponent } from './components/backend/managewebsites/blogs/
 import { TestimonialModule } from 'testimonial-lib-influxiq';
 import { ListingTestimonialComponent } from './components/backend/managewebsites/testimonial/listing-testimonial/listing-testimonial.component';
 import { AddEditTestimonialComponent } from './components/backend/managewebsites/testimonial/add-edit-testimonial/add-edit-testimonial.component';
+import { AuthGuard } from './auth.guard';
 
 @NgModule({
   declarations: [
@@ -192,7 +193,7 @@ import { AddEditTestimonialComponent } from './components/backend/managewebsites
     NewsTitleModule
   ],
   entryComponents: [GalleryZoom, VideoZoom],
-  providers: [CookieService, ApiService],
+  providers: [CookieService, ApiService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

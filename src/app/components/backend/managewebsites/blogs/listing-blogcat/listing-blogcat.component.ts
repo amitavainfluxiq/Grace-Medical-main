@@ -2,6 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute,Router} from '@angular/router';
  import{CookieService} from 'ngx-cookie-service';
+ import { ApiService } from '../../../../../api.service';
 
 @Component({
   selector: 'app-listing-blogcat',
@@ -13,7 +14,8 @@ export class ListingBlogcatComponent implements OnInit {
   
     /************** lib list setup start here *************/
     public blogListConfig:any = {
-      apiBaseUrl: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/",
+      // apiBaseUrl: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/",
+      apiBaseUrl: this.apiService.serverUrl,
       listEndPoint: "datalist",
       datasource: "",
       tableName: "blog_category",
@@ -25,7 +27,7 @@ export class ListingBlogcatComponent implements OnInit {
       view: "blog_category_view"
       
     }
-    constructor( private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService ) { 
+    constructor( private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService ) { 
 
       this.activatedRoute.data.subscribe(resolveData => {
         this.blogListConfig.datasource = resolveData.data.res;
