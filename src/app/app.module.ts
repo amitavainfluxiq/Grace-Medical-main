@@ -10,7 +10,7 @@ import { DemoMaterialModule } from './modules/materialModule';
 
 import { HomeComponentfrontend } from './components/frontend/home/home.component';
 import { HomefrontendheaderComponent } from './components/frontend/homefrontendheader/homefrontendheader.component';
-import { HomefrontendfooterComponent } from './components/frontend/homefrontendfooter/homefrontendfooter.component';
+import { HomefrontendfooterComponent, NewslatterDialogComponent, NewslattersuccessDialogComponent } from './components/frontend/homefrontendfooter/homefrontendfooter.component';
 import { OurphysiciansComponent } from './components/frontend/ourphysicians/ourphysicians.component';
 import { ServicesComponent } from './components/frontend/services/services.component';
 import { JournalsComponent } from './components/frontend/journals/journals.component';
@@ -108,6 +108,7 @@ import { ListingBlogComponent } from './components/backend/managewebsites/blogs/
 import { TestimonialModule } from 'testimonial-lib-influxiq';
 import { ListingTestimonialComponent } from './components/backend/managewebsites/testimonial/listing-testimonial/listing-testimonial.component';
 import { AddEditTestimonialComponent } from './components/backend/managewebsites/testimonial/add-edit-testimonial/add-edit-testimonial.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -168,8 +169,9 @@ import { AddEditTestimonialComponent } from './components/backend/managewebsites
     ListingBlogComponent,
     ListingTestimonialComponent,
     AddEditTestimonialComponent,
-    
 
+    NewslatterDialogComponent,
+    NewslattersuccessDialogComponent
 
   ],
   imports: [
@@ -189,9 +191,11 @@ import { AddEditTestimonialComponent } from './components/backend/managewebsites
     AppRoutingModule,MetaModule.forRoot(), BrowserAnimationsModule,
 
     LoginModule,
-    NewsTitleModule
+    NewsTitleModule,
+      FormsModule,
+      ReactiveFormsModule
   ],
-  entryComponents: [GalleryZoom, VideoZoom],
+  entryComponents: [GalleryZoom, VideoZoom, NewslatterDialogComponent, NewslattersuccessDialogComponent],
   providers: [CookieService, ApiService],
   bootstrap: [AppComponent]
 })

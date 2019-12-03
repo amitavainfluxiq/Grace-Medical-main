@@ -9,7 +9,7 @@ import { ApiService } from 'src/app/api.service';
   styleUrls: ['./homeservices.component.css']
 })
 export class HomeservicesComponent implements OnInit {
-  public serviceData: any =''; 
+  // public serviceData: any ='';
 public serviceListConfig: any;
 
 
