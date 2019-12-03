@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb5622c8-38a8-4e54-a5a4-3be9de3de4d8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/api.service.ts" afterPath="$PROJECT_DIR$/src/app/api.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/backend/admin-dashboard/admin-article-manager/add-edit-blog/add-edit-blog.component.ts" afterPath="$PROJECT_DIR$/src/app/components/backend/admin-dashboard/admin-article-manager/add-edit-blog/add-edit-blog.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.css" afterPath="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.ts" afterPath="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-success-dialog.html" afterPath="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-success-dialog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/style.css" afterPath="$PROJECT_DIR$/src/assets/css/style.css" />
-    </list>
+    <list default="true" id="bb5622c8-38a8-4e54-a5a4-3be9de3de4d8" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +30,8 @@
       <file leaf-file-name="homefrontendfooter.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="124" column="47" lean-forward="false" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="47" />
+            <state relative-caret-position="170">
+              <caret line="126" column="9" lean-forward="true" selection-start-line="123" selection-start-column="5" selection-end-line="126" selection-end-column="9" />
               <folding>
                 <element signature="e#0#84#0" expanded="true" />
               </folding>
@@ -642,12 +633,12 @@
       <workItem from="1574425085678" duration="2491000" />
       <workItem from="1574744351650" duration="58000" />
       <workItem from="1575283089207" duration="285000" />
-      <workItem from="1575350349308" duration="21895000" />
+      <workItem from="1575350349308" duration="22962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="322544000" />
+    <option name="totallyTimeSpent" value="323611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -1077,8 +1068,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="124" column="47" lean-forward="false" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="47" />
+        <state relative-caret-position="170">
+          <caret line="126" column="9" lean-forward="true" selection-start-line="123" selection-start-column="5" selection-end-line="126" selection-end-column="9" />
           <folding>
             <element signature="e#0#84#0" expanded="true" />
           </folding>
