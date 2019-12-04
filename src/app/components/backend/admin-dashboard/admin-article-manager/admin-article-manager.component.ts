@@ -12,26 +12,23 @@ import {ActivatedRoute,Router} from '@angular/router';
 export class AdminArticleManagerComponent implements OnInit {
 
   public base_URL:any = environment['API_URL'];
-
-// ===============================Declarations=========================
-blogCatConfig: any = [];
-blogCatConfig_skip: any = ["_id"];
-detail_skip_array:any=["_id"]
-blogCatConfig_modify_header: any = {"brand name":"Brand Name",
-"parent category":"Parent Category","priority":"Priority","status":"Status"};
-tableName: any = 'inventories';
-UpdateEndpoint: any = "addorupdatedata";
-deleteEndpoint: any = "deletesingledata";
-searchingEndpoint: any = "datalist";
-editUrl: any = 'manage-article-category/edit';
-apiBaseUrl:any=this.base_URL;
-status: any = [{ val: 1, 'name': 'Active' }, { val: 0, 'name': 'Inactive' }];
-view:any="blog_category_view";
-public search_settings: any = {
-selectsearch: [{ label: 'Search By Status', field: 'status', values: this.status }],
-textsearch: [{ label: "Search By brand name...", field: 'brand_name' }]
-};
-// ====================================================================
+  articleCatConfig: any = [];
+  articleCatConfig_skip: any = ["_id"];
+  detail_skip_array:any=["_id"]
+  articleCatConfig_modify_header: any = {"blogtitle":"Article Name",
+  "parent category":"Parent Category","priority":"Priority","status":"Status"};
+  tableName: any = 'inventories';
+  UpdateEndpoint: any = "addorupdatedata";
+  deleteEndpoint: any = "deletesingledata";
+  searchingEndpoint: any = "datalist";
+  editUrl: any = 'manage-article-category/edit';
+  apiBaseUrl:any=this.base_URL;
+  status: any = [{ val: 1, 'name': 'Active' },{ val: 0, 'name': 'Inactive' }];
+  view:any="blog_category_view";
+  public search_settings: any = {
+  selectsearch: [{ label: 'Search By Status', field: 'status', values: this.status }],
+  textsearch: [{ label: 'Search By Article', field: 'blogtitle' }]
+  };
 
 
 
@@ -79,23 +76,14 @@ textsearch: [{ label: "Search By brand name...", field: 'brand_name' }]
       
     // });
 
-    let data: any = {
-      source:"blog_category_view",
-      endpoint: "datalistwithouttoken"
-      // token: this.cookieService.get('jwtToken')
-    }
-    this.apiService.httpViaPost("datalist", data).subscribe((result: any)=>{
-      //console.log(result.res);
-      this.blogCatConfig = result.res;
-      console.log('>>>>>>>>>>>>>>>>>>>>>>>>>', this.blogCatConfig);
-    });
+  
 
 
 
     this.activatedRoute.data.forEach((data: any) => {
       //console.log('>>>>>>>koushik>>>>>>>',data)
       // this.blogsList = data.blogCatList.res;
-      this.blogListConfig.datasource = data.blogsList.res;
+      this.blogListConfig = data.blogsList.res;
     })
 
 
@@ -103,6 +91,16 @@ textsearch: [{ label: "Search By brand name...", field: 'brand_name' }]
 
   ngOnInit() {
 
+    let data: any = {
+      source:"blog_category_view",
+      endpoint: "datalistwithouttoken"
+      // token: this.cookieService.get('jwtToken')
+    }
+    this.apiService.httpViaPost("datalist", data).subscribe((result: any)=>{
+      //console.log(result.res);
+      this.articleCatConfig = result.res;
+      // console.log('>>>>>>>>>>>>>>>>>>>>>>>>>', this.articleCatConfig);
+    });
     
   }
 
