@@ -30,78 +30,73 @@ export class AdminArticleManagerComponent implements OnInit {
   textsearch: [{ label: 'Search By Article', field: 'blogtitle' }]
   };
 
-
-
-
-  /************** lib list setup start here *************/
-//   public blogCatConfig:any = {
-//     // apiBaseUrl: "https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/",
-//     apiBaseUrl: this.apiService.serverUrl,
-//     listEndPoint: "datalist",
-//     datasource: "",
-//     tableName: "blog_category",
-//     updateurl: "addorupdatedata",
-//     editUrl: "manage-article-category/edit",
-//     jwtToken: "",
-//     deleteEndPoint: "deletesingledata",
-//     addLink: "manage-article-category/add",
-//     view: "blog_category_view"
-
-//  }
-
+  // public blogListConfig: any;
 
    //Blogs Lib List
-   public blogListConfig: any = {
-    apiBaseUrl: this.apiService.serverUrl,
-    listEndPoint: "datalist",
-    datasource: [],
-    tableName: "blogs",
-    updateurl: "addorupdatedata",
-    editUrl: "manage-article/edit",
-    jwtToken: this.cookieService.get('jwtToken'),
-    deleteEndPoint: "deletesingledata",
-    addLink: "manage-article/add",
-    view: "blogs_view"
-  }
+  //  public blogListConfig: any = {
+  //   apiBaseUrl: this.apiService.serverUrl,
+  //   listEndPoint: "datalist",
+  //   datasource: [],
+  //   tableName: "blogs",
+  //   updateurl: "addorupdatedata",
+  //   editUrl: "manage-article/edit",
+  //   jwtToken: this.cookieService.get('jwtToken'),
+  //   deleteEndPoint: "deletesingledata",
+  //   addLink: "manage-article/add",
+  //   view: "blogs"
+  // }
   
+
+
+  
+  public blogListBase_URL:any = environment['API_URL'];
+  blogListConfig: any = [];
+  blogListConfig_skip: any = ["_id"];
+  blogListDetail_skip_array:any=["_id"]
+  blogListConfig_modify_header: any = {"blogtitle":"Article Name",
+  "parent category":"Parent Category","priority":"Priority","status":"Status"};
+  blogListTableName: any = 'inventories';
+  blogListUpdateEndpoint: any = "addorupdatedata";
+  blogListDeleteEndpoint: any = "deletesingledata";
+  blogListSearchingEndpoint: any = "datalist";
+  blogListEditUrl: any = 'manage-article-category/edit';
+  blogListApiBaseUrl:any=this.blogListBase_URL;
+  blogListStatus: any = [{ val: 1, 'name': 'Active' },{ val: 0, 'name': 'Inactive' }];
+  blogListView:any="blog_category_view";
+  public blogListSearch_settings: any = {
+    selectsearch: [{ label: 'Search By Status', field: 'status', values: this.status }],
+    textsearch: [{ label: 'Search By Article', field: 'blogtitle' }]
+  };
+
+
+
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService) {
-
-    // this.activatedRoute.data.subscribe(resolveData => {
-    //   this.blogCatConfig.datasource = resolveData.data.res;
-
-    //   // console.log('kb article cat list', this.blogCatConfig.datasource);
-
-    //   this.blogCatConfig.jwtToken = this.cookieService.get('jwtToken');
-      
-    // });
-
   
-
-
-
+  
     this.activatedRoute.data.forEach((data: any) => {
       //console.log('>>>>>>>koushik>>>>>>>',data)
       // this.blogsList = data.blogCatList.res;
       this.blogListConfig = data.blogsList.res;
-    })
+            console.log('>>>>>>>koushik>>>>>>>',this.blogListConfig)
 
+    })
 
    }
 
   ngOnInit() {
 
+
     let data: any = {
       source:"blog_category_view",
-      endpoint: "datalistwithouttoken"
-      // token: this.cookieService.get('jwtToken')
+      token: this.cookieService.get('jwtToken')
     }
     this.apiService.httpViaPost("datalist", data).subscribe((result: any)=>{
       //console.log(result.res);
       this.articleCatConfig = result.res;
-      // console.log('>>>>>>>>>>>>>>>>>>>>>>>>>', this.articleCatConfig);
+      console.log('>>>>>>>>>>>>>>>>>>>>>>>>>', this.articleCatConfig);
     });
-    
+       
   }
 
 }

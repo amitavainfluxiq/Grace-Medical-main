@@ -90,6 +90,8 @@ const routes: Routes = [
     resolve: { serviceList: ResolveService },
     data: { requestcondition: { source: 'service_view', condition: {} }, endpoint: 'datalistwithouttoken' }
   },
+
+  
   {path: 'journals', component: JournalsComponent, resolve: { journalListData: ResolveService },
   data: { requestcondition: { condition: { "limit": 1, "skip": 1 } }, endpoint: 'blogdata' }
   },
@@ -176,17 +178,7 @@ const routes: Routes = [
    /**Article category**/
    { path: 'manage-article-category/add', component: AddEditBlogcatComponent },
    {
-     path: 'manage-article-category/list',
-     component: ListingBlogcatComponent,
-     resolve: { blogCatList: ResolveService },
-     data: { 
-       requestcondition: { 
-         source: 'blog_category_view', 
-         condition: {} 
-        }, 
-      endpoint: 'datalist' 
-    }
-   },
+     path: 'manage-article-category/list',component: ListingBlogcatComponent},
    {
      path: 'manage-article-category/edit/:_id',
      component: AddEditBlogcatComponent,

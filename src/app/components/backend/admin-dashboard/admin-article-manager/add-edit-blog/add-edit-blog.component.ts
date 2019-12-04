@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
-import { ApiService } from '../../../../../api.service';
+// import { ApiService } from '../../../../../api.service';
 import{environment} from '../../../../../../environments/environment.dev'
 
 @Component({
@@ -11,14 +11,14 @@ import{environment} from '../../../../../../environments/environment.dev'
 })
 export class AddEditBlogComponent implements OnInit {
 
-
   // server: any ='https://r245816wug.execute-api.us-east-1.amazonaws.com/dev/api/';
-  public apiBaseUrl:any= environment['API_URL'];
+  server: any = environment.API_URL;
   addUrl: any = 'addorupdatedata';
   getDataUrl: any= 'datalist';
   public editdata: any = [];
   action:any="add";
   listURL:any="manage-article/list";
+
 
 
   public configData: any = {
@@ -40,14 +40,14 @@ export class AddEditBlogComponent implements OnInit {
     path: "blogs",
     prefix: "blogs-file"
   }
-constructor(private cookieService: CookieService, private activatedRoute: ActivatedRoute, public apiservice: ApiService) { }
+constructor(private cookieService: CookieService, private activatedRoute: ActivatedRoute) { }
 
 ngOnInit() {
   
   this.activatedRoute.params.subscribe(params => {
     if (params._id) {
       this.activatedRoute.data.subscribe(resolveData => {         
-        this.editdata= resolveData.data.res[0];  
+        this.editdata= resolveData.blogsList.res[0];  
         this.action="edit";    
       });
     }
