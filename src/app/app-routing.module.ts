@@ -92,9 +92,11 @@ const routes: Routes = [
   },
 
   
-  {path: 'journals', component: JournalsComponent, resolve: { journalListData: ResolveService },
-  data: { requestcondition: { condition: { "limit": 1, "skip": 1 } }, endpoint: 'blogdata' }
-  },
+  // {path: 'journals', component: JournalsComponent, resolve: { journalListData: ResolveService },
+  // data: { requestcondition: { condition: { "limit": 1, "skip": 1 } }, endpoint: 'blogdata' }
+  // },
+
+  {path: 'journals', component: JournalsComponent},
 
 
   {path: 'imagegallery', component: ImagegalleryComponent},

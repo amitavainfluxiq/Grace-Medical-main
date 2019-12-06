@@ -94,7 +94,7 @@ export class AdminArticleManagerComponent implements OnInit {
     this.apiService.httpViaPost("datalist", data).subscribe((result: any)=>{
       //console.log(result.res);
       this.articleCatConfig = result.res;
-      console.log('>>>>>>>>>>>>>>>>>>>>>>>>>', this.articleCatConfig);
+      // console.log('>>>>>>>>>>>>>>>>>>>>>>>>>', this.articleCatConfig);
     });
        
   }

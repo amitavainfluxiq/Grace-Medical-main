@@ -72,9 +72,14 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6eaee', endColorstr='#dce2e6', GradientType=1 );}
 
 
-.journals_blog .journals_blog_left{ width: 574px;  float: left ; display: inline-block; margin-right: 20px; margin-bottom: 0px!important;}
-.journals_blog .journals_blog_right{ width: 495px;  float: right; display: inline-block; position: relative; margin-bottom: 0px!important; }
-
+.journals_blog .journals_blog_left{ width: 574px; float: left; margin-right: 20px; margin-bottom: 0px!important;}
+.journals_blog .journals_blog_right{ width: 495px; float: right; position: relative; margin-bottom: 0px!important; }
+.journals_blog .journals_blog_right .journals_blog_right_wrapper_outer .journals_blog_right_wrapper{
+    height: 520px;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
 .journals_blog:nth-child(even) .journals_blog_left{   float: right;  margin-right: 0px; margin-left: 20px;}
 .journals_blog:nth-child(even) .journals_blog_right{  float: left !important;  }
 
@@ -85,9 +90,18 @@
 
 .journals_blog:nth-child(even) .journals_blog_right .journals_blog_share{ left: 0; right: inherit;}
 
-.journals_blog .journals_blog_right .journalsmainimg{ display: block; width: 100%;}
+.journals_blog .journals_blog_right .journals_blog_right_wrapper_outer{position: relative;}
 
-.journals_blog  h2{ font-size: 48px; color: #03afa5; margin: 0; padding: 0 0 20px 0; font-family: 'Helvetica-Normal'; font-weight: normal; line-height: 50px;}
+.journals_blog .journals_blog_right .journals_blog_right_wrapper_outer .journals_blog_right_wrapper img{
+    height: 100% !important;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100% !important;
+    width: auto;
+    height: auto;
+}
+
+.journals_blog  h2{ font-size: 36px; color: #03afa5; margin: 0; padding: 0 0 20px 0; font-family: 'Helvetica-Normal'; font-weight: normal; line-height: normal;}
 .journals_blog .journals_blog_left h3{ font-size: 24px; color: #3d3d3d; margin: 10px 0; padding: 0; font-family: 'Helvetica-Normal'; font-weight: normal; text-transform: uppercase;}
 .journals_blog .journals_blog_left h4{ font-size: 24px; color: #3d3d3d; margin: 0; padding: 10px 0 0 0; font-family: 'Helvetica-Normal'; font-weight: normal;}
 
@@ -103,6 +117,70 @@
 .journals_blog:nth-of-type(3n+2) h2{color: #997d6e;}
 
 .blog_loadbtn{ display: block; width: 100%; height: 55px;   background: #13b9af; border: none!important; outline: none!important; box-shadow: none!important;  font-size: 20px; color: #ffffff; cursor: pointer; margin-top: 30px;}
+
+
+
+.mat-tree-node{list-style: none;}
+
+.truncate{overflow: hidden;text-overflow: -o-ellipsis-lastline; display: -webkit-box; line-height: normal; max-height: 158px; -webkit-line-clamp: 5;}
+.truncateopen{overflow: inherit !important; min-height: 94px; height: 100% !important; height: auto !important; text-overflow: inherit !important; -webkit-line-clamp: inherit !important; }
+.truncateopen p{ height: auto !important;    overflow: inherit; min-height: auto !important;
+  text-overflow: inherit;
+  display: inherit;
+  line-height: 24px;
+  height: auto !important;
+  -webkit-line-clamp: inherit !important;}
+  .generalcls .testicontent .quatation .truncate a{
+    margin-right: 5px;
+  }
+
+
+
+
+
+  .journals_block_right .mat-tree-node {
+    border-radius: 0px!important;
+    box-shadow: none!important;
+    background: #e6e8e9!important;
+    border-bottom: solid 1px #fff;
+    position: relative;
+ }
+
+ .journals_block_right .mat-tree-node li ul{
+    background: #13b9af!important;
+    border-bottom: solid 1px #fff;
+    color: #fff;
+    padding-left: 20px!important;
+    margin: 0;
+    padding: 10px;
+ }
+
+ .journals_block_right .mat-tree-node .mat-button-wrapper{
+    position: relative;
+ }
+
+ .blogcategorycountcls{
+    position: absolute;
+    top: -4px;
+    right: 4px;
+ }
+
+ .journals_block_right .mat-tree-node .mat-icon-button {
+    position: absolute;
+    right: 10px;
+}
+.blogcategorycls{
+    padding-left: 10px;
+}
+.blogcountcls{
+    background: #13b9af!important;
+    color: #fff;
+    padding: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    display: inline-block;
+}
 
 /*=========================================================================================================================================*/
 /*============================================================MEDIA CSS====================================================================*/
