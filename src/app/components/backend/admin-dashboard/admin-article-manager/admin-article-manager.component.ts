@@ -59,7 +59,7 @@ export class AdminArticleManagerComponent implements OnInit {
   blogListUpdateEndpoint: any = "addorupdatedata";
   blogListDeleteEndpoint: any = "deletesingledata";
   blogListSearchingEndpoint: any = "datalist";
-  blogListEditUrl: any = 'manage-article-category/edit';
+  blogListEditUrl: any = 'manage-article/edit';
   blogListApiBaseUrl:any=this.blogListBase_URL;
   blogListStatus: any = [{ val: 1, 'name': 'Active' },{ val: 0, 'name': 'Inactive' }];
   blogListView:any="blog_category_view";
@@ -78,7 +78,7 @@ export class AdminArticleManagerComponent implements OnInit {
       //console.log('>>>>>>>koushik>>>>>>>',data)
       // this.blogsList = data.blogCatList.res;
       this.blogListConfig = data.blogsList.res;
-            console.log('>>>>>>>koushik>>>>>>>',this.blogListConfig)
+            // console.log('>>>>>>>koushik>>>>>>>',this.blogListConfig)
 
     })
 

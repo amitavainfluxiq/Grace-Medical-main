@@ -75,7 +75,7 @@
 .journals_blog .journals_blog_left{ width: 574px; float: left; margin-right: 20px; margin-bottom: 0px!important;}
 .journals_blog .journals_blog_right{ width: 495px; float: right; position: relative; margin-bottom: 0px!important; }
 .journals_blog .journals_blog_right .journals_blog_right_wrapper_outer .journals_blog_right_wrapper{
-    height: 520px;
+    height: 402px;
     width: 100%;
     display: inline-block;
     overflow: hidden;
@@ -84,7 +84,7 @@
 .journals_blog:nth-child(even) .journals_blog_right{  float: left !important;  }
 
 
-.journals_blog_share{ position: absolute; right: 0; bottom: -4px;}
+.journals_blog_share{ position: absolute; right: 0; bottom: 0px;}
 
 .journals_blog_share img{ width: 45px; cursor: pointer;}
 
@@ -101,9 +101,9 @@
     height: auto;
 }
 
-.journals_blog  h2{ font-size: 36px; color: #03afa5; margin: 0; padding: 0 0 20px 0; font-family: 'Helvetica-Normal'; font-weight: normal; line-height: normal;}
-.journals_blog .journals_blog_left h3{ font-size: 24px; color: #3d3d3d; margin: 10px 0; padding: 0; font-family: 'Helvetica-Normal'; font-weight: normal; text-transform: uppercase;}
-.journals_blog .journals_blog_left h4{ font-size: 24px; color: #3d3d3d; margin: 0; padding: 10px 0 0 0; font-family: 'Helvetica-Normal'; font-weight: normal;}
+.journals_blog  h2{ font-size: 24px; color: #03afa5; margin: 0; padding: 0 0 20px 0; font-family: 'Helvetica-Normal'; font-weight: normal; line-height: normal; cursor: pointer;}
+.journals_blog .journals_blog_left h3{ font-size: 18px; color: #d85353; margin: 10px 0; padding: 0; font-family: 'Helvetica-Normal'; font-weight: normal; text-transform: uppercase;}
+.journals_blog .journals_blog_left h4{ font-size: 18px; color: #3d3d3d; margin: 0; padding: 10px 0 0 0; font-family: 'Helvetica-Normal'; font-weight: normal;}
 
 .journalsreadmore{ display: block; width: 155px; height: 44px; text-align: center; line-height: 44px; float: right; outline: none; background: #00a2ff; border: none; cursor: pointer; font-size: 24px;  color: #ffffff; border-radius: 4px; margin-top: 30px;}
 

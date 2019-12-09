@@ -45,33 +45,37 @@ adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq
 
 
 
-                <h2>Researchers Explore
-Why Women's Alzheimer's
-Risk Is Higher Than Men's
-</h2>
+                <h2>{{journal[0].blogtitle}}</h2>
+                <span class="journals_blog_img">
 
-
-
-                     <span class="journals_blog_img">
-
-                <img src="assets/images/blogdetailimg.jpg" alt="#" class="journalsmainimg">
+                <img [src]="journal[0].image" alt="#" class="journalsmainimg">
+                
                  <span class="journals_blog_share">
+                     
+                    <a class="sociallink fa fb" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fjournalsdetail%2F{{journal[0]._id}}" target="_blank">
+                        <img src="/assets/images/share_this_1.png" alt="#" >
+                    </a>
 
- <img src="/assets/images/share_this_1.png" alt="#" >
-    <img src="/assets/images/share_this_2.png" alt="#" >
-    <img src="/assets/images/share_this_3.png" alt="#" >
-    <img src="/assets/images/share_this_4.png" alt="#" >
-    <img src="/assets/images/share_this_5.png" alt="#" >
-    <img src="/assets/images/share_this_6.png" alt="#" >
-                        </span>
+                    <a class="sociallink fa twi" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fjournalsdetail%2F{{journal[0]._id}}" target="_blank"><img src="/assets/images/share_this_2.png" alt="#" >
+                    </a>
 
+                    <a class="sociallink fa tumblr" href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fjournalsdetail%2F{{journal[0]._id}}" target="_blank">
+                        <img src="/assets/images/share_this_7.png" alt="#" >
+                    </a>
+                     
+                    <a class="sociallink fa lin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fjournalsdetail%2F{{journal[0]._id}}" target="_blank">
+                        <img src="/assets/images/share_this_4.png" alt="#" >
+                    </a>
 
+                    <a class="sociallink fa share" (click)="copyText('https://dev.gracemedical.influxiq.com/journalsdetail%2F?affid='+journal[0]._id)">
+                        <img src="/assets/images/share_this_6.png" alt="#" >
+                    </a>
+                </span>
             </span>
 
 
-                <h3>JON HAMILTON, July 17, 2019 </h3>
-                <h4>Scientists are beginning to understand why Alzheimer's disease affects more women than men and why the disease seems to progress more quickly in
-women's brains. The explanation appears to involve social, biological and genetic differences, researchers reported Tuesday at the Alzheimer's.</h4>
+                <h3>{{journal[0].author}}, {{journal[0].date}} </h3>
+                <h4><span [innerHtml]="journal[0].description"></span></h4>
 
 
 
@@ -98,9 +102,9 @@ women's brains. The explanation appears to involve social, biological and geneti
 
     <mat-card-content class="journals_block_right">
 
-        <h2>Lorem ipsum dolor </h2>
+        <h2>Category ({{ blogcategorycount }})</h2>
 
-        <mat-accordion>
+        <!-- <mat-accordion>
             <mat-expansion-panel>
                 <mat-expansion-panel-header>
                     <mat-panel-title >
@@ -280,10 +284,42 @@ women's brains. The explanation appears to involve social, biological and geneti
 
             </mat-expansion-panel>
 
-        </mat-accordion>
-
+        </mat-accordion> -->
+        <mat-tree [dataSource]="blogCategoryDataSource" [treeControl]="nestedTreeControl" class="example-tree">
+            <mat-tree-node *matTreeNodeDef="let item" matTreeNodePadding>
+              <li class="mat-tree-node">
+                <button mat-icon-button disabled></button>
+                {{ item.blogtitle }}
+              </li>
+            </mat-tree-node>
+            <mat-tree-node *matTreeNodeDef="let item; when: hasNestedChild">
+              <li>
+                <div class="mat-tree-node">
+                  <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'toggle ' + item.blogtitle">
+                    <mat-icon class="mat-icon-rtl-mirror">
+                      {{
+                        nestedTreeControl.isExpanded(item)
+                          ? "expand_more"
+                          : "chevron_right"
+                      }}
+                    </mat-icon>
+                  </button>
+                  <span class="blogcategorycls"><span class="blogcountcls">{{ item.blogcount }}</span> {{ item.blogtitle }} </span>
+                </div>
+                <ul *ngFor="let journalList of journalListing; let i = index" [class.example-tree-invisible]="
+                    !nestedTreeControl.isExpanded(item)
+                  ">
+                  <ng-container matTreeNodeOutlet>
+                      {{ journalList.blogtitle }}
+                  </ng-container>
+                </ul>
+              </li>
+            </mat-tree-node>
+          </mat-tree>
 
     </mat-card-content>
+
+      
 
     <span class="clear"></span>
 
@@ -292,6 +328,128 @@ women's brains. The explanation appears to involve social, biological and geneti
 </mat-card>
 
 
+
+<mat-card>
+       <!-- loop most viewed blogs  -->
+       <mat-card-content class="bottomdetaillistsbox mostviewedblogs">
+        
+    <mat-card-content>
+            <h2>Most Viewed Blogs</h2>
+        <mat-card-subtitle *ngFor="let mostview of mostviewjournalListing | slice:0:indexval1 ; let i=index">
+            <h2 (click)="mostViewDetail(mostview._id)">{{mostview.blogtitle}}</h2>
+
+            <span class="home_block2img" (click)="mostViewDetail(mostview._id)"> <img src="{{ mostview.image }}"> </span>
+
+
+            <span class="homeblock2_subtext">
+                <h3>
+                    {{ mostview.date }}
+               </h3>
+                <h4><span [innerHtml]="mostview.description"></span></h4>
+
+                <h5>{{ mostview.author }}</h5>
+
+                <span class="homeblock2_subsociallink">
+
+                        <a class="sociallink fa fb" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fjournalsdetail%2F{{journal[0]._id}}" target="_blank">
+                            <img src="/assets/images/share_this_1.png" alt="#" >
+                        </a>
+    
+                        <a class="sociallink fa twi" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fjournalsdetail%2F{{journal[0]._id}}" target="_blank"><img src="/assets/images/share_this_2.png" alt="#" >
+                        </a>
+    
+                        <a class="sociallink fa tumblr" href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fjournalsdetail%2F{{journal[0]._id}}" target="_blank">
+                            <img src="/assets/images/share_this_7.png" alt="#" >
+                        </a>
+                         
+                        <a class="sociallink fa lin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fjournalsdetail%2F{{journal[0]._id}}" target="_blank">
+                            <img src="/assets/images/share_this_4.png" alt="#" >
+                        </a>
+    
+                        <a class="sociallink fa share" (click)="copyText('https://dev.gracemedical.influxiq.com/journalsdetail%2F?affid='+journal[0]._id)">
+                            <img src="/assets/images/share_this_6.png" alt="#" >
+                        </a>
+                </span>
+
+
+                <span class="homeblock2_readlink" (click)="mostViewDetail(mostview._id)">Read Article</span>
+
+
+            </span>
+
+            <span class="clear"></span>
+
+
+        </mat-card-subtitle>
+        <button class="homeblock2link"  *ngIf="mostviewjournalListing !=null && indexval < mostviewjournalListing.length" (click)="journalMostViewLoadMore()">Load More</button>
+    </mat-card-content>
+</mat-card-content>
+
+<!-- loop YOU MIGHT ALSO LIKE  -->
+
+
+<!-- loop YOU MIGHT ALSO LIKE  -->
+<mat-card-content class="bottomdetaillistsbox youmighalsolike">
+    
+
+
+        <mat-card-content>
+                <h2>YOU MIGHT ALSO LIKE</h2>
+        <mat-card-subtitle *ngFor="let youMightLike of youMightLikejournalListing | slice:0:indexval ; let i=index">
+            <h2 (click)="youMightLikeDetail(youMightLike._id)">{{youMightLike.blogtitle}}</h2>
+
+            <span class="home_block2img" (click)="youMightLikeDetail(youMightLike._id)"> <img src="{{ youMightLike.image }}"> </span>
+
+
+            <span class="homeblock2_subtext">
+                <h3>
+                    {{ youMightLike.date }}
+               </h3>
+                <h4><span [innerHtml]="youMightLike.description"></span></h4>
+
+                <h5>{{ youMightLike.author }}</h5>
+
+                <span class="homeblock2_subsociallink">
+
+                        <a class="sociallink fa fb" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fjournalsdetail%2F{{journal[0]._id}}" target="_blank">
+                            <img src="/assets/images/share_this_1.png" alt="#" >
+                        </a>
+    
+                        <a class="sociallink fa twi" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fjournalsdetail%2F{{journal[0]._id}}" target="_blank"><img src="/assets/images/share_this_2.png" alt="#" >
+                        </a>
+    
+                        <a class="sociallink fa tumblr" href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fjournalsdetail%2F{{journal[0]._id}}" target="_blank">
+                            <img src="/assets/images/share_this_7.png" alt="#" >
+                        </a>
+                         
+                        <a class="sociallink fa lin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fjournalsdetail%2F{{journal[0]._id}}" target="_blank">
+                            <img src="/assets/images/share_this_4.png" alt="#" >
+                        </a>
+    
+                        <a class="sociallink fa share" (click)="copyText('https://dev.gracemedical.influxiq.com/journalsdetail%2F?affid='+journal[0]._id)">
+                            <img src="/assets/images/share_this_6.png" alt="#" >
+                        </a>
+                </span>
+
+
+                <span class="homeblock2_readlink" (click)="youMightLikeDetail(youMightLike._id)">Read Article</span>
+
+
+            </span>
+
+            <span class="clear"></span>
+
+
+        </mat-card-subtitle>
+        <button class="homeblock2link"  *ngIf="youMightLikejournalListing !=null && indexval < youMightLikejournalListing.length" (click)="journalYouMightLikeLoadMore()">Load More</button>
+    </mat-card-content>
+
+
+       
+</mat-card-content>
+
+<!-- loop most viewed blogs  -->
+</mat-card>
 
 
 

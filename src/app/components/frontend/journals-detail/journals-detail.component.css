@@ -69,15 +69,122 @@
 
 .journals_blog .journals_blog_img .journalsmainimg{ display: block; width: 100%;}
 
-.journals_blog  h2{ font-size: 48px; color: #03afa5; margin: 0; padding: 0 0 20px 0; font-family: 'Helvetica-Normal'; font-weight: normal; line-height: 50px;}
-.journals_blog   h3{ font-size: 24px; color: #3d3d3d; margin:20px 0 10px 0; padding: 0; font-family: 'Helvetica-Normal'; font-weight: normal; text-transform: uppercase;}
-.journals_blog   h4{ font-size: 24px; color: #3d3d3d; margin: 0; padding: 0px 0 0 0; font-family: 'Helvetica-Normal'; font-weight: normal;}
+.journals_blog  h2{ font-size: 32px; color: #03afa5; margin: 0; padding: 0 0 20px 0; font-family: 'Helvetica-Normal'; font-weight: normal; line-height: normal; text-transform: capitalize;}
+.journals_blog   h3{ font-size: 18px; color: #d85353; margin:20px 0 10px 0; padding: 0; font-family: 'Helvetica-Normal'; font-weight: normal; text-transform: uppercase;}
+.journals_blog   h4{ font-size: 18px; color: #3d3d3d; margin: 0; padding: 0px 0 0 0; font-family: 'Helvetica-Normal'; font-weight: normal;}
 
 .journalsreadmore{ display: block; width: 155px; height: 44px; text-align: center; line-height: 44px; float: right; outline: none; background: #00a2ff; border: none; cursor: pointer; font-size: 24px;  color: #ffffff; border-radius: 4px; margin-top: 30px;}
 
 
+.mat-tree-node {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+}
 
 
+.journals_block_right .mat-tree-node {
+    border-radius: 0px!important;
+    box-shadow: none!important;
+    background: #e6e8e9!important;
+    border-bottom: solid 1px #fff;
+    position: relative;
+ }
+
+ .journals_block_right .mat-tree-node li{
+     width: 100%;
+ }
+
+ .journals_block_right .mat-tree-node li ul{
+    background: #13b9af!important;
+    border-bottom: solid 1px #fff;
+    color: #fff;
+    padding-left: 20px!important;
+    margin: 0;
+    padding: 10px;
+ }
+
+ .journals_block_right .mat-tree-node .mat-button-wrapper{
+    position: relative;
+ }
+
+ .blogcategorycountcls{
+    position: absolute;
+    top: -4px;
+    right: 4px;
+ }
+
+ .journals_block_right .mat-tree-node .mat-icon-button {
+    position: absolute;
+    right: 10px;
+}
+.blogcategorycls{
+    padding-left: 10px;
+}
+.blogcountcls{
+    background: #13b9af!important;
+    color: #fff;
+    padding: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+
+
+
+
+
+.bottomdetaillistsbox{ display: block; width: 100%; padding: 10px 0 0 0; clear: both; overflow: hidden; outline: none!important; border: none!important; margin: 0!important; border-radius: 0px!important; box-shadow: none!important;}
+
+.bottomdetaillistsbox h2{ margin: 0px; padding: 0 0 10px 0; text-align: left; font-size: 30px; color: #363636;  font-family: 'Helvetica-Normal'; text-transform: uppercase;}
+
+.bottomdetaillistsbox .mat-card-content{ width: 1560px; display: block; margin: 0 auto;}
+
+.bottomdetaillistsbox .mat-card-content mat-card-subtitle{ display: block; float: left; width: 30.3%; padding: 1%; margin: 0.5%; background: #f1f1f1; border-top: solid 9px #e0dfdd;}
+
+.bottomdetaillistsbox .mat-card-content mat-card-subtitle h2{ margin: 0; padding: 0 0 10px 0; font-size: 18px; color: #363636;  font-family: 'Helvetica-Normal';}
+
+.bottomdetaillistsbox .mat-card-content mat-card-subtitle .home_block2img{ width: 219px; float: left; height: 232px;}
+
+.bottomdetaillistsbox .mat-card-content mat-card-subtitle .home_block2img img{ height: 100% !important; -o-object-fit: cover; object-fit: cover; width: 100% !important; width: auto;
+    height: auto; border: solid 1px #fff;}
+
+.bottomdetaillistsbox .mat-card-content mat-card-subtitle .homeblock2_subtext{ width: 246px; float: right;}
+
+.bottomdetaillistsbox .mat-card-content mat-card-subtitle .homeblock2_subtext h3{ font-weight: normal; margin: 0; padding: 0; font-size: 13px; color: #434243;}
+.bottomdetaillistsbox .mat-card-content mat-card-subtitle .homeblock2_subtext h3 label{ display: block; color: #e01b50;}
+
+.bottomdetaillistsbox .mat-card-content mat-card-subtitle .homeblock2_subtext h4{
+    height: 135px;
+    padding: 0px;
+    margin: 10px 0;
+    position: relative;
+    font-size: 16px;
+    color: #434243;
+    font-family: 'Helvetica-Normal';
+    font-weight: normal;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.bottomdetaillistsbox .mat-card-content mat-card-subtitle .homeblock2_subtext h4 span{ display: table-cell; vertical-align: middle; height: 106px;}
+
+.bottomdetaillistsbox .mat-card-content mat-card-subtitle .homeblock2_subtext h5{ text-align: right; margin: 0; padding: 0 0 13px 0; font-size: 14px; color: #434243;  font-family: 'Helvetica-Normal'; font-weight: normal; text-transform: uppercase;}
+
+.bottomdetaillistsbox .homeblock2_subsociallink{ display: inline-block;}
+
+.bottomdetaillistsbox .homeblock2_subsociallink img{ width: 22px; margin-right: 1px; cursor: pointer;}
+
+.bottomdetaillistsbox .homeblock2_readlink{ display: block; float: right; width: 78px; text-align: center; font-size: 14px; color: #0277c1; border-bottom: solid 1px #0277c1; cursor: pointer;  font-family: 'Helvetica-Normal'; margin: 2px 0 0 0; outline: none;}
+.bottomdetaillistsbox .homeblock2_readlink:hover{ border: none;}
+
+.bottomdetaillistsbox .homeblock2link{ width: 164px; display: block; line-height: 45px; margin: 12px 0.5% 14px 0!important; background: #13b9af; text-align: center;font-size: 14px; color: #ffffff; text-transform: uppercase;  font-family: 'Helvetica-Normal'; border-radius: 0px; float: right; padding: 0px!important; height: 40px; }
+
+
+.homeblock2link{ width: 164px; display: block; line-height: 45px; margin: 12px 0.5% 14px 0!important; background: #13b9af; text-align: center;font-size: 14px; color: #ffffff; text-transform: uppercase;  font-family: 'Helvetica-Normal'; border-radius: 0px; float: left; padding: 0px!important; height: 40px; border: none; cursor: pointer; }
 
 /*=========================================================================================================================================*/
 /*============================================================MEDIA CSS====================================================================*/

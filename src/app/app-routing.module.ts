@@ -97,7 +97,18 @@ const routes: Routes = [
   // },
 
   {path: 'journals', component: JournalsComponent},
-
+  {path: 'journalsdetail/:_id', component: JournalsDetailComponent,
+  resolve: {
+    journalCatList: ResolveService
+  },
+  data:
+  {
+    requestcondition:
+    {
+      source: 'blogs_view', condition: {}
+    }, endpoint: 'datalistwithouttoken'
+  }
+},
 
   {path: 'imagegallery', component: ImagegalleryComponent},
   {path: 'videogallery', component: VideogalleryComponent},
@@ -112,7 +123,7 @@ const routes: Routes = [
   {path: 'appointment', component: AppointmentsfrontendComponent},
   {path: 'sacheduleappointment', component: ScheduleAppointmentComponent},
   {path: 'ourphysiciansdetail', component: OurphysiciansDetailComponent},
-  {path: 'journalsdetail', component: JournalsDetailComponent},
+  
 
   {path: 'add_lesson', component: AddLessonComponent},
   {path: 'edit_category', component: EditCategoryComponent},

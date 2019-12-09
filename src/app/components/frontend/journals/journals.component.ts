@@ -1,7 +1,8 @@
 
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, Inject} from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 // import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
+import {MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
 
 import { MatTreeNestedDataSource } from '@angular/material/tree';
 import { NestedTreeControl } from '@angular/cdk/tree';
@@ -9,7 +10,9 @@ import { BehaviorSubject, of as observableOf } from 'rxjs';
 import { CookieService } from 'ngx-cookie-service';
 import { MetaService } from '@ngx-meta/core';
 import {ApiService} from "../../../api.service";
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
+export interface DialogData {data: any;} 
 
 export class FileNode{
   children: FileNode[];
@@ -26,21 +29,21 @@ export class FileNode{
 export class JournalsComponent implements OnInit {
 
   
-  public journalList: any;
-  public indexval:any;
+  public journalList: any = []; 
+  public indexval:any=5;
   public journalListing:any;
-
   public p_id: any;
   public data:any;
-  public blogListing: any = [];  
   public blogcategorycount:any;
-  public blogList: any;
   public resc: any = [];  
   public catData: any;
   public blogCount: any =[];
   public blogtitle: any;
 
+  public videourl:any='';
+  public url:"https://www.youtube.com/embed/"
 
+  safeSrc: SafeResourceUrl;
 
     /*------------TREE NESTEDDATA-----*/
 
@@ -52,7 +55,7 @@ export class JournalsComponent implements OnInit {
 
 
 
-  constructor( public apiService: ApiService, private readonly meta: MetaService, private activatedRoute: ActivatedRoute, public router: Router, private cookieservice: CookieService) { window.scrollTo(500, 0);
+  constructor( public apiService: ApiService, private readonly meta: MetaService, private activatedRoute: ActivatedRoute, public router: Router, private cookieservice: CookieService, private sanitizer: DomSanitizer,public dialog:MatDialog) { window.scrollTo(500, 0);
 
     this.meta.setTitle('Grace Medical - Medical Journals');
     this.meta.setTag('og:description', 'Stay updated with all the new developments taking place in the Healthcare and Medical industry with the latest Medical Journals maintained by some of the most esteemed professionals of the Medical World.');
@@ -84,7 +87,7 @@ export class JournalsComponent implements OnInit {
     this.apiService.postDatawithoutToken("datalistwithouttoken", catData).subscribe((result: any)=> {
       // console.log(result.res);
       this.blogCategoryDataSource = result.res;
-      console.log('>>>>>>>>>>>>>>>>>>>>>>>>>', this.blogCategoryDataSource);
+      // console.log('>>>>>>>>>>>>>>>>>>>>>>>>>', this.blogCategoryDataSource);
     });
 
 
@@ -140,15 +143,36 @@ export class JournalsComponent implements OnInit {
 
   ngOnInit() {
     
-    
+   
 
   }
+
+   //*********view Video modal section***********//
+
+   openvideourl(val:any){
+
+    let url:any;
+    url="https://www.youtube.com/embed/";
+     // console.log('video url....>',url+val);
+     this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl(url + val);
+     
+     // console.log('>>>>>>>>>>>>>>>>>>',this.safeSrc)
+     const dialogRef = this.dialog.open(CommonVideoModalComponent, {
+       panelClass:['modal-md','success-modal'],       
+       width:'450px',
+       data:this.safeSrc, 
+     });
+     dialogRef.afterClosed().subscribe(result => {  
+     });
+   }
+
+//********* end Video modal section***********//
 
 
   //***********blog list view in blog detail************//
   blogdetail(val:any){
     // console.log(val)
-    this.router.navigateByUrl('/blog-details/' +val)
+    this.router.navigateByUrl('/journalsdetail/' +val)
   }
 
   showmore(index:any) {
@@ -160,5 +184,28 @@ export class JournalsComponent implements OnInit {
   }
 
 
+  //***********load more view blog *************//
+  blogloadmore(){
+    // console.log('load more')
+    this.indexval=this.indexval+2;
 
+  }
+
+  //**blog view from blog category list**//
+  openblog(val:any){
+    console.log(val)
+  }
+}
+
+
+
+//**********video modal component************//
+@Component({
+  selector:'app-commonvideomodal',
+  templateUrl:'./commonvideomodal.html'
+})
+export class CommonVideoModalComponent {
+  constructor( public dialogRef: MatDialogRef<CommonVideoModalComponent>,
+               @Inject(MAT_DIALOG_DATA) public data: DialogData){
+  }
 }
