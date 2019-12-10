@@ -51,7 +51,7 @@ export class AdminArticleManagerComponent implements OnInit {
   
   public blogListBase_URL:any = environment['API_URL'];
   blogListConfig: any = [];
-  blogListConfig_skip: any = ["_id"];
+  blogListConfig_skip: any = ["_id","credentials","blogs_image","categorydata"];
   blogListDetail_skip_array:any=["_id"]
   blogListConfig_modify_header: any = {"blogtitle":"Article Name",
   "parent category":"Parent Category","priority":"Priority","status":"Status"};
