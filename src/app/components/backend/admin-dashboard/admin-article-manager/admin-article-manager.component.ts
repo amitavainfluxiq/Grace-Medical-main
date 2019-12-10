@@ -3,6 +3,7 @@ import {ActivatedRoute,Router} from '@angular/router';
  import{CookieService} from 'ngx-cookie-service';
  import { ApiService } from '../../../../api.service';
  import {environment} from '../../../../../environments/environment.dev';
+ 
 
 @Component({
   selector: 'app-admin-article-manager',
@@ -10,6 +11,7 @@ import {ActivatedRoute,Router} from '@angular/router';
   styleUrls: ['./admin-article-manager.component.css']
 })
 export class AdminArticleManagerComponent implements OnInit {
+  
 
   public base_URL:any = environment['API_URL'];
   articleCatConfig: any = [];
@@ -81,6 +83,13 @@ export class AdminArticleManagerComponent implements OnInit {
             // console.log('>>>>>>>koushik>>>>>>>',this.blogListConfig)
 
     })
+
+
+
+    
+
+
+
 
    }
 
