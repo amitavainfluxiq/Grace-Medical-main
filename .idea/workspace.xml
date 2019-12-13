@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bb5622c8-38a8-4e54-a5a4-3be9de3de4d8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.ts" afterPath="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-dialog.html" afterPath="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-dialog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-success-dialog.html" afterPath="$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-success-dialog.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,35 +16,12 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="homefrontendfooter.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.ts">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="140" column="3" lean-forward="false" selection-start-line="140" selection-start-column="3" selection-end-line="140" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#84#0" expanded="true" />
-                <element signature="n#!!block;n#donewsSubmit#0;n#NewslatterDialogComponent#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newsletter-dialog.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-dialog.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="100" lean-forward="false" selection-start-line="25" selection-start-column="100" selection-end-line="25" selection-end-column="100" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newsletter-success-dialog.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-success-dialog.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="51" lean-forward="false" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+            <state relative-caret-position="240">
+              <caret line="693" column="0" lean-forward="true" selection-start-line="693" selection-start-column="0" selection-end-line="794" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -87,13 +61,13 @@
       <find>newslatterViewModal</find>
       <find>GalleryZoom</find>
       <find>postDatawithoutToken</find>
-      <find>NewslatterDialogComponent</find>
       <find>newslattersuccessViewModal</find>
       <find>addorupdatedata</find>
       <find>DialogData</find>
       <find>add-edit-blog</find>
-      <find>addDataWithoutToken</find>
       <find>email_modal</find>
+      <find>NewslatterDialogComponent</find>
+      <find>addDataWithoutToken</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -196,6 +170,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -379,44 +354,6 @@
               <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="managewebsites" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grace-Medical-main" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="managewebsites" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -465,7 +402,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -473,7 +409,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../appliqate" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../probid-angular" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
@@ -607,12 +543,13 @@
       <workItem from="1574425085678" duration="2491000" />
       <workItem from="1574744351650" duration="58000" />
       <workItem from="1575283089207" duration="285000" />
-      <workItem from="1575350349308" duration="24547000" />
+      <workItem from="1575350349308" duration="25349000" />
+      <workItem from="1575434084987" duration="4486000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="325196000" />
+    <option name="totallyTimeSpent" value="330484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -744,13 +681,6 @@
           <folding>
             <element signature="e#0#50#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/resolve.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -938,7 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
           <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,7 +875,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -954,9 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -972,37 +897,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-152">
           <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/api.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="447" column="21" lean-forward="false" selection-start-line="447" selection-start-column="2" selection-end-line="447" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-          <folding>
-            <element signature="e#6203#6259#0" expanded="true" />
-            <element signature="e#6575#6622#0" expanded="true" />
-            <element signature="e#7225#7286#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="716" column="17" lean-forward="false" selection-start-line="716" selection-start-column="17" selection-end-line="716" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1014,39 +908,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.html">
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-success-dialog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" column="104" lean-forward="false" selection-start-line="15" selection-start-column="99" selection-end-line="15" selection-end-column="104" />
-          <folding>
-            <element signature="n#span#1;n#mat-card-content#0;n#mat-card#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="77" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="140" column="3" lean-forward="false" selection-start-line="140" selection-start-column="3" selection-end-line="140" selection-end-column="3" />
+        <state relative-caret-position="550">
+          <caret line="175" column="3" lean-forward="true" selection-start-line="175" selection-start-column="3" selection-end-line="176" selection-end-column="36" />
           <folding>
-            <element signature="e#0#84#0" expanded="true" />
-            <element signature="n#!!block;n#donewsSubmit#0;n#NewslatterDialogComponent#0" expanded="false" />
+            <element signature="e#0#58#0" expanded="true" />
+            <element signature="e#5797#5858#0" expanded="true" />
+            <element signature="e#5950#6054#0" expanded="true" />
+            <element signature="e#6203#6259#0" expanded="true" />
+            <element signature="e#6575#6622#0" expanded="true" />
+            <element signature="e#7225#7286#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-dialog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="100" lean-forward="false" selection-start-line="25" selection-start-column="100" selection-end-line="25" selection-end-column="100" />
+        <state relative-caret-position="544">
+          <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/newsletter-success-dialog.html">
+    <entry file="file://$PROJECT_DIR$/src/app/resolve.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="51" lean-forward="false" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+        <state relative-caret-position="260">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/api.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="447" column="0" lean-forward="true" selection-start-line="447" selection-start-column="0" selection-end-line="456" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="37" column="3" lean-forward="true" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#84#0" expanded="false" />
+            <element signature="n#!!block;n#doSubmit#0;n#HomefrontendfooterComponent#0" expanded="false" />
+            <element signature="n#!!block;n#newslatterViewModal#0;n#HomefrontendfooterComponent#0" expanded="false" />
+            <element signature="e#2716#2793#0" expanded="false" />
+            <element signature="n#NewslatterDialogComponent#0" expanded="false" />
+            <element signature="n#!!block;n#donewsSubmit#0;n#NewslatterDialogComponent#0" expanded="false" />
+            <element signature="e#5432#5525#0" expanded="false" />
+            <element signature="n#NewslattersuccessDialogComponent#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/frontend/homefrontendfooter/homefrontendfooter.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="48" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="28" selection-end-column="48" />
+          <folding>
+            <element signature="n#span#1;n#mat-card-content#0;n#mat-card#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="693" column="0" lean-forward="true" selection-start-line="693" selection-start-column="0" selection-end-line="794" selection-end-column="66" />
           <folding />
         </state>
       </provider>
