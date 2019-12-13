@@ -16,7 +16,6 @@ export class AddEditBlogcatComponent implements OnInit {
     endpoint: environment.API_URL+'addorupdatedata',
     endpoint2:environment.API_URL,
     // API_URL
-
     source: "blog_category",
     condition: {},
     defaultData: null,

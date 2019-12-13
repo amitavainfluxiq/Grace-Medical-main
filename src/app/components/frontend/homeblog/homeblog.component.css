@@ -6,24 +6,34 @@
 
 .homeblock2 .mat-card-content mat-card-subtitle{ display: block; float: left; width: 30.3%; padding: 1%; margin: 0 0.5%; background: #f1f1f1; border-top: solid 9px #e0dfdd;}
 
-.homeblock2 .mat-card-content mat-card-subtitle h2{ margin: 0; padding: 0 0 30px 0; font-size: 27px; color: #363636;  font-family: 'Helvetica-Normal';}
+.homeblock2 .mat-card-content mat-card-subtitle h2{ margin: 0; padding: 0 0 30px 0; font-size: 20px; color: #363636;  font-family: 'Helvetica-Normal';}
 
-.homeblock2 .mat-card-content mat-card-subtitle .home_block2img{ width: 219px; float: left; }
+.homeblock2 .mat-card-content mat-card-subtitle .home_block2img{ width: 219px; float: left; height: 245px; }
 
-.homeblock2 .mat-card-content mat-card-subtitle .home_block2img img{ width: 100%; border: solid 1px #fff;}
+.homeblock2 .mat-card-content mat-card-subtitle .home_block2img img{ height: 100% !important; -o-object-fit: cover; object-fit: cover; width: 100% !important; width: auto;
+    height: auto; border: solid 1px #fff;}
 
 .homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext{ width: 246px; float: right;}
 
 .homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext h3{ font-weight: normal; margin: 0; padding: 0; font-size: 13px; color: #434243;}
 .homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext h3 label{ display: block; color: #e01b50;}
 
-.homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext h4{ height: 106px; padding: 0px; margin: 10px 0; position: relative; font-size: 18px; color: #434243; font-family: 'Helvetica-Normal'; font-weight: normal; line-height: 20px;}
+.homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext h4{height: 135px;
+    padding: 0px;
+    margin: 10px 0;
+    position: relative;
+    font-size: 16px;
+    color: #434243;
+    font-family: 'Helvetica-Normal';
+    font-weight: normal;
+    line-height: 20px;
+    overflow: hidden;}
 
 .homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext h4 span{ display: table-cell; vertical-align: middle; height: 106px;}
 
 .homeblock2 .mat-card-content mat-card-subtitle .homeblock2_subtext h5{ text-align: right; margin: 0; padding: 0 0 13px 0; font-size: 14px; color: #434243;  font-family: 'Helvetica-Normal'; font-weight: normal; text-transform: uppercase;}
 
-.homeblock2_subsociallink{ display: inline-block; float: left;}
+.homeblock2_subsociallink{ display: inline-block;}
 
 .homeblock2_subsociallink img{ width: 22px; margin-right: 1px; cursor: pointer;}
 

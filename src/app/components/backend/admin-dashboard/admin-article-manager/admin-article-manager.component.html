@@ -68,8 +68,27 @@
                                                 </span>
                                             </span>
                                             <div class="tablediv">
+
+                                                    <lib-listing *ngIf="blogListConfig != null && blogListConfig.length>0"
+                                                            [datasource]="blogListConfig"
+                                                            [skip]="blogListConfig_skip" 
+                                                            [modify_header_array]="blogListConfig_modify_header"
+                                                            [sourcedata]="blogListTableName" 
+                                                            [apiurl]="blogListApiUrl"
+                                                            [editroute]="blogListEditUrl"
+                                                            [jwttoken]="blogListUser_cookie"
+                                                            [statusarr]="blogListStatus" 
+                                                            [updateendpoint]="blogListUpdateEndpoint" 
+                                                            [deleteendpoint]="blogListDeleteEndpoint"
+                                                            [date_search_endpoint]="blogListSearchingEndpoint" 
+                                                            [date_search_source]="blogListView" 
+                                                            [search_settings]="blogListSearch_settings"
+                                                            [detail_datatype]="blogListImage_detail_datatype"
+                                                            [detail_skip_array]="blogListDetail_skip_array">
+                                                        </lib-listing>
+
                                                      <!-- to listing library -->
-                            <lib-listing-blogmanagementlib class="formfilterdiv" [config]="blogListConfig"></lib-listing-blogmanagementlib>
+                            <!-- <lib-listing-blogmanagementlib class="formfilterdiv" *ngIf="blogListConfig != null && blogListConfig.length > 0" [config]="blogListConfig"></lib-listing-blogmanagementlib> -->
         
                                                 <!-- <lib-listing-blogmanagementlib class="formfilterdiv" *ngIf="blogListConfig.datasource != null && blogListConfig.datasource.length > 0" [config]="blogListConfig"></lib-listing-blogmanagementlib> -->
                                             </div>
@@ -92,24 +111,16 @@
                                                           <h2>Manage Article Category</h2>
                                                       </span>
                                                       <span>
-                                                                <button class="singleButton" mat-raised-button color="primary" [routerLink]="['/manage-article-category/add']"><i class="material-icons">add</i> Add Article Category</button>
-        
-                                                          <!-- <button mat-button class="btngreen sim-button" [routerLink]="['/blog-category/add']"><i class="material-icons">add</i> Add Blog Category</button> -->
+                                                        <button class="singleButton" mat-raised-button color="primary" [routerLink]="['/manage-article-category/add']"><i class="material-icons">add</i> Add Article Category</button>
                                                       </span>                    
                                                   </span>
                                               </span>
                                               <div class="tablediv">
-                                                      <!-- to listing library -->
-                                                      <!-- <lib-Blog class="formfilterdiv" [config]="blogCatConfig"></lib-Blog>  -->
-        
-                                                <!-- <lib-Blog class="formfilterdiv" [config]="blogCatConfig"></lib-Blog> -->
-            
-                                               <!-- <lib-Blog *ngIf="blogCatConfig.datasource != null && blogCatConfig.datasource.length > 0" [config]="blogCatConfig"></lib-Blog> -->
-                                              
-                                               <lib-listing *ngIf="blogCatConfig != null && blogCatConfig.length>0"
-                                                    [datasource]="blogCatConfig"
-                                                    [skip]="blogCatConfig_skip" 
-                                                    [modify_header_array]="blogCatConfig_modify_header"
+                                                <!-- to listing library -->                                                
+                                               <lib-listing *ngIf="articleCatConfig != null && articleCatConfig.length>0"
+                                                    [datasource]="articleCatConfig"
+                                                    [skip]="articleCatConfig_skip" 
+                                                    [modify_header_array]="articleCatConfig_modify_header"
                                                     [sourcedata]="tableName" 
                                                     [apiurl]="apiUrl"
                                                     [editroute]="editUrl"

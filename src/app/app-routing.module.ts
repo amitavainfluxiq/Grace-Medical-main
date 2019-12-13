@@ -90,10 +90,25 @@ const routes: Routes = [
     resolve: { serviceList: ResolveService },
     data: { requestcondition: { source: 'service_view', condition: {} }, endpoint: 'datalistwithouttoken' }
   },
-  {path: 'journals', component: JournalsComponent, resolve: { journalListData: ResolveService },
-  data: { requestcondition: { condition: { "limit": 1, "skip": 1 } }, endpoint: 'blogdata' }
-  },
 
+  
+  // {path: 'journals', component: JournalsComponent, resolve: { journalListData: ResolveService },
+  // data: { requestcondition: { condition: { "limit": 1, "skip": 1 } }, endpoint: 'blogdata' }
+  // },
+
+  {path: 'journals', component: JournalsComponent},
+  {path: 'journalsdetail/:_id', component: JournalsDetailComponent,
+  resolve: {
+    journalCatList: ResolveService
+  },
+  data:
+  {
+    requestcondition:
+    {
+      source: 'blogs_view', condition: {}
+    }, endpoint: 'datalistwithouttoken'
+  }
+},
 
   {path: 'imagegallery', component: ImagegalleryComponent},
   {path: 'videogallery', component: VideogalleryComponent},
@@ -108,7 +123,7 @@ const routes: Routes = [
   {path: 'appointment', component: AppointmentsfrontendComponent},
   {path: 'sacheduleappointment', component: ScheduleAppointmentComponent},
   {path: 'ourphysiciansdetail', component: OurphysiciansDetailComponent},
-  {path: 'journalsdetail', component: JournalsDetailComponent},
+  
 
   {path: 'add_lesson', component: AddLessonComponent},
   {path: 'edit_category', component: EditCategoryComponent},
@@ -176,17 +191,7 @@ const routes: Routes = [
    /**Article category**/
    { path: 'manage-article-category/add', component: AddEditBlogcatComponent },
    {
-     path: 'manage-article-category/list',
-     component: ListingBlogcatComponent,
-     resolve: { blogCatList: ResolveService },
-     data: { 
-       requestcondition: { 
-         source: 'blog_category_view', 
-         condition: {} 
-        }, 
-      endpoint: 'datalist' 
-    }
-   },
+     path: 'manage-article-category/list',component: ListingBlogcatComponent},
    {
      path: 'manage-article-category/edit/:_id',
      component: AddEditBlogcatComponent,

@@ -6,36 +6,45 @@
 
     <mat-card-content>
 
-        <mat-card-subtitle>
-            <h2>Researchers Explore Why Women's
-                Alzheimer's Risk Is Higher Than Men's</h2>
+        <mat-card-subtitle *ngFor="let journal of journalListing | slice:0:indexval ; let i=index">
+            <h2 (click)="journalsdetail(journal._id)">{{journal.blogtitle}}</h2>
 
-            <span class="home_block2img">  <img src="/assets/images/home_block2_img1.jpg" alt="#" ></span>
+            <span class="home_block2img" (click)="journalsdetail(journal._id)">  <img src="{{journal.image}}" alt="#" ></span>
 
 
             <span class="homeblock2_subtext">
                 <h3>
-                    July 17, 20195:02 AM ET
-                    <label>Heard on Morning Edition</label>
+                    {{journal.date}}
                </h3>
-                <h4><span>Scientists are beginning to
-understand why Alzheimer's
-                    disease affects more ...............</span></h4>
+                <h4><span [innerHtml]="journal.description"></span></h4>
 
-                <h5>JON HAMILTON</h5>
+                <h5>{{journal.author}}</h5>
 
                 <span class="homeblock2_subsociallink">
+                        <a class="sociallink fa fb" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fhome%2F{{journal._id}}" target="_blank">
+                            <img src="/assets/images/share_this_1.png" alt="#" >
+                        </a>
 
-                     <img src="/assets/images/share_this_1.png" alt="#" >
-                    <img src="/assets/images/share_this_2.png" alt="#" >
-                    <img src="/assets/images/share_this_3.png" alt="#" >
-                    <img src="/assets/images/share_this_4.png" alt="#" >
-                    <img src="/assets/images/share_this_5.png" alt="#" >
-                    <img src="/assets/images/share_this_6.png" alt="#" >
+                        <a class="sociallink fa twi" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fhome%2F{{journal._id}}" target="_blank"><img src="/assets/images/share_this_2.png" alt="#" >
+                        </a>
+
+                        <a class="sociallink fa tumblr" href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fhome%2F{{journal._id}}" target="_blank">
+                            <img src="/assets/images/share_this_7.png" alt="#" >
+                        </a>
+                         
+                        <a class="sociallink fa lin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fjournals%2F{{journal._id}}" target="_blank">
+                            <img src="/assets/images/share_this_4.png" alt="#" >
+                        </a>
+
+                        <a class="sociallink fa share" (click)="copyText('https://dev.gracemedical.influxiq.com/home%2F?affid='+journal._id)">
+                            <img src="/assets/images/share_this_6.png" alt="#" >
+                        </a>
+                   
+                    
                 </span>
 
 
-                <span class="homeblock2_readlink" routerLink="/journals">Read Article</span>
+                <span class="homeblock2_readlink" (click)="journalsdetail(journal._id)">Read Article</span>
 
 
   <span class="clear"></span>
@@ -45,76 +54,7 @@ understand why Alzheimer's
 
 
         </mat-card-subtitle>
-        <mat-card-subtitle>
-            <h2>Study links higher body weight later in life to faster brain aging</h2>
-
-            <span class="home_block2img">  <img src="/assets/images/home_block2_img2.jpg" alt="#" ></span>
-
-            <span class="homeblock2_subtext">
-                <h3>
-                    March 20, 2019
-                    <label>Carolyn Robertson</label>
-               </h3>
-                <h4><span>A new study has identified an association between having a higher body mass and larger waist later in life ...........</span></h4>
-
-                <h5>Loremipsum</h5>
-
-                <span class="homeblock2_subsociallink">
-
-                     <img src="/assets/images/share_this_1.png" alt="#" >
-    <img src="/assets/images/share_this_2.png" alt="#" >
-    <img src="/assets/images/share_this_3.png" alt="#" >
-    <img src="/assets/images/share_this_4.png" alt="#" >
-    <img src="/assets/images/share_this_5.png" alt="#" >
-    <img src="/assets/images/share_this_6.png" alt="#" >
-                </span>
-
-
-                <span class="homeblock2_readlink" routerLink="/journals">Read Article</span>
-
-
-  <span class="clear"></span>
-            </span>
-
-            <span class="clear"></span>
-
-
-        </mat-card-subtitle>
-        <mat-card-subtitle>
-            <h2>Study introduces 'the Big Bang Theory of migraine'</h2>
-
-            <span class="home_block2img">  <img src="/assets/images/home_block2_img3.jpg" alt="#" ></span>
-
-            <span class="homeblock2_subtext">
-                <h3>
-                   22 July 2019
-                    <label>Jasmin Collier</label>
-               </h3>
-                <h4><span>Girls who approach puberty at a more rapid rate than their peers may be at higher risk  ..................</span></h4>
-
-                <h5>Loremipsum</h5>
-
-                <span class="homeblock2_subsociallink">
-
-                     <img src="/assets/images/share_this_1.png" alt="#" >
-    <img src="/assets/images/share_this_2.png" alt="#" >
-    <img src="/assets/images/share_this_3.png" alt="#" >
-    <img src="/assets/images/share_this_4.png" alt="#" >
-    <img src="/assets/images/share_this_5.png" alt="#" >
-    <img src="/assets/images/share_this_6.png" alt="#" >
-                </span>
-
-
-                <span class="homeblock2_readlink" routerLink="/journals">Read Article</span>
-
-
-  <span class="clear"></span>
-            </span>
-
-            <span class="clear"></span>
-
-
-        </mat-card-subtitle>
+       
         <span class="clear"></span>
         <button mat-button routerLink="/journals" class="homeblock2link">View All Journals</button>
 

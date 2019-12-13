@@ -38,34 +38,66 @@ adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq
         <span class="journals_blog" *ngFor="let journal of journalListing | slice:0:indexval ; let i=index">
 
             <span class="journals_blog_left">
-                <h2>{{journal.blogtitle}}</h2>
+                <h2 (click)="blogdetail(journal._id)">{{journal.blogtitle}}</h2>
 
-                <h3>{{journal.author}}, {{journal.created_dt}} </h3>
+                <h3>{{journal.author}}, {{journal.date}} </h3>
 
-                <h4 [innerHtml]="journal.description_html"></h4>
+                <span class="bnticons">
+                    <button *ngIf="journal.video_url !='' && journal.video_url !=null " (click)="openvideourl(journal.video_url)"><img src="/assets/images/videoicon.png"></button>
+                    <button *ngIf="journal.video_url !='' && journal.video_url !=null " (click)="openvideourl(journal.video_url)"><img src="/assets/images/audioicon.png"></button>
+                </span>
 
-                <button class="journalsreadmore" routerLink="/journalsdetail">Read more</button>
+                <h4 class="truncate">
+                    <span [innerHtml]="journal.description"></span>
+                </h4>
+
+                <button class="journalsreadmore" (click)="blogdetail(journal._id)">Read more</button>
                 <span class="clear"></span>
             </span>
             <span class="journals_blog_right">
+                <span class="journals_blog_right_wrapper_outer">
+                    <span class="journals_blog_right_wrapper" (click)="blogdetail(journal._id)">
+                        <img src="{{journal.image}}" alt="#">                        
+                    </span>
+                    <span class="journals_blog_share">
+                        <!-- <img src="/assets/images/share_this_1.png" alt="#" >
+                        <img src="/assets/images/share_this_2.png" alt="#" >
+                        <img src="/assets/images/share_this_3.png" alt="#" >
+                        <img src="/assets/images/share_this_4.png" alt="#" >
+                        <img src="/assets/images/share_this_5.png" alt="#" >
+                        <img src="/assets/images/share_this_6.png" alt="#" > -->
 
-                <img src="{{journal.image}}" alt="#" class="journalsmainimg">
-                 <span class="journals_blog_share">
-                    <img src="/assets/images/share_this_1.png" alt="#" >
-                    <img src="/assets/images/share_this_2.png" alt="#" >
-                    <img src="/assets/images/share_this_3.png" alt="#" >
-                    <img src="/assets/images/share_this_4.png" alt="#" >
-                    <img src="/assets/images/share_this_5.png" alt="#" >
-                    <img src="/assets/images/share_this_6.png" alt="#" >
+                        <a class="sociallink fa fb" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fjournals%2F{{journal._id}}" target="_blank">
+                            <img src="/assets/images/share_this_1.png" alt="#" >
+                        </a>
+
+                        <a class="sociallink fa twi" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fjournals%2F{{journal._id}}" target="_blank"><img src="/assets/images/share_this_2.png" alt="#" >
+                        </a>
+
+                        <a class="sociallink fa tumblr" href="https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fjournals%2F{{journal._id}}" target="_blank">
+                            <img src="/assets/images/share_this_7.png" alt="#" >
+                        </a>
+                         
+                        <a class="sociallink fa lin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdev.gracemedical.influxiq.com%2Fjournals%2F{{journal._id}}" target="_blank">
+                            <img src="/assets/images/share_this_4.png" alt="#" >
+                        </a>
+
+                        <a class="sociallink fa share" (click)="copyText('https://dev.gracemedical.influxiq.com/journals%2F?affid='+journal._id)">
+                            <img src="/assets/images/share_this_6.png" alt="#" >
+                        </a>
+
+
+                    </span>
                 </span>
+                 
         </span>
         <span class="clear"></span>
         </span>
-        <button class="blog_loadbtn">Load More</button>
+        <button class="blog_loadbtn"  *ngIf="journalListing !=null && indexval < journalListing.length" (click)="blogloadmore()">Load More</button>
     </mat-card-content>
     <mat-card-content class="journals_block_right">
-        <h2>Lorem ipsum dolor </h2>
-        <mat-accordion>
+        <h2>Category ({{ blogcategorycount }})</h2>
+        <!-- <mat-accordion>
             <mat-expansion-panel>
                 <mat-expansion-panel-header>
                     <mat-panel-title>
@@ -210,8 +242,38 @@ adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq
 
             </mat-expansion-panel>
 
-        </mat-accordion>
-
+        </mat-accordion> -->
+        <mat-tree [dataSource]="blogCategoryDataSource" [treeControl]="nestedTreeControl" class="example-tree">
+            <mat-tree-node *matTreeNodeDef="let item" matTreeNodePadding>
+              <li class="mat-tree-node">
+                <button mat-icon-button disabled></button>
+                {{ item.blogtitle }}
+              </li>
+            </mat-tree-node>
+            <mat-tree-node *matTreeNodeDef="let item; when: hasNestedChild">
+              <li>
+                <div class="mat-tree-node">
+                  <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'toggle ' + item.blogtitle">
+                    <mat-icon class="mat-icon-rtl-mirror">
+                      {{
+                        nestedTreeControl.isExpanded(item)
+                          ? "expand_more"
+                          : "chevron_right"
+                      }}
+                    </mat-icon>
+                  </button>
+                  <span class="blogcategorycls"><span class="blogcountcls">{{ item.blogcategorycount }}</span> {{ item.blogtitle }} </span>
+                </div>
+                <ul *ngFor="let journal of journalListing; let i = index" [class.example-tree-invisible]="
+                    !nestedTreeControl.isExpanded(item)
+                  ">
+                  <ng-container matTreeNodeOutlet>
+                      {{ journal.blogtitle }}
+                  </ng-container>
+                </ul>
+              </li>
+            </mat-tree-node>
+          </mat-tree>
     </mat-card-content>
 
     <span class="clear"></span>
