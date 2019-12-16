@@ -1,2 +1,24 @@
-
-<lib-addedit  [config]="configAddEdit" [imageUpload]="configData"></lib-addedit>
+<app-adminheader>
+    <span class="admwrapper">
+        <!-- <img src="/assets/images/admin_testimonial_img.png" alt="#" style="width: 100%;  "> -->
+        <mat-card class="adminnerbannerwrapper"> 
+            <mat-card-content class="adminnerbanner"> 
+                    <span class="innerbannercontainer">
+                        <span class="innerbannerimage">
+                            <span class="innerbannerimagemain">
+                                <img src="/assets/images/admbanner-testimonial.jpg" alt="#">
+                            </span>
+                        </span>
+                        <span class="content">
+                            <mat-card-title class="adminnerbannertitle"><i class="material-icons">add</i> Add Edit Testimonial</mat-card-title>
+                            <span class="adminnerbannerpara">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </span>
+                        </span>
+                    </span>
+            </mat-card-content>
+            <lib-addedit  [config]="configAddEdit" [imageUpload]="configData"></lib-addedit>
+        </mat-card>
+        <app-adminfooter></app-adminfooter>
+    </span>
+</app-adminheader>

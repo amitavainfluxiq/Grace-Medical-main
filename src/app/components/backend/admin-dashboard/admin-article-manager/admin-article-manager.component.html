@@ -43,8 +43,10 @@
                                     </span>
                                 </span>
                                 <span class="content">
-                                    <mat-card-title>Testimonial</mat-card-title>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <mat-card-title class="adminnerbannertitle">Article</mat-card-title>
+                                    <span class="adminnerbannerpara">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </span>
                                 </span>
                     </span>
                 </mat-card-content>        
@@ -63,11 +65,11 @@
                                                         <h2>Manage Article</h2>
                                                     </span>
                                                     <span>
-                                                        <button class="singleButton" mat-raised-button color="primary" [routerLink]="['/manage-article/add']">Add Article</button>
+                                                        <button class="singleButton singleButtonblack" mat-raised-button color="primary" [routerLink]="['/manage-article/add']"><i class="material-icons">add</i> Add Article</button>
                                                     </span>                    
                                                 </span>
                                             </span>
-                                            <div class="tablediv">
+                                            <span class="tablediv">
 
                                                     <lib-listing *ngIf="blogListConfig != null && blogListConfig.length>0"
                                                             [datasource]="blogListConfig"
@@ -91,7 +93,7 @@
                             <!-- <lib-listing-blogmanagementlib class="formfilterdiv" *ngIf="blogListConfig != null && blogListConfig.length > 0" [config]="blogListConfig"></lib-listing-blogmanagementlib> -->
         
                                                 <!-- <lib-listing-blogmanagementlib class="formfilterdiv" *ngIf="blogListConfig.datasource != null && blogListConfig.datasource.length > 0" [config]="blogListConfig"></lib-listing-blogmanagementlib> -->
-                                            </div>
+                                            </span>
                                         </mat-card>
                                     </span>
                                   </ng-template>
@@ -111,7 +113,7 @@
                                                           <h2>Manage Article Category</h2>
                                                       </span>
                                                       <span>
-                                                        <button class="singleButton" mat-raised-button color="primary" [routerLink]="['/manage-article-category/add']"><i class="material-icons">add</i> Add Article Category</button>
+                                                        <button class="singleButton singleButtonblack" mat-raised-button color="primary" [routerLink]="['/manage-article-category/add']"><i class="material-icons">add</i> Add Article Category</button>
                                                       </span>                    
                                                   </span>
                                               </span>
