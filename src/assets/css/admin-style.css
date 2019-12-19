@@ -51,7 +51,8 @@ body{ margin: 0!important; padding: 0!important;}
 @keyframes spin{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
 
 
-.admwrapper{width: 96%; margin: 0 auto; display: block;}
+.admwrapper{width: 96%; margin: 40px auto; display: block;}
+.admwrapper .mat-card{box-shadow: none !important; padding: 0;}
 
 /*---Inner Banner css----*/
 
@@ -62,32 +63,43 @@ body{ margin: 0!important; padding: 0!important;}
   }
   
   .innerbannerimage {
-    width: 50%;
+    width: 53%;
     height: 231px;
-    margin: 0 0 0 -55px;
-    -webkit-transform: skew(25deg);
-    -moz-transform: skew(25deg);
-    -o-transform: skew(25deg);
-    transform: skew(25deg);
+    margin: 0 0 0 -100px;
+    -webkit-transform: skew(40deg);
+    -moz-transform: skew(40deg);
+    -o-transform: skew(40deg);
+    transform: skew(40deg);
     overflow: hidden;
     position: relative;
+    display: block;
   }
   
   .innerbannerimage .innerbannerimagemain img {    
     position: absolute;
-    top: -30px;
-    left: -30px;
-    right: -30px;
-    bottom: -30px;
-    -webkit-transform: skew(-20deg);
-    -moz-transform: skew(-20deg);
-    -o-transform: skew(-20deg);
-    transform: skew(-20deg);
+    top: -50%;
+    left: 0%;
+    right: 6px;
+    bottom: 0;
+    -webkit-transform: skew(-35deg);
+    -moz-transform: skew(-35deg);
+    -o-transform: skew(-35deg);
+    transform: skew(-40deg);
+    display: block;
   }
+
 
 .adminnerbanner{background-color: #7db4d0;}
 .adminnerbanner .adminnerbannertitle.mat-card-title {font-size: 48px !important; color: #fff !important;  font-family: "HelveticaBold"; text-transform: uppercase !important;}
-.adminnerbanner .adminnerbannerpara p {font-size: 24px; color: #ffffff; font-family: "HelveticaBold"; margin: 0;}
+.adminnerbanner .adminnerbannerpara p {font-size: 20px; color: #292929; font-family: "HelveticaBold"; margin: 0; line-height: 24px;}
+.adminnerbanner .innerbannercontainer{position: relative;}
+.adminnerbanner .content{position: absolute;right: 0;z-index: 99;top: 50%;transform: translate(-0%, -50%);width: 45%; padding: 24px;}
+
+.searchblock .buttonsetToolbar.mat-toolbar {background: none !important;padding: 0 0px;}
+.searchblock .buttonsetToolbar.mat-toolbar-single-row {height: auto !important;padding: 0 0px;}
+
+.singleButton{}
+.singleButtonblack{background-color: #323233 !important; border-radius: 0 !important;}
 
 /*---End Inner Banner css----*/
 
@@ -95,7 +107,8 @@ body{ margin: 0!important; padding: 0!important;}
 
 .formfilterdiv {}
 .formfilterdiv table td br {display: none;}
-
+.tablediv .searchbar {padding-right: 0;}
+.tablediv .searchbar .mat-form-field .mat-form-field-appearance-legacy .mat-form-field-infix {padding: 0px 0px!important;background: #ababab !important;}
 
 
 
@@ -179,10 +192,10 @@ outline: none;}
 .tablediv .mat-paginator .mat-form-field-infix .mat-select { padding: 0px 5px; color: #f1f1f1;}
 .tablediv .mat-paginator .mat-select-value {color: #333; caret-color: #333 !important;}
 .tablediv .mat-paginator .mat-select-arrow {color: #333;}
-.tablediv .mat-card .mat-form-field-flex {margin-top: 0px; background-color: #fff !important; border: 0px solid #efefef;}
+/* .tablediv .mat-card .mat-form-field-flex {margin-top: 0px; background-color: #fff !important; border: 0px solid #efefef;}
 .tablediv .mat-card .mat-input-element{color: #333 !important; caret-color: #f1f1f1 !important;}
 .tablediv .mat-card .mat-form-field-label-wrapper {position: absolute; left: 0; box-sizing: content-box; width: 100%; height: 100%; overflow: hidden; pointer-events: none; border-bottom: 1px solid #fff;}
-.tablediv .mat-card .mat-form-field-label-wrapper{top: -1em; padding-top: 1em;}
+.tablediv .mat-card .mat-form-field-label-wrapper{top: -1em; padding-top: 1em;} */
 .tablediv button.mat-raised-button{display: inline-block!important; height: auto!important; background: #cc3333!important; font-size: 12px!important; color: #fff!important;
 text-transform: uppercase!important; font-family: 'Ralewaybold'; text-decoration: none!important;  line-height: normal!important; text-align: center!important; margin: 0 auto!important; white-space: normal!important; margin-top: 10px!important; padding: 12px 10px!important; border-radius: 0px !important; margin-right: 5px !important;margin-bottom: 10px !important; z-index: 99;}
 .mat-select-panel-wrap .mat-select-panel {background: #969696;}
@@ -192,12 +205,13 @@ text-transform: uppercase!important; font-family: 'Ralewaybold'; text-decoration
 .formfilterdiv {margin-top: -10% !important;}
 .formfilterdiv .container{width: 100%;}
 
-.tablediv{margin-top: -70px;}
-.tablediv .searchbar {padding-right: 173px;flex-direction: row-reverse; justify-content: inherit !important;margin-top: 0px; margin-bottom: 5px;    z-index: 9;}
-.tablediv .searchbar .mat-form-field{z-index: 99; position: relative;}
-.tablediv .mat-form-field-flex {align-items: stretch;}
+.tablediv{margin-top:0px;}
+.tablediv .searchbar {padding-right: 0; flex-direction: row-reverse; justify-content: inherit !important; margin-top: 0px; margin-bottom: 8px; z-index: 9;
+  height: auto;}
+.tablediv .searchbar .mat-form-field{z-index: 99; position: relative;margin-left: 10px;}
+.tablediv .mat-form-field-flex {align-items: stretch; padding: 5px 6px !important;}
 .tablediv table td span .material-icons{color: #4f5051 !important;}
-.tablediv .mat-form-field-appearance-legacy .mat-form-field-infix{line-height: normal; padding: 10px 5px;}
+.tablediv .mat-form-field-appearance-legacy .mat-form-field-infix{line-height: 32px; padding: 10px 5px;}
 .tablediv table .actionnewbtn span{cursor:pointer;}
 .tablediv.trainingtablediv{margin-top:0px !important;}
 .tablediv.trainingtablediv table {margin-top: 27px;}
@@ -205,11 +219,12 @@ text-transform: uppercase!important; font-family: 'Ralewaybold'; text-decoration
 .searchblock{margin: 0; padding: 0; position: relative; display: block;}
 .searchblock .btnorange{min-width: 160px; border-radius: 0px; padding: 9px 18px 7px !important; margin: 0 !important; display: flex !important; align-items: center;}
 .searchblock{background: #dde2e5 !important; padding: 10px 10px 10px 22px !important;display: block; margin:10px auto !important;}
-.searchblock span{display: flex; align-items: center; position: relative; z-index: 99;}
+.searchblock span{display: flex; align-items: center; position: relative; z-index: 99;margin-left: 5px;}
 .searchblock .searchblockwrapper {display: flex; align-items: stretch; justify-content: space-between; flex-direction: row;}
 .searchblock span h2{font-family: "Helvetica-Normal"; color:#373b3d; font-size: 24px!important;margin: 0;}
 
-.tablediv .searchbar .mat-form-field .mat-form-field-infix{margin-bottom: 0;}
+.tablediv .searchbar .mat-form-field .mat-form-field-infix{margin-bottom: 0;height: 32px!important;}
+
 /* .bloglists .tablediv {margin-top: -73px;} */
 
 .tablediv .searchbar .mat-form-field .mat-form-field-prefix, .tablediv .searchbar .mat-form-field .mat-form-field-suffix {
@@ -218,11 +233,11 @@ text-transform: uppercase!important; font-family: 'Ralewaybold'; text-decoration
     -webkit-box-align: center;
     align-items: center;
 }
-.bloglists .tablediv .searchbar {padding-right: 200px;}
-.blogcatlists .tablediv .searchbar {padding-right: 252px;}
+.tablediv .searchbar .mat-form-field {border: 1px solid #efefef;}
 
 .tablediv table td.mat-column-Actions{width: 98px;}	
 .tablediv table th.mat-column-date_added{width: 114px;}
 
-
+.paginator .mat-form-field-label-wrapper{    padding-top: 0;}
+.paginator .mat-form-field-appearance-legacy .mat-form-field-infix {line-height: normal;}
 
