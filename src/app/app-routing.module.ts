@@ -36,7 +36,7 @@ import { AdminAppointmentsComponent } from './components/backend/admin-dashboard
 import { AdminSocialAdvoComponent } from './components/backend/admin-dashboard/admin-social-advo/admin-social-advo.component';
 import { AdminArticleManagerComponent } from './components/backend/admin-dashboard/admin-article-manager/admin-article-manager.component';
 import { AdminTestimonialComponent } from './components/backend/admin-dashboard/admin-testimonial/admin-testimonial.component';
-import { AdminNewsletterComponent } from './components/backend/admin-dashboard/admin-newsletter/admin-newsletter.component';
+ 
 import { AdminGalleryManagerComponent } from './components/backend/admin-dashboard/admin-gallery-manager/admin-gallery-manager.component';
 
 import { OurphysiciansDetailComponent } from './components/frontend/ourphysicians-detail/ourphysicians-detail.component';
@@ -57,7 +57,7 @@ import { AddMediaComponent } from './components/backend/admin-dashboard/add-medi
 
 import { AdminSubscribersComponent } from './components/backend/admin-dashboard/admin-subscribers/admin-subscribers.component';
 
-import { AdminNewsSettingsComponent } from './components/backend/admin-dashboard/admin-news-settings/admin-news-settings.component';
+ 
 import { HomeblogComponent } from './components/frontend/homeblog/homeblog.component';
 import { HomedoctorsComponent } from './components/frontend/homedoctors/homedoctors.component';
 import { HometestimonialComponent } from './components/frontend/hometestimonial/hometestimonial.component';
@@ -76,6 +76,34 @@ import { AddEditBlogComponent } from './components/backend/admin-dashboard/admin
 import { ListingBlogcatComponent } from './components/backend/managewebsites/blogs/listing-blogcat/listing-blogcat.component';
 import { AddEditTestimonialComponent } from './components/backend/managewebsites/testimonial/add-edit-testimonial/add-edit-testimonial.component';
 import { ListingTestimonialComponent } from './components/backend/managewebsites/testimonial/listing-testimonial/listing-testimonial.component';
+
+
+
+
+
+import { NewsletterlistsComponent } from './components/backend/admin-dashboard/newsletterlists/newsletterlists.component';
+
+import { AddEditNewsletterComponent } from './components/backend/admin-dashboard/newsletterlists/add-edit-newsletter/add-edit-newsletter.component';
+ 
+import { AddEditSubscriberComponent } from './components/backend/admin-dashboard/newsletterlists/add-edit-subscriber/add-edit-subscriber.component';
+import { AddEditSubscriberGroupComponent } from './components/backend/admin-dashboard/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component';
+ 
+ import { AddEditTestemailComponent } from './components/backend/admin-dashboard/newsletterlists/add-edit-testemail/add-edit-testemail.component';
+
+ import { AddEditSenderappComponent } from './components/backend/admin-dashboard/newsletterlists/add-edit-senderapp/add-edit-senderapp.component';
+ 
+
+import { ListingNewsletterComponent } from './components/backend/admin-dashboard/newsletterlists/listing-newsletter/listing-newsletter.component';
+
+import { LisitngTestemailappComponent } from './components/backend/admin-dashboard/newsletterlists/lisitng-testemailapp/lisitng-testemailapp.component';
+
+import { ListingSenderappComponent } from './components/backend/admin-dashboard/newsletterlists/listing-senderapp/listing-senderapp.component';
+
+import { ListingSubscriptionComponent } from './components/backend/admin-dashboard/newsletterlists/listing-subscription/listing-subscription.component';
+
+import { ListingSubcategoryComponent } from './components/backend/admin-dashboard/newsletterlists/listing-subcategory/listing-subcategory.component';
+
+
 
 const routes: Routes = [
 
@@ -134,7 +162,7 @@ const routes: Routes = [
   {path: 'admin_category_manager', component: AdminCategoryManagerComponent},
   {path: 'add_media', component: AddMediaComponent},
   {path: 'admin_subscribers', component: AdminSubscribersComponent},
-  {path: 'admin_news_settings', component: AdminNewsSettingsComponent},
+  
 
 
   {path: 'admin_dashboard', component: DashboardComponent},
@@ -161,7 +189,7 @@ const routes: Routes = [
   },
 
   {path: 'admin_testimonial', component: AdminTestimonialComponent},
-  {path: 'admin_newsletter', component: AdminNewsletterComponent},
+  
   {path: 'admin_gallery_manager', component: AdminGalleryManagerComponent},
   {path: 'homeblog', component: HomeblogComponent},
   {path: 'homedoctors', component: HomedoctorsComponent},
@@ -243,6 +271,101 @@ const routes: Routes = [
        resolve: { testimonialData: ResolveService },
        data: { requestcondition: { source: 'testimonial', condition: {} }, endpoint: 'datalist' }
      },
+
+
+
+
+      // ___________________Newsletter MANAGEMENT_________________
+  // =======================================================
+
+  {
+    path: 'newsletter-list', component: NewsletterlistsComponent, canActivate: [AuthGuard],
+    resolve: { newsData: ResolveService },
+    data: {
+      requestcondition: {
+        source: 'newsletters_view',
+        condition: {}
+      },
+      endpoint: 'datalist'
+    },
+  },
+
+
+    // _____________________newsletter________________
+    { path: 'newsletter/add', component: AddEditNewsletterComponent },
+
+    {
+      path: 'newsletter/list',
+      component: ListingNewsletterComponent
+    },
+    {
+      path: 'newsletter/edit/:_id',
+      component: AddEditNewsletterComponent
+    },
+    // -----------------------------------------------
+
+    
+  // _____________________Subscriber________________
+  { path: 'subscriber/add', component: AddEditSubscriberComponent },
+
+  {
+    path: 'newsletter-list',
+    component: ListingSubscriptionComponent 
+  },
+  {
+    path: 'subscriber/add-group/edit/:_id',
+    component: AddEditSubscriberComponent
+  },
+  // -----------------------------------------------
+  // -------------------------------------------
+
+
+
+    // _____________________Subscriber GROUP________________
+    { path: 'subscriber-group/add', component: AddEditSubscriberGroupComponent },
+
+    {
+      path: 'newsletter-list',
+      component: ListingSubcategoryComponent 
+    },
+    {
+      path: 'subscriber-group/edit/:_id',
+      component: AddEditSubscriberGroupComponent
+    },
+    // -----------------------------------------------
+    // -------------------------------------------
+  
+
+
+  // ________________________test email _____________________
+  { path: 'test/add', component: AddEditTestemailComponent },
+  {
+    path: 'newsletter-list',
+    component: LisitngTestemailappComponent 
+  
+  },
+  {
+    path: 'test/edit/:_id',
+    component: AddEditTestemailComponent
+    
+  
+    
+  },
+  
+    // ________________________sender's list_____________________
+    { path: 'sender/add', component: AddEditSenderappComponent },
+    {
+      path: 'newsletter-list',
+      component: ListingSenderappComponent 
+    },
+
+    {
+      path: 'sender/edit/:_id',
+      component: AddEditSenderappComponent
+      
+    
+      
+    },
 
 
 ];

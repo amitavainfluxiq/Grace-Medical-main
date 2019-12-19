@@ -17,7 +17,7 @@ export class AddEditBlogComponent implements OnInit {
   getDataUrl: any= 'datalist';
   public editdata: any = [];
   action:any="add";
-  listURL:any="manage-article/list";
+  listURL:any="manage-article";
 
 
 
