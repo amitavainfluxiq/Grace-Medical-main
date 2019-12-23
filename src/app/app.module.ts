@@ -33,7 +33,7 @@ import { AdminAppointmentsComponent } from './components/backend/admin-dashboard
 import { AdminSocialAdvoComponent } from './components/backend/admin-dashboard/admin-social-advo/admin-social-advo.component';
 import { AdminArticleManagerComponent } from './components/backend/admin-dashboard/admin-article-manager/admin-article-manager.component';
 import { AdminTestimonialComponent } from './components/backend/admin-dashboard/admin-testimonial/admin-testimonial.component';
-import { AdminNewsletterComponent } from './components/backend/admin-dashboard/admin-newsletter/admin-newsletter.component';
+ 
 import { AdminGalleryManagerComponent } from './components/backend/admin-dashboard/admin-gallery-manager/admin-gallery-manager.component';
 import { ScheduleAppointmentComponent } from './components/frontend/schedule-appointment/schedule-appointment.component';
 import { OurphysiciansDetailComponent } from './components/frontend/ourphysicians-detail/ourphysicians-detail.component';
@@ -46,7 +46,31 @@ import { AddArticleCategoryComponent } from './components/backend/admin-dashboar
 import { AdminCategoryManagerComponent } from './components/backend/admin-dashboard/admin-category-manager/admin-category-manager.component';
 import { AddMediaComponent } from './components/backend/admin-dashboard/add-media/add-media.component';
 import { AdminSubscribersComponent } from './components/backend/admin-dashboard/admin-subscribers/admin-subscribers.component';
-import { AdminNewsSettingsComponent } from './components/backend/admin-dashboard/admin-news-settings/admin-news-settings.component';
+ 
+
+
+import { NewsletterlistsComponent } from './components/backend/admin-dashboard/newsletterlists/newsletterlists.component';
+
+import { AddEditNewsletterComponent } from './components/backend/admin-dashboard/newsletterlists/add-edit-newsletter/add-edit-newsletter.component';
+ 
+import { AddEditSubscriberComponent } from './components/backend/admin-dashboard/newsletterlists/add-edit-subscriber/add-edit-subscriber.component';
+import { AddEditSubscriberGroupComponent } from './components/backend/admin-dashboard/newsletterlists/add-edit-subscriber-group/add-edit-subscriber-group.component';
+ 
+ import { AddEditTestemailComponent } from './components/backend/admin-dashboard/newsletterlists/add-edit-testemail/add-edit-testemail.component';
+
+ import { AddEditSenderappComponent } from './components/backend/admin-dashboard/newsletterlists/add-edit-senderapp/add-edit-senderapp.component';
+ 
+
+import { ListingNewsletterComponent } from './components/backend/admin-dashboard/newsletterlists/listing-newsletter/listing-newsletter.component';
+
+import { LisitngTestemailappComponent } from './components/backend/admin-dashboard/newsletterlists/lisitng-testemailapp/lisitng-testemailapp.component';
+
+import { ListingSenderappComponent } from './components/backend/admin-dashboard/newsletterlists/listing-senderapp/listing-senderapp.component';
+
+import { ListingSubscriptionComponent } from './components/backend/admin-dashboard/newsletterlists/listing-subscription/listing-subscription.component';
+
+import { ListingSubcategoryComponent } from './components/backend/admin-dashboard/newsletterlists/listing-subcategory/listing-subcategory.component'; 
+
 
 
 
@@ -141,7 +165,7 @@ import { AuthGuard } from './auth.guard';
     AdminSocialAdvoComponent,
     AdminArticleManagerComponent,
     AdminTestimonialComponent,
-    AdminNewsletterComponent,
+ 
     AdminGalleryManagerComponent,
     ScheduleAppointmentComponent,
     OurphysiciansDetailComponent,
@@ -153,7 +177,7 @@ import { AuthGuard } from './auth.guard';
     AdminCategoryManagerComponent,
     AddMediaComponent,
     AdminSubscribersComponent,
-    AdminNewsSettingsComponent,
+ 
     HomeblogComponent,
     HomeservicesComponent,
     HomedoctorsComponent,
@@ -178,6 +202,19 @@ import { AuthGuard } from './auth.guard';
     CommonVideoModalComponent,
     CommonTestimonialVideoModalComponent,
     VideoModalComponent,
+
+
+    NewsletterlistsComponent,
+    AddEditNewsletterComponent,
+    AddEditSubscriberComponent,
+    AddEditSubscriberGroupComponent,
+    AddEditTestemailComponent,
+    AddEditSenderappComponent,
+    ListingNewsletterComponent,
+    LisitngTestemailappComponent,
+    ListingSenderappComponent,
+    ListingSubscriptionComponent,
+    ListingSubcategoryComponent,
 
   ],
   imports: [
