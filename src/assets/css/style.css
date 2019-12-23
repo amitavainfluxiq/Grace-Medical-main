@@ -779,6 +779,17 @@ successmodal button{height: 38px;
 .newsletter_modal h4{ display: block; text-align: center; margin: 0; padding:10px 0 0px 0; font-size: 22px; color: #111;  font-family: 'Helvetica-Normal'; font-weight: normal;}
 
 .newsletter_modalsuccess{ padding-top: 25px!important; padding-bottom: 25px!important;}
+
+.newsletter_modal .h6textcon{display: block;
+       
+    margin: 0;
+    padding: 10px 0 0 0;
+    font-size: 22px;
+    color: #13b9af;
+    font-family: Helvetica-Normal;
+    font-weight: 400;}
+  
+    .ptextcon{ margin: 10px 0 0 0; font-family: Helvetica-Normal; font-size: 16px; color: #111;}
 @media(max-width:540px) {
 
     .newsletter_modal {

@@ -13,7 +13,9 @@ export class HomeblogComponent implements OnInit {
   public indexval:any=3;
   public journalListing:any;
 
-
+  copyText(val:any){
+    console.log('copyText');
+  }
   
 
   constructor(public apiservice: ApiService, private router: Router) { 

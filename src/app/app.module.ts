@@ -12,7 +12,9 @@ import { HomeComponentfrontend } from './components/frontend/home/home.component
 import { HomefrontendheaderComponent } from './components/frontend/homefrontendheader/homefrontendheader.component';
 import { HomefrontendfooterComponent, NewslatterDialogComponent, NewslattersuccessDialogComponent } from './components/frontend/homefrontendfooter/homefrontendfooter.component';
 import { OurphysiciansComponent } from './components/frontend/ourphysicians/ourphysicians.component';
+ 
 import { ServicesComponent, ServicesModal } from './components/frontend/services/services.component';
+ 
 import { JournalsComponent, CommonVideoModalComponent } from './components/frontend/journals/journals.component';
 import { ImagegalleryComponent, GalleryZoom } from './components/frontend/imagegallery/imagegallery.component';
 import { VideogalleryComponent, VideoZoom } from './components/frontend/videogallery/videogallery.component';
@@ -199,6 +201,9 @@ import { AuthGuard } from './auth.guard';
 
     NewslatterDialogComponent,
     NewslattersuccessDialogComponent,
+    CommonVideoModalComponent,
+    CommonTestimonialVideoModalComponent,
+    VideoModalComponent,
 
     
     ServicesModal,
@@ -244,9 +249,10 @@ import { AuthGuard } from './auth.guard';
     NewsTitleModule,
       FormsModule,
       ReactiveFormsModule
-  ],
+  ], 
   entryComponents: [GalleryZoom, VideoZoom, NewslatterDialogComponent, NewslattersuccessDialogComponent, ServicesModal, ServicesModalhome, CommonVideoModalComponent, CommonTestimonialVideoModalComponent, CommonTestimonialVideoModalComponent],
-  providers: [CookieService, ApiService,AuthGuard],
+  providers: [CookieService, ApiService,AuthGuard, CommonVideoModalComponent, CommonTestimonialVideoModalComponent, VideoModalComponent],
+ 
   bootstrap: [AppComponent]
 })
 export class AppModule { }

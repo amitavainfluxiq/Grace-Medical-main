@@ -76,16 +76,15 @@
                                                             [skip]="blogListConfig_skip" 
                                                             [modify_header_array]="blogListConfig_modify_header"
                                                             [sourcedata]="blogListTableName" 
-                                                            [apiurl]="blogListApiUrl"
+                                                            [apiurl]="apiService.serverUrl"
                                                             [editroute]="blogListEditUrl"
-                                                            [jwttoken]="blogListUser_cookie"
+                                                            [jwttoken]="apiService.accesstoken"
                                                             [statusarr]="blogListStatus" 
                                                             [updateendpoint]="blogListUpdateEndpoint" 
                                                             [deleteendpoint]="blogListDeleteEndpoint"
                                                             [date_search_endpoint]="blogListSearchingEndpoint" 
                                                             [date_search_source]="blogListView" 
                                                             [search_settings]="blogListSearch_settings"
-                                                            [detail_datatype]="blogListImage_detail_datatype"
                                                             [detail_skip_array]="blogListDetail_skip_array">
                                                         </lib-listing>
 
@@ -124,24 +123,21 @@
                                                     [skip]="articleCatConfig_skip" 
                                                     [modify_header_array]="articleCatConfig_modify_header"
                                                     [sourcedata]="tableName" 
-                                                    [apiurl]="apiUrl"
+                                                    [apiurl]="apiService.serverUrl"
                                                     [editroute]="editUrl"
-                                                    [jwttoken]="user_cookie"
+                                                    [jwttoken]="apiService.accesstoken"
                                                     [statusarr]="status" 
                                                     [updateendpoint]="UpdateEndpoint" 
                                                     [deleteendpoint]="deleteEndpoint"
                                                     [date_search_endpoint]="searchingEndpoint" 
                                                     [date_search_source]="view" 
                                                     [search_settings]="search_settings"
-                                                    [detail_datatype]="image_detail_datatype"
                                                     [detail_skip_array]="detail_skip_array">
                                                 </lib-listing>
                                             
                                             
                                             </div>
                                       </mat-card>
-            
-                                            <!-- <app-listing-blogcat></app-listing-blogcat>                          -->
                                         </span>
                                     </ng-template>
                     </mat-tab>                      

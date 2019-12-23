@@ -57,7 +57,10 @@ export class JournalsDetailComponent implements OnInit {
 
   safeSrc: SafeResourceUrl;
 
-
+  copyText(val:any){
+    console.log('copyText');
+  }
+  
   constructor(private readonly meta: MetaService, private router: Router, private activatedRoute: ActivatedRoute, private cookieService: CookieService, public apiService: ApiService,private sanitizer: DomSanitizer,public dialog:MatDialog) { window.scrollTo(500, 0);
 
     this.meta.setTitle('Grace Medical - Medical Journals Detail');

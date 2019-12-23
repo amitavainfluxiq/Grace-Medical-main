@@ -24,6 +24,7 @@ export class HomeComponentfrontend implements OnInit {
     this.meta.setTag('og:image', '../../assets/images/logo2.png');
     this.meta.setTag('twitter:image', '../../assets/images/logo2.png');
 
+
   }
 
 
@@ -55,6 +56,10 @@ export class HomeComponentfrontend implements OnInit {
 
 
 
+  }
+  
+  activeclick(){
+      console.log('test');
   }
 
 }

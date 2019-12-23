@@ -218,7 +218,7 @@
 
               <mat-form-field>  
               
-                  <input matInput placeholder="Email" [formControl]="myformsetting.controls['email']"  (blur)="inputUntouch(myform,'email')">
+                  <input matInput placeholder="Email" [formControl]="myformsetting.controls['email']" >
                   <mat-error *ngIf="myformsetting.controls['email'].touched && !myformsetting.controls['email'].valid
                && myformsetting.controls['email'].errors.required">
                       Email field can not be blank</mat-error>
