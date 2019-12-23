@@ -241,3 +241,15 @@ text-transform: uppercase!important; font-family: 'Ralewaybold'; text-decoration
 .paginator .mat-form-field-label-wrapper{    padding-top: 0;}
 .paginator .mat-form-field-appearance-legacy .mat-form-field-infix {line-height: normal;}
 
+
+
+.newsletter_modal .h6textcon{display: block;
+       
+  margin: 0;
+  padding: 10px 0 0 0;
+  font-size: 22px;
+  color: #13b9af;
+  font-family: Helvetica-Normal;
+  font-weight: 400;}
+
+  .ptextcon{ margin: 10px 0 0 0; font-family: Helvetica-Normal; font-size: 16px; color: #111;}

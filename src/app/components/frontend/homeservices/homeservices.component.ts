@@ -1,7 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Inject} from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 import { ApiService } from 'src/app/api.service';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA,} from '@angular/material/dialog';
+
+
+
+export interface DialogData {
+  description: any;
+  service_title: any;
+}
+
 
 @Component({
   selector: 'app-homeservices',
@@ -15,7 +24,7 @@ public serviceListConfig: any;
 
 
 
-  constructor( private activatedRoute : ActivatedRoute , private cookieService : CookieService, public apiService: ApiService) { 
+  constructor( private activatedRoute : ActivatedRoute , private cookieService : CookieService, public apiService: ApiService, public dialog: MatDialog) { 
 
     let data: any = {
       source:"service_view",
@@ -38,6 +47,38 @@ public serviceListConfig: any;
     //   console.log('kkkk',  this.serviceData );
     //   // console.log("true data" + resolveData)
     // });
+  }
+
+
+  openDialog(itemVal:any): void {
+    const dialogRef = this.dialog.open(ServicesModalhome, {
+      // width: '250px',
+      data: {description: itemVal.description, service_title: itemVal.service_title,}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+       console.log('The dialog was closed');
+      // this.animal = result;
+    });
+  }
+
+}
+
+
+
+@Component({
+  selector: 'ServicesModalhome',
+  templateUrl: 'servicesModalHome.html',
+})
+export class ServicesModalhome {
+
+ 
+
+ constructor(public dialogRef: MatDialogRef<ServicesModalhome>,
+    @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
+
+  public onNoClick(): void {
+    this.dialogRef.close();
   }
 
 }

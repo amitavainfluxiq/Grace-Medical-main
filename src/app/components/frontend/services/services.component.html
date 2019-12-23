@@ -12,9 +12,9 @@
 <span class="servicemaincontainer">
 <mat-card class="servecemainwrapper">
  <mat-card-subtitle class="servecetextwrapper">
-  <h2>Lorem ipsum dolor sit amet</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+  <h2>WE MAKE A COMMITMENT TO YOUR GOOD HEALTH!</h2>
+  <p>We are committed to you and dedicated to excellence and progress. We provide a wide variety of inpatient and outpatient services. The clinical programs and medical facilities are continuously updated to meet both the changing needs of the community and the advances made by new discoveries and innovations in technology.
+</p>
  </mat-card-subtitle>
 
 
@@ -43,9 +43,12 @@
         <span class="servececol">
             <mat-card-content class="serviceblocktextwrapper">
             <h3><strong class="blockicon"><img src="{{ item.additional_img }}"></strong>
-                <strong class="blocktext"> <span [innerHtml]="item.service_title"></span> <i>(Lorem ipsum dolor sit amet)</i></strong>
+                <strong class="blocktext"> <span [innerHtml]="item.service_title"></span> </strong>
             </h3>
-            <p><span [innerHtml]="item.description"></span></p>
+            <p class="serviceptext"><span [innerHtml]="item.description"> </span></p>
+
+
+            <a href="javascript:void(0)" (click)="openDialog(item)" class="servicesdetailbtn">View Detail</a>
         </mat-card-content>
         </span>
     </mat-list-item>

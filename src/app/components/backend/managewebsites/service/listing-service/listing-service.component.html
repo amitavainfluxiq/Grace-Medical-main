@@ -1,17 +1,39 @@
+<app-adminheader>
 
 
-<mat-card>
-    <mat-toolbar color="primary" style="justify-content: center; align-items: center;">
-        <h2 class="headerSpan">Services List</h2>
-    </mat-toolbar>
+    <span class="admwrapper">
+            <!-- <img src="/assets/images/manage-article-img.jpg" alt="#" style="width: 100%;  "> -->
+        <span class="adminnerbannerwrapper"> 
+            <mat-card-content class="adminnerbanner"> 
+                <span class="innerbannercontainer">
+                            <span class="innerbannerimage">
+                                <span class="innerbannerimagemain">
+                                    <img src="/assets/images/admbanner-testimonial.jpg" alt="#">
+                                </span>
+                            </span>
+                            <span class="content">
+                                <mat-card-title class="adminnerbannertitle">Services List</mat-card-title>
+                                <span class="adminnerbannerpara">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </span>
+                            </span>
+                </span>
+            </mat-card-content>  
+          </span>      
+       
 
-    <!-- ---------------------Button for adding new role------------------------------ -->
-    <mat-toolbar class="buttonsetToolbar">
-        <button class="singleButton" mat-raised-button color="primary" [routerLink]="['/manage-service/add']">Add service</button>
-    </mat-toolbar>
+          <mat-toolbar class="buttonsetToolbar">
+            <button class="singleButton" mat-raised-button color="primary" [routerLink]="['/manage-service/add']">Add service</button>
+        </mat-toolbar>
+        
     
+        <!-- to listing library -->
+        <lib-servicelib [config]="serviceListConfig" ></lib-servicelib>
+          
 
-    <!-- to listing library -->
-    <lib-servicelib [config]="serviceListConfig" ></lib-servicelib>
-</mat-card>
-
+      
+    </span>
+  
+  <app-adminfooter></app-adminfooter>
+  </app-adminheader>
+  

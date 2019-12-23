@@ -18,6 +18,8 @@
 
 .homeblock3_wrapper ul li .services_li_text{   width: 44%; display: block; float: left; background: url("../../../../assets/images/home_ser_linebg.png") repeat-y; padding-left: 30px; margin-left: -3px; height: 370px; padding-top: 40px; padding-bottom: 24px; position: relative; font-size: 16px; color: #434243;  font-family: 'Helvetica-Normal';}
 
+.homeblock3_wrapper ul li .services_li_text span{  overflow: hidden;
+    text-overflow: ellipsis;display: block; height: 300px;}
 .homeblock3sublink{ width: 164px; display: block; line-height: 41px; margin: 0!important; background: #13b9af; text-align: center; font-size: 18px; color: #ffffff;   font-family: 'Helvetica-Normal'; border-radius: 0px;   padding: 0px!important; height: 40px; border: solid 1px #fff; position: absolute; left: 8px; bottom: 0; }
 
 .homeblock3link{ width: 164px; display: block; line-height: 46px; margin:30px auto!important; background: #13b9af; text-align: center; font-size: 18px; color: #ffffff;   font-family: 'Helvetica-Normal'; border-radius: 0px;   padding: 0px!important; height: 45px; border: solid 1px #fff; margin-bottom: 10px!important;   }
@@ -267,6 +269,10 @@
 
 
 @media(max-width:1199px) {
+
+
+    .homeblock3_wrapper ul li .services_li_text span{  overflow: initial;
+ display: block; height: auto;}
 
     /* .imgwraooer{
         position: inherit;

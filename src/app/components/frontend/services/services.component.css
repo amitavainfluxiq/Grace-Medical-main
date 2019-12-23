@@ -14,7 +14,7 @@
 .servecemainwrapper{width: 1660px; display: block; margin: 0 auto;box-shadow: none; padding: 0;background: none;}
 .servecetextwrapper{text-align: center; padding: 40px 0;    margin: 0;}
 .servecetextwrapper h2{font-size: 30px; font-family: 'HelveticaBold'; color: #1f1f1f; margin: 0; padding-bottom: 15px;text-transform: uppercase;}
-.servecetextwrapper p{font-size: 18px; font-family: 'HelveticaBold'; color: #1f1f1f; width: 880px; margin: 0 auto; line-height: 27px;}
+.servecetextwrapper p{font-size: 18px; font-family: 'HelveticaBold'; color: #1f1f1f; width: 90%; margin: 0 auto; line-height: 27px;}
 
 
 .servecerow{
@@ -63,6 +63,32 @@
     height: 30px;
     width: 30px;
 }
+
+.serviceptext{ margin: 0; padding: 0;   overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;}
+
+
+   .servicesdetailbtn {width: 120px;
+        display: block;
+        line-height: 45px;
+        margin: 10px 0!important;
+        background: #13b9af;
+        text-align: center;
+        font-size: 18px;
+        color: #ffffff;
+        font-family: 'Helvetica-Normal';
+        border-radius: 0px;
+        padding: 0px!important;
+        height: 40px;
+       text-decoration: none;
+        
+    }
+
+ 
+ 
 
 @media(max-width:1700px) {
     .servecemainwrapper{
