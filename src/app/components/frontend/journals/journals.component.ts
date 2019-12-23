@@ -14,12 +14,13 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 export interface DialogData {data: any;} 
 
+
+
 export class FileNode{
   children: FileNode[];
   blogListing: string;
   type:any
 }
-
 
 @Component({
   selector: 'app-journals',
@@ -28,7 +29,7 @@ export class FileNode{
 })
 export class JournalsComponent implements OnInit {
 
-  
+
   public journalList: any = []; 
   public indexval:any=5;
   public journalListing:any;
@@ -44,6 +45,9 @@ export class JournalsComponent implements OnInit {
   public url:"https://www.youtube.com/embed/"
 
   safeSrc: SafeResourceUrl;
+
+  
+
 
     /*------------TREE NESTEDDATA-----*/
 

@@ -13,10 +13,10 @@ import { HomefrontendheaderComponent } from './components/frontend/homefrontendh
 import { HomefrontendfooterComponent, NewslatterDialogComponent, NewslattersuccessDialogComponent } from './components/frontend/homefrontendfooter/homefrontendfooter.component';
 import { OurphysiciansComponent } from './components/frontend/ourphysicians/ourphysicians.component';
 import { ServicesComponent } from './components/frontend/services/services.component';
-import { JournalsComponent } from './components/frontend/journals/journals.component';
+import { JournalsComponent, CommonVideoModalComponent } from './components/frontend/journals/journals.component';
 import { ImagegalleryComponent, GalleryZoom } from './components/frontend/imagegallery/imagegallery.component';
 import { VideogalleryComponent, VideoZoom } from './components/frontend/videogallery/videogallery.component';
-import { TestimonialComponent } from './components/frontend/testimonial/testimonial.component';
+import { TestimonialComponent, CommonTestimonialVideoModalComponent } from './components/frontend/testimonial/testimonial.component';
 import { ContactusComponent } from './components/frontend/contactus/contactus.component';
 import { AppointmentsfrontendComponent } from './components/frontend/appointmentsfrontend/appointmentsfrontend.component';
 import { AdminfooterComponent } from './components/backend/admin-dashboard/adminfooter/adminfooter.component';
@@ -37,7 +37,7 @@ import { AdminNewsletterComponent } from './components/backend/admin-dashboard/a
 import { AdminGalleryManagerComponent } from './components/backend/admin-dashboard/admin-gallery-manager/admin-gallery-manager.component';
 import { ScheduleAppointmentComponent } from './components/frontend/schedule-appointment/schedule-appointment.component';
 import { OurphysiciansDetailComponent } from './components/frontend/ourphysicians-detail/ourphysicians-detail.component';
-import { JournalsDetailComponent } from './components/frontend/journals-detail/journals-detail.component';
+import { JournalsDetailComponent, VideoModalComponent } from './components/frontend/journals-detail/journals-detail.component';
 import { AddLessonComponent } from './components/backend/admin-dashboard/add-lesson/add-lesson.component';
 import { EditCategoryComponent } from './components/backend/admin-dashboard/edit-category/edit-category.component';
 
@@ -174,7 +174,10 @@ import { AuthGuard } from './auth.guard';
     AddEditTestimonialComponent,
 
     NewslatterDialogComponent,
-    NewslattersuccessDialogComponent
+    NewslattersuccessDialogComponent,
+    CommonVideoModalComponent,
+    CommonTestimonialVideoModalComponent,
+    VideoModalComponent,
 
   ],
   imports: [
@@ -199,7 +202,7 @@ import { AuthGuard } from './auth.guard';
       ReactiveFormsModule
   ],
   entryComponents: [GalleryZoom, VideoZoom, NewslatterDialogComponent, NewslattersuccessDialogComponent],
-  providers: [CookieService, ApiService,AuthGuard],
+  providers: [CookieService, ApiService,AuthGuard, CommonVideoModalComponent, CommonTestimonialVideoModalComponent, VideoModalComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

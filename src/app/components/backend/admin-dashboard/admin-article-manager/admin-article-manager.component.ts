@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute,Router} from '@angular/router';
  import{CookieService} from 'ngx-cookie-service';
  import { ApiService } from '../../../../api.service';
- import {environment} from '../../../../../environments/environment.dev';
  
 
 @Component({
@@ -13,7 +12,6 @@ import {ActivatedRoute,Router} from '@angular/router';
 export class AdminArticleManagerComponent implements OnInit {
   
 
-  public base_URL:any = environment['API_URL'];
   articleCatConfig: any = [];
   articleCatConfig_skip: any = ["_id"];
   detail_skip_array:any=["_id"]
@@ -24,7 +22,6 @@ export class AdminArticleManagerComponent implements OnInit {
   deleteEndpoint: any = "deletesingledata";
   searchingEndpoint: any = "datalist";
   editUrl: any = 'manage-article-category/edit';
-  apiBaseUrl:any=this.base_URL;
   status: any = [{ val: 1, 'name': 'Active' },{ val: 0, 'name': 'Inactive' }];
   view:any="blog_category_view";
   public search_settings: any = {
@@ -32,26 +29,6 @@ export class AdminArticleManagerComponent implements OnInit {
   textsearch: [{ label: 'Search By Article', field: 'blogtitle' }]
   };
 
-  // public blogListConfig: any;
-
-   //Blogs Lib List
-  //  public blogListConfig: any = {
-  //   apiBaseUrl: this.apiService.serverUrl,
-  //   listEndPoint: "datalist",
-  //   datasource: [],
-  //   tableName: "blogs",
-  //   updateurl: "addorupdatedata",
-  //   editUrl: "manage-article/edit",
-  //   jwtToken: this.cookieService.get('jwtToken'),
-  //   deleteEndPoint: "deletesingledata",
-  //   addLink: "manage-article/add",
-  //   view: "blogs"
-  // }
-  
-
-
-  
-  public blogListBase_URL:any = environment['API_URL'];
   blogListConfig: any = [];
   blogListConfig_skip: any = ["_id","credentials","blogs_image","categorydata"];
   blogListDetail_skip_array:any=["_id"]
@@ -62,7 +39,6 @@ export class AdminArticleManagerComponent implements OnInit {
   blogListDeleteEndpoint: any = "deletesingledata";
   blogListSearchingEndpoint: any = "datalist";
   blogListEditUrl: any = 'manage-article/edit';
-  blogListApiBaseUrl:any=this.blogListBase_URL;
   blogListStatus: any = [{ val: 1, 'name': 'Active' },{ val: 0, 'name': 'Inactive' }];
   blogListView:any="blog_category_view";
   public blogListSearch_settings: any = {

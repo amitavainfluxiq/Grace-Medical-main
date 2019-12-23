@@ -8,7 +8,6 @@ import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader'
 @NgModule({
   imports: [
     AppModule,
-    AppServerModule,
     ModuleMapLoaderModule,
     ServerTransferStateModule,
   ],
