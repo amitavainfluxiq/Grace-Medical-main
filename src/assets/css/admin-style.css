@@ -243,3 +243,106 @@ text-transform: uppercase!important; font-family: 'Ralewaybold'; text-decoration
 
 
 
+.admwrapper .mat-tab-labels .mat-tab-label{ background: #33333b; font-size: 16px; color: #fff; text-transform: uppercase;     opacity: inherit; border-right: solid 2px #fff; }
+.admwrapper .mat-ink-bar{ display: none;}
+
+.admwrapper .mat-tab-label-active{ background: #1b73ca!important;}
+
+.admwrapper .mat-tab-labels .mat-tab-label h2{font-size: 16px; font-weight: normal;}
+
+
+.admwrapper .tablediv lib-listing .container {
+  width: 100%;
+  padding: 0px;
+  margin-top: -65px;
+}
+
+.admwrapper .mat-toolbar-row{ padding-right: 180px;     margin-bottom: 5px;}
+
+.admwrapper .searchblock{ margin-top: 1px!important;}
+
+.admwrapper .searchblock span h2 {
+  font-family: "Helvetica-Normal";
+  color: #373b3d;
+  font-size: 20px!important;
+  margin: 0;
+  padding: 4px 0 8px 0;
+}
+
+
+.admwrapper .tablediv .mat-form-field-flex { 
+  height: 40px;  border: solid 1px #f6f7f9;
+}
+
+
+.admwrapper .searchblock .btnorange { background: #323234; font-size: 14px; color: #fff;     padding: 0px 18px 0px !important;
+ 
+  margin-top: -5px !important;
+  display: block!important; 
+  height: 40px;}
+
+  .mat-tab-body.mat-tab-body-active{ overflow: initial!important;}
+
+  .mat-tab-body-content{ overflow: initial!important;}
+
+ .clear {
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+.setting_formblock{ display: block; margin: 15px 0 10px 0;}
+
+
+.setting_formblock  .mat-form-field-appearance-legacy .mat-form-field-label {
+  top: 0;
+}
+
+.setting_formblock .mat-form-field-appearance-legacy .mat-form-field-subscript-wrapper {
+  margin-top: 0px!important;
+  top: 50px!important;
+}
+
+.setting_formblock  input.mat-input-element {
+  margin-top: 0px!important;
+}
+
+.setting_formblock label{ display: inline-block; float: left;     margin-top: 10px;}
+.setting_formblock .mat-form-field{ display: inline-block; float: left; margin: 0 10px;}
+
+.setting_formblock  .mat-form-field-infix{ height: 40px!important;}
+
+.setting_formblock .mat-form-field-label-wrapper {
+  top: -37px!important;
+  display: block!important;
+}
+
+.setting_formblock .mat-form-field-label-wrapper label{ margin-top: 0px!important;}
+
+
+
+.setting_formblock  .mat-radio-container { 
+  margin: 2px 0 0 20px;
+  float: left;
+}
+
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: #1b73ca!important;
+}
+
+.mat-radio-inner-circle{
+  background-color: #1b73ca!important;
+}
+
+.setting_formblock button {
+  background: #1b73ca!important;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  margin-right: 2px;
+  padding: 10px 25px;
+  margin-top: 25px;
+}

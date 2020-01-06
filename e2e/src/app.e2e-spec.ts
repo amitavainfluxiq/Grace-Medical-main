@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('consult4health-vm app is running!');
+    expect(page.getTitleText()).toEqual('Grace-Medical-main app is running!');
   });
 
   afterEach(async () => {

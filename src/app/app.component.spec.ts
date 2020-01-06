@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'consult4health-vm'`, () => {
+  it(`should have as title 'Grace-Medical-main'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('consult4health-vm');
+    expect(app.title).toEqual('Grace-Medical-main');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('consult4health-vm app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('Grace-Medical-main app is running!');
   });
 });
